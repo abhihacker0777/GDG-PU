@@ -9,21 +9,21 @@ export default function About() {
       icon: Users,
       color: "#4285F4",
       bg: "bg-blue-50 text-[#4285F4]",
-      desc: "Meet student developers, designers, and tech enthusiasts across Poornima University and Jaipur tech communities."
+      desc: "Meet Student Developers, Designers, And Tech Enthusiasts Across Poornima University And Jaipur Tech Communities."
     },
     {
       title: "Learn",
       icon: BookOpen,
       color: "#EA4335",
       bg: "bg-red-50 text-[#EA4335]",
-      desc: "Acquire hands-on engineering skills in Google Cloud, Android, AI, Flutter, and Web dev through interactive speaker sessions and peer study jams."
+      desc: "Acquire Hands-On Engineering Skills In Google Cloud, Android, AI, Flutter, And Web Dev Through Interactive Speaker Sessions And Peer Study Jams."
     },
     {
       title: "Grow",
       icon: Rocket,
       color: "#34A853",
       bg: "bg-green-50 text-[#34A853]",
-      desc: "Apply your skills to build real-world solutions, compete in the Google Solution Challenge, and elevate your engineering career."
+      desc: "Apply Your Skills To Build Real-World Solutions, Compete In The Google Solution Challenge, And Elevate Your Engineering Career."
     }
   ];
 
@@ -31,17 +31,17 @@ export default function About() {
     {
       year: "2024",
       title: "Chapter Formation & Initial Bootcamps",
-      desc: "Chartered at Poornima University with active participation in Android, web, and cloud developer study jams."
+      desc: "Chartered At Poornima University With Active Participation In Android, Web, And Cloud Developer Study Jams."
     },
     {
       year: "2025",
-      title: "Build with AI & Hackathon Briefings",
-      desc: "Conducted Build with AI workshops at 5th Floor Seminar Hall and large-scale orientation in 3rd Floor Seminar Hall."
+      title: "Build With AI & Hackathon Briefings",
+      desc: "Conducted Build With AI Workshops At 5th Floor Seminar Hall And Large-Scale Orientation In 3rd Floor Seminar Hall."
     },
     {
       year: "2026",
       title: "Google Solution Challenge & Scaling",
-      desc: "Active participation in the global Google Solution Challenge 2026 with over 2,258 chapter members."
+      desc: "Active Participation In The Global Google Solution Challenge 2026 With Over 2,258 Chapter Members."
     }
   ];
 
@@ -57,7 +57,7 @@ export default function About() {
           <span className="text-poornima-700">Poornima University</span>
         </h1>
         <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          Google Developer Groups on Campus Poornima University is an inclusive, student-led technical community backed by Google Developers.
+          Google Developer Groups On Campus Poornima University Is An Inclusive, Student-Led Technical Community Backed By Google Developers.
         </p>
       </section>
 
@@ -69,7 +69,7 @@ export default function About() {
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">Our Mission</h2>
             <p className="mt-3 text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-              To provide Poornima University students with practical coding workshops, mentorship from industry professionals, and real-world project experience that bridges academic theory and industry engineering.
+              To Provide Poornima University Students With Practical Coding Workshops, Mentorship From Industry Professionals, And Real-World Project Experience That Bridges Academic Theory And Industry Engineering.
             </p>
             <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-google-blue">
               <CheckCircle2 className="w-4 h-4" /> 100% Student-Driven & Inclusive
@@ -82,7 +82,7 @@ export default function About() {
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">Our Vision</h2>
             <p className="mt-3 text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-              To establish Poornima University as Rajasthan's premier student innovation hub, where students collaborate and build impactful solutions using Google technologies.
+              To Establish Poornima University As Rajasthan's Premier Student Innovation Hub, Where Students Collaborate And Build Impactful Solutions Using Google Technologies.
             </p>
             <div className="mt-6 flex items-center gap-2 text-xs font-semibold text-poornima-700">
               <CheckCircle2 className="w-4 h-4" /> Global Recognition & Growth
@@ -145,7 +145,7 @@ export default function About() {
                 Academic Excellence
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
-                Poornima University is a premier educational institution in Rajasthan recognized for technical innovation, entrepreneurship, and industry-focused research. The Faculty of Computer Science and Engineering actively supports student developer initiatives, providing computing facilities, seminar halls, and sponsorship for tech sessions.
+                Poornima University Is A Premier Educational Institution In Rajasthan Recognized For Technical Innovation, Entrepreneurship, And Industry-Focused Research. The Faculty Of Computer Science And Engineering Actively Supports Student Developer Initiatives, Providing Computing Facilities, Seminar Halls, And Sponsorship For Tech Sessions.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
                 <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
