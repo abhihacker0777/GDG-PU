@@ -31,10 +31,10 @@ body {
   border: 2px solid #f8fafc;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f59e0b;
+  background: #05488B;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #4285F4;
+  background: #05488B;
 }
 
 * {
