@@ -120,11 +120,19 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-slate-50 rounded-3xl border border-slate-200 text-center">
-              <img
-                src="/logo.png"
-                alt="Poornima University Logo"
-                className="h-16 sm:h-20 w-auto object-contain mb-4 animate-logo-pulse"
-              />
+              <a
+                href="https://poornima.edu.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Poornima University Official Website"
+                className="transition-transform duration-300 hover:scale-105"
+              >
+                <img
+                  src="/logo.png"
+                  alt="Poornima University Logo"
+                  className="h-16 sm:h-20 w-auto object-contain mb-4 animate-logo-pulse"
+                />
+              </a>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-poornima-100 text-poornima-800 text-xs font-bold mb-2">
                 <Award className="w-4 h-4 text-poornima-gold" /> NAAC 'A+' Accredited
               </div>

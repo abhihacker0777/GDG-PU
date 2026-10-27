@@ -61,22 +61,18 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
               </div>
 
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                <button
-                  onClick={() => onOpenRSVP(evt)}
-                  className="px-4 py-2 rounded-xl text-xs font-bold text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover transition shadow-xs flex items-center gap-1.5"
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-poornima-700" />
-                  <span>RSVP / Details</span>
-                </button>
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
+                  Past Event
+                </span>
 
                 <a
                   href={evt.bevyUrl}
                   target="_blank"
-                  rel="noreferrer"
-                  className="text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center gap-1"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1.5"
                 >
-                  <span>Official Page</span>
-                  <ExternalLink className="w-3 h-3" />
+                  <span>View Details on Bevy</span>
+                  <ExternalLink className="w-3 h-3 opacity-70" />
                 </a>
               </div>
             </div>
@@ -101,7 +97,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {realChapterPhotos.map((photo, i) => (
             <div key={i} className="rounded-3xl overflow-hidden bg-white border border-slate-200 shadow-xs hover:shadow-md transition">
               <div className="aspect-4/3 overflow-hidden bg-slate-100">

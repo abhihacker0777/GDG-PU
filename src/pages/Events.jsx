@@ -5,7 +5,8 @@ import {
   Clock, 
   Search, 
   Sparkles,
-  ExternalLink
+  ExternalLink,
+  CheckCircle2
 } from 'lucide-react';
 import { realEvents } from '../data/gdgData';
 
@@ -55,11 +56,18 @@ export default function Events({ onOpenRSVP }) {
             >
               <div>
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
-                      {event.category}
-                    </span>
-                    <span className="text-xs font-semibold text-slate-500 flex items-center gap-1">
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">
+                        {event.category}
+                      </span>
+                      {event.registrationType && (
+                        <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-100">
+                          {event.registrationType}
+                        </span>
+                      )}
+                    </div>
+                    <span className="text-xs font-semibold text-slate-500 flex items-center gap-1 shrink-0">
                       <Calendar className="w-3.5 h-3.5 text-google-blue" /> {event.date}
                     </span>
                   </div>
@@ -87,22 +95,19 @@ export default function Events({ onOpenRSVP }) {
                 </div>
               </div>
 
-              <div className="p-6 pt-0 flex items-center justify-between">
-                <button
-                  onClick={() => onOpenRSVP(event)}
-                  className="px-4 py-2 rounded-xl text-xs font-bold text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover transition shadow-xs flex items-center gap-1.5"
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-poornima-700" />
-                  <span>RSVP / Pass</span>
-                </button>
+              <div className="p-6 pt-0 border-t border-slate-100 mt-4 pt-4 flex items-center justify-between">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-600">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-slate-400" />
+                  <span>Concluded</span>
+                </span>
 
                 <a
                   href={event.bevyUrl}
                   target="_blank"
-                  rel="noreferrer"
-                  className="text-xs font-bold text-slate-600 hover:text-slate-900 flex items-center gap-1"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition"
                 >
-                  <span>View on Bevy</span>
+                  <span>View Details on Bevy</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

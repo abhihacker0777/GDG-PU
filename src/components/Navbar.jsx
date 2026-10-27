@@ -26,20 +26,34 @@ export default function Navbar({ activeTab, setActiveTab }) {
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16 sm:h-20 gap-3">
           
-          <div className="shrink-0 flex items-center gap-2.5 sm:gap-4 cursor-pointer group" onClick={() => handleNavClick('home')}>
-            <img 
-              src="/gdg_official_lockup.png" 
-              alt="Google Developer Groups" 
-              className="h-6 sm:h-8 md:h-9 w-auto object-contain shrink-0"
-            />
+          <div className="shrink-0 flex items-center gap-2.5 sm:gap-4">
+            <button
+              onClick={() => handleNavClick('home')}
+              className="shrink-0 focus:outline-none cursor-pointer"
+              title="GDG on Campus Home"
+            >
+              <img 
+                src="/gdg_official_lockup.png" 
+                alt="Google Developer Groups" 
+                className="h-6 sm:h-8 md:h-9 w-auto object-contain"
+              />
+            </button>
 
             <div className="h-6 sm:h-7 w-px bg-slate-200 shrink-0"></div>
 
-            <img 
-              src="/logo.png" 
-              alt="Poornima University Logo" 
-              className="h-7 sm:h-9 md:h-10 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
+            <a
+              href="https://poornima.edu.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit Poornima University Official Website"
+              className="shrink-0 transition-transform duration-300 hover:scale-105"
+            >
+              <img 
+                src="/logo.png" 
+                alt="Poornima University Logo" 
+                className="h-7 sm:h-9 md:h-10 w-auto object-contain"
+              />
+            </a>
           </div>
 
           <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
