@@ -13,7 +13,7 @@ export default function Footer() {
           </h2>
 
           <p className="w-full text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed text-left">
-            Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.
+            Welcome To GDG On Campus Poornima University, Your Community For Everything Code, Tech, And Collaboration! Here At GDG On Campus Poornima University, We Focus On Developing Our Coding Skills While Also Exploring Life Beyond The Screen. Whether You're A Beginner Or An Experienced Developer, Our Community Is A Place To Engage In Meaningful Discussions About Technology, Share Fun Experiences, And Collaborate On Projects That Make A Difference Both On Campus And In The Local Community. Join Us As We Talk About Code, Tech, And Life, All While Building Lasting Friendships And Working Together On Exciting Projects.
           </p>
         </div>
 

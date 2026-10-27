@@ -1,6 +1,6 @@
 export const chapterInfo = {
-  name: "GDG on Campus Poornima University - Jaipur, India",
-  shortName: "GDG on Campus Poornima University",
+  name: "GDG On Campus Poornima University - Jaipur, India",
+  shortName: "GDG On Campus Poornima University",
   university: "Poornima University",
   city: "Jaipur",
   state: "Rajasthan",
@@ -8,7 +8,7 @@ export const chapterInfo = {
   membersCount: "2,258",
   puLogoUrl: "/22.png",
   officialUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
-  description: "Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.",
+  description: "Welcome To GDG On Campus Poornima University, Your Community For Everything Code, Tech, And Collaboration! Here At GDG On Campus Poornima University, We Focus On Developing Our Coding Skills While Also Exploring Life Beyond The Screen. Whether You're A Beginner Or An Experienced Developer, Our Community Is A Place To Engage In Meaningful Discussions About Technology, Share Fun Experiences, And Collaborate On Projects That Make A Difference Both On Campus And In The Local Community. Join Us As We Talk About Code, Tech, And Life, All While Building Lasting Friendships And Working Together On Exciting Projects.",
   channels: {
     whatsapp: "https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ",
     instagram: "https://instagram.com/gdg.poornima",
@@ -32,7 +32,7 @@ export const realOrganizers = [
     avatar: "/team2026/15.webp",
     twitter: "thatraghavarora",
     profileUrl: "https://gdg.community.dev/u/raghav57/",
-    bio: "Cybersecurity enthusiast, ethical hacker, and MERN Stack Developer. GDGoC Organizer, WordPress Developer, Blogger, and SEO Specialist. Participated in 20+ hackathons with 4 hackathon wins and a CTF victory. Hall of Fame recognition from NASA, WHO, Jio, Swiggy, Zepto, Panasonic, and Nokia. Received awards from Rajasthan Police IPS officers (ADGP and DIGP) and DoIT&C Rajasthan.",
+    bio: "Cybersecurity Enthusiast, Ethical Hacker, And MERN Stack Developer. GDGoC Organizer, WordPress Developer, Blogger, And SEO Specialist. Participated In 20+ Hackathons With 4 Hackathon Wins And A CTF Victory. Hall Of Fame Recognition From NASA, WHO, Jio, Swiggy, Zepto, Panasonic, And Nokia. Received Awards From Rajasthan Police IPS Officers (ADGP And DIGP) And DoIT&C Rajasthan.",
     badge: "Organizer"
   },
   {
@@ -42,7 +42,7 @@ export const realOrganizers = [
     avatar: "/team2026/14.webp",
     twitter: "",
     profileUrl: "https://gdg.community.dev/u/mj8qcn/",
-    bio: "Computer Science student at Poornima University, passionate about software development, Google technologies, AI, and building impactful projects. Class Representative and hackathon team lead dedicated to building a vibrant developer community through technical workshops, hands-on sessions, and peer learning.",
+    bio: "Computer Science Student At Poornima University, Passionate About Software Development, Google Technologies, AI, And Building Impactful Projects. Class Representative And Hackathon Team Lead Dedicated To Building A Vibrant Developer Community Through Technical Workshops, Hands-On Sessions, And Peer Learning.",
     badge: "Organizer"
   },
   {
@@ -52,7 +52,7 @@ export const realOrganizers = [
     avatar: "/team2026/13.webp",
     twitter: "",
     profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
-    bio: "Lead Organizer of Google Developer Groups on Campus at Poornima University. Passionate about empowering student developers, organizing high-impact technology events, and connecting Poornima University innovators with the global Google Developer ecosystem.",
+    bio: "Lead Organizer Of Google Developer Groups On Campus At Poornima University. Passionate About Empowering Student Developers, Organizing High-Impact Technology Events, And Connecting Poornima University Innovators With The Global Google Developer Ecosystem.",
     badge: "Lead Organizer"
   }
 ];
@@ -60,8 +60,8 @@ export const realOrganizers = [
 export const realEvents = [
   {
     id: "evt-01",
-    title: "Google Solution Challenge Kick-off and Workshop",
-    registrationType: "Free registration",
+    title: "Google Solution Challenge Kick-Off And Workshop",
+    registrationType: "Free Registration",
     category: "Workshop",
     status: "Past",
     date: "March 18, 2026",
@@ -73,8 +73,8 @@ export const realEvents = [
   },
   {
     id: "evt-02",
-    title: "Build with AI Workshop: Let's Hack It!",
-    registrationType: "Free registration",
+    title: "Build With AI Workshop: Let's Hack It!",
+    registrationType: "Free Registration",
     category: "Hackathon Workshop",
     status: "Past",
     date: "January 22, 2026",
@@ -87,7 +87,7 @@ export const realEvents = [
   {
     id: "evt-03",
     title: "GDG India Hackathon Briefing Session",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Online Briefing",
     status: "Past",
     date: "December 24, 2025",
@@ -99,8 +99,8 @@ export const realEvents = [
   },
   {
     id: "evt-04",
-    title: "Step into a World of Innovation – Orientation 2025-26",
-    registrationType: "Free registration",
+    title: "Step Into A World Of Innovation – Orientation 2025-26",
+    registrationType: "Free Registration",
     category: "Orientation",
     status: "Past",
     date: "October 06, 2025",
@@ -113,7 +113,7 @@ export const realEvents = [
   {
     id: "evt-05",
     title: "Google Cloud Community Day 2025-Jaipur",
-    registrationType: "External registration",
+    registrationType: "External Registration",
     category: "Cloud Community",
     status: "Past",
     date: "July 06, 2025",
@@ -126,7 +126,7 @@ export const realEvents = [
   {
     id: "evt-06",
     title: "Build With AI 2.O & Farewell",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Workshop & Ceremony",
     status: "Past",
     date: "March 24, 2025",
@@ -139,7 +139,7 @@ export const realEvents = [
   {
     id: "evt-07",
     title: "Solution Challenge 2025 Insights - GDG India",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Info Session",
     status: "Past",
     date: "January 10, 2025",
@@ -152,7 +152,7 @@ export const realEvents = [
   {
     id: "evt-08",
     title: "Tech Winter Break - GDG On Campus Poornima University",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Bootcamp Day 4",
     status: "Past",
     date: "December 24, 2024",
@@ -165,7 +165,7 @@ export const realEvents = [
   {
     id: "evt-09",
     title: "Tech Winter Break - GDG On Campus Poornima University",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Bootcamp Day 3",
     status: "Past",
     date: "December 22, 2024",
@@ -178,7 +178,7 @@ export const realEvents = [
   {
     id: "evt-10",
     title: "Tech Winter Break - GDG On Campus Poornima University",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Bootcamp Day 2",
     status: "Past",
     date: "December 14, 2024",
@@ -191,7 +191,7 @@ export const realEvents = [
   {
     id: "evt-11",
     title: "Tech Winter Break GDG On Campus Poornima University",
-    registrationType: "Free registration",
+    registrationType: "Free Registration",
     category: "Bootcamp Day 1",
     status: "Past",
     date: "December 05, 2024",
@@ -204,7 +204,7 @@ export const realEvents = [
   {
     id: "evt-12",
     title: "Devfest Jaipur 2024",
-    registrationType: "External registration",
+    registrationType: "External Registration",
     category: "Flagship Conference",
     status: "Past",
     date: "November 24, 2024",
@@ -216,8 +216,8 @@ export const realEvents = [
   },
   {
     id: "evt-13",
-    title: "Build with AI: Explore, Learn, and Create for Beginners",
-    registrationType: "Free registration",
+    title: "Build With AI: Explore, Learn, And Create For Beginners",
+    registrationType: "Free Registration",
     category: "AI Workshop",
     status: "Past",
     date: "October 21, 2024",
@@ -229,8 +229,8 @@ export const realEvents = [
   },
   {
     id: "evt-14",
-    title: "Info Session : GDSC to GDG on Campus & GenAI Study Jams Overview",
-    registrationType: "Free registration",
+    title: "Info Session : GDSC To GDG On Campus & GenAI Study Jams Overview",
+    registrationType: "Free Registration",
     category: "Inaugural Info Session",
     status: "Past",
     date: "September 20, 2024",
@@ -246,22 +246,22 @@ export const realChapterPhotos = [
   {
     url: "/16.jpg",
     caption: "Student Innovators & Tech Gathering",
-    description: "GDG on Campus student participants and developers gathered at Poornima University computing facilities."
+    description: "GDG On Campus Student Participants And Developers Gathered At Poornima University Computing Facilities."
   },
   {
     url: "/17.webp",
     caption: "Auditorium Technical Gathering",
-    description: "Students seated in the auditorium during Google Cloud & AI technical sessions at Poornima University."
+    description: "Students Seated In The Auditorium During Google Cloud & AI Technical Sessions At Poornima University."
   },
   {
     url: "/21.jpg",
     caption: "Stage Celebration & Student Cheers",
-    description: "Core organizers, volunteers, and participants on stage celebrating the culmination of campus hackathons."
+    description: "Core Organizers, Volunteers, And Participants On Stage Celebrating The Culmination Of Campus Hackathons."
   },
   {
     url: "/18.webp",
-    caption: "Hands-on Development Workshop",
-    description: "Hands-on coding workshop with student developers at Poornima University seminar halls."
+    caption: "Hands-On Development Workshop",
+    description: "Hands-On Coding Workshop With Student Developers At Poornima University Seminar Halls."
   }
 ];
 
@@ -271,7 +271,7 @@ export const chapterYearData = {
     status: "Updating Soon 2026",
     badge: "2026 Season",
     headline: "Projects & Core Team Updating Soon",
-    message: "Projects and initiatives for the 2026 Season are actively in progress as part of the Google Solution Challenge 2026 and campus initiatives. Official project showcases and repositories will be updated here soon.",
+    message: "Projects And Initiatives For The 2026 Season Are Actively In Progress As Part Of The Google Solution Challenge 2026 And Campus Initiatives. Official Project Showcases And Repositories Will Be Updated Here Soon.",
     organizers: [
       {
         name: "Raghav Arora",
@@ -296,7 +296,7 @@ export const chapterYearData = {
       }
     ],
     coreTeamStatus: "Coming Soon",
-    coreTeamMessage: "2026 Core Team selection & announcements in progress. Stay tuned!"
+    coreTeamMessage: "2026 Core Team Selection & Announcements In Progress. Stay Tuned!"
   },
   archive2025: {
     year: "2025",
@@ -388,16 +388,16 @@ export const chapterYearData = {
     },
     highlights: [
       {
-        title: "Build with AI Workshop: Let's Hack It!",
-        desc: "Interactive hands-on session at 5th Floor Seminar Hall teaching prototype engineering with Google technologies."
+        title: "Build With AI Workshop: Let's Hack It!",
+        desc: "Interactive Hands-On Session At 5th Floor Seminar Hall Teaching Prototype Engineering With Google Technologies."
       },
       {
         title: "GDG India Hackathon Briefing",
-        desc: "Comprehensive online briefing guiding Poornima students through national-level hackathon problem statements."
+        desc: "Comprehensive Online Briefing Guiding Poornima Students Through National-Level Hackathon Problem Statements."
       },
       {
         title: "Orientation Session 2025-26",
-        desc: "Over 500 first-year students inducted into Google Developer Groups on Campus at the 3rd Floor Seminar Hall."
+        desc: "Over 500 First-Year Students Inducted Into Google Developer Groups On Campus At The 3rd Floor Seminar Hall."
       }
     ]
   },
@@ -422,15 +422,15 @@ export const chapterYearData = {
     highlights: [
       {
         title: "Chapter Formation & Inauguration",
-        desc: "Official chartering of the student developer chapter at Poornima University supported by Google Developers."
+        desc: "Official Chartering Of The Student Developer Chapter At Poornima University Supported By Google Developers."
       },
       {
-        title: "Hands-on Code Labs",
-        desc: "Skill workshops focusing on Android, web development, and cloud computing fundamentals."
+        title: "Hands-On Code Labs",
+        desc: "Skill Workshops Focusing On Android, Web Development, And Cloud Computing Fundamentals."
       },
       {
         title: "Study Jams & Certifications",
-        desc: "Students completed Google Cloud Skills Boost quests and earned verified technical badges."
+        desc: "Students Completed Google Cloud Skills Boost Quests And Earned Verified Technical Badges."
       }
     ]
   }

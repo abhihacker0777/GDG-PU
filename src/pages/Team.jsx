@@ -73,7 +73,7 @@ export default function Team() {
             Want To Join The Chapter Team?
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-            Reach out through our official WhatsApp group or Bevy community to participate in upcoming hackathons and workshop organizing.
+            Reach Out Through Our Official WhatsApp Group Or Bevy Community To Participate In Upcoming Hackathons And Workshop Organizing.
           </p>
         </div>
       </section>

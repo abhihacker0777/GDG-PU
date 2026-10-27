@@ -14,7 +14,7 @@ export default function Photos() {
           Chapter Photos
         </h1>
         <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto">
-          Moments captured during workshops, hackathon presentations, and orientation sessions at Poornima University.
+          Moments Captured During Workshops, Hackathon Presentations, And Orientation Sessions At Poornima University.
         </p>
       </section>
 
@@ -50,7 +50,7 @@ export default function Photos() {
         <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-3">
           <h3 className="text-lg sm:text-xl font-bold text-slate-900">Have Photos From Recent GDG Sessions?</h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
-            Tag us on Instagram @gdg.poornima or share your event clicks on the chapter WhatsApp group to get featured.
+            Tag Us On Instagram @gdg.poornima Or Share Your Event Clicks On The Chapter WhatsApp Group To Get Featured.
           </p>
         </div>
       </section>

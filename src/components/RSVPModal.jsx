@@ -65,7 +65,7 @@ export default function RSVPModal({ event, isOpen, onClose }) {
               </div>
               <h4 className="text-2xl font-bold text-slate-900">Registration Confirmed!</h4>
               <p className="mt-2 text-sm text-slate-600 max-w-sm mx-auto">
-                Confirmation sent to <span className="font-semibold text-poornima-700">{formData.email}</span>. See you at Poornima University!
+                Confirmation Sent To <span className="font-semibold text-poornima-700">{formData.email}</span>. See You At Poornima University!
               </p>
 
               <div className="mt-6 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-left text-xs text-slate-600 space-y-1">

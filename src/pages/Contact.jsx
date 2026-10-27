@@ -54,8 +54,8 @@ function CustomSelect({ label, value, onChange, options }) {
                     setIsOpen(false);
                   }}
                   className={`w-full text-left px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition flex items-center justify-between ${isSelected
-                      ? 'bg-poornima-50 text-poornima-800 font-bold'
-                      : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900'
+                    ? 'bg-poornima-50 text-poornima-800 font-bold'
+                    : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900'
                     }`}
                 >
                   <span className="truncate">{opt}</span>
@@ -112,7 +112,7 @@ export default function Contact() {
           Connect With Our Chapter
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-          Have a question about upcoming events, hackathon partnerships, or want to invite GDG Poornima to collaborate? Reach out to us anytime!
+          Have A Question About Upcoming Events, Hackathon Partnerships, Or Want To Invite GDG Poornima To Collaborate? Reach Out To Us Anytime!
         </p>
       </section>
 
@@ -174,7 +174,7 @@ export default function Contact() {
                     <Globe className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-slate-900">University Portal</h4>
+                    <h4 className="font-bold text-slate-900">University Website</h4>
                     <p className="text-xs text-slate-500 mt-1">
                       <a href="https://poornima.edu.in" target="_blank" rel="noreferrer" className="hover:text-poornima-700 flex items-center gap-1">
                         poornima.edu.in <ExternalLink className="w-3 h-3" />
@@ -190,7 +190,7 @@ export default function Contact() {
                 </div>
                 <h4 className="font-extrabold text-base">Join On Google Developer Groups</h4>
                 <p className="text-xs text-slate-100 leading-relaxed">
-                  Join our official chapter on the Google Community Dev portal to receive verified event notifications and tickets.
+                  Join Our Official Chapter On The Google Community Dev Portal To Receive Verified Event Notifications And Tickets.
                 </p>
                 <a
                   href="https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
@@ -215,7 +215,7 @@ export default function Contact() {
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900">Message Delivered!</h3>
                   <p className="text-sm text-slate-600 max-w-md mx-auto">
-                    Thank you for reaching out to GDG on Campus Poornima University. Our team will get back to your email ({formData.email}) within 24–48 hours.
+                    Thank You For Reaching Out To GDG On Campus Poornima University. Our Team Will Get Back To Your Email ({formData.email}) Within 24–48 Hours.
                   </p>
                   <button
                     onClick={() => {
@@ -237,7 +237,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <h3 className="text-2xl font-bold text-slate-900">Send Us A Message</h3>
                   <p className="text-xs sm:text-sm text-slate-500">
-                    Fill out the form below and we will route your inquiry to the appropriate organizer.
+                    Fill Out The Form Below And We Will Route Your Inquiry To The Appropriate Organizer.
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -295,7 +295,7 @@ export default function Contact() {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="How can we assist you or collaborate?"
+                      placeholder="How Can We Assist You Or Collaborate?"
                       className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
                     ></textarea>
                   </div>

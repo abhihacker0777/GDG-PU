@@ -85,7 +85,7 @@ export default function Projects({ setActiveTab }) {
           GDG Poornima Chapter Journey
         </h1>
         <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto">
-          Explore chapter milestones and developer initiatives across 2024, 2025, and upcoming 2026.
+          Explore Chapter Milestones And Developer Initiatives Across 2024, 2025, And Upcoming 2026.
         </p>
 
         <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-2 sm:gap-3">
@@ -161,7 +161,7 @@ export default function Projects({ setActiveTab }) {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-google-red"></span>
-                  <span>Build with AI Workshops & Hands-on Sprints</span>
+                  <span>Build With AI Workshops & Hands-On Sprints</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-google-green"></span>

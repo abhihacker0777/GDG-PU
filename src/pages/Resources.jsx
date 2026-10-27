@@ -20,7 +20,7 @@ export default function Resources() {
           Learning Tracks & Resources
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-          Hand-curated documentation, certification pathways, free Google Cloud lab access, and answers to common student questions.
+          Hand-Curated Documentation, Certification Pathways, Free Google Cloud Lab Access, And Answers To Common Student Questions.
         </p>
       </section>
 
@@ -75,7 +75,7 @@ export default function Resources() {
             Frequently Asked Questions
           </h2>
           <p className="text-sm text-slate-500 mt-2">
-            Everything you need to know about participating in GDG on Campus Poornima University.
+            Everything You Need To Know About Participating In GDG On Campus Poornima University.
           </p>
         </div>
 

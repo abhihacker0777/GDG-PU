@@ -32,14 +32,14 @@ export default function Events({ onOpenRSVP }) {
           Official Chapter Gatherings
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-          Workshops, briefing sessions, and orientation events hosted at Poornima University.
+          Workshops, Briefing Sessions, And Orientation Events Hosted At Poornima University.
         </p>
 
         <div className="mt-8 max-w-md mx-auto relative">
           <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" />
           <input
             type="text"
-            placeholder="Search events (e.g. Solution Challenge, AI, Hackathon)..."
+            placeholder="Search Events (e.g. Solution Challenge, AI, Hackathon)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-slate-200 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700 shadow-xs"
