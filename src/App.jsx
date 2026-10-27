@@ -8,7 +8,7 @@ import About from './pages/About';
 import Events from './pages/Events';
 import Team from './pages/Team';
 import Projects from './pages/Projects';
-import Resources from './pages/Resources';
+import Photos from './pages/Photos';
 import Contact from './pages/Contact';
 
 export default function App() {
@@ -34,12 +34,12 @@ export default function App() {
         return <About setActiveTab={setActiveTab} />;
       case 'events':
         return <Events onOpenRSVP={handleOpenRSVP} />;
-      case 'team':
+      case 'organizers':
         return <Team setActiveTab={setActiveTab} />;
       case 'projects':
         return <Projects setActiveTab={setActiveTab} />;
-      case 'resources':
-        return <Resources />;
+      case 'photos':
+        return <Photos />;
       case 'contact':
         return <Contact />;
       default:

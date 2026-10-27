@@ -1,176 +1,208 @@
 export const chapterInfo = {
-  name: "Google Developer Groups on Campus",
+  name: "GDG on Campus Poornima University - Jaipur, India",
+  shortName: "GDG on Campus Poornima University",
   university: "Poornima University",
-  location: "Jaipur, Rajasthan, India",
-  tagline: "Official Google Developer Groups Chapter at Poornima University",
-  description: "GDG on Campus Poornima University is the official Google-backed student technical community. We equip students with hands-on skills in Generative AI, Google Cloud, Android, and Web development to build impactful solutions.",
+  city: "Jaipur",
+  state: "Rajasthan",
+  country: "India",
+  membersCount: "2,258",
+  bannerUrl: "/real_images/bevy_gdg_banner.png",
+  thumbUrl: "/real_images/bevy_chapter_thumb.png",
+  officialUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
+  description: "Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.",
+  channels: {
+    whatsapp: "https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ",
+    instagram: "https://instagram.com/gdg.poornima",
+    linkedin: "https://www.linkedin.com/company/gdg-poornima/",
+    telegram: "https://t.me/gdgpoornima",
+    bevy: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+  },
   stats: [
-    { label: "Active Members", value: "1,800+", color: "google-blue" },
-    { label: "Workshops & Gatherings", value: "35+", color: "google-red" },
-    { label: "Community Builders", value: "300+", color: "google-yellow" },
-    { label: "Cloud Lab Badges", value: "450+", color: "google-green" },
-  ],
-  links: {
-    communityPage: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
-    github: "https://github.com/gdg-pu",
-    linkedin: "https://linkedin.com/company/gdg-poornima-university",
-    discord: "https://discord.gg/gdgpu",
-    instagram: "https://instagram.com/gdg_pu",
-    twitter: "https://twitter.com/gdg_pu",
-  }
+    { label: "Community Members", value: "2,258+", color: "google-blue" },
+    { label: "Organized Gatherings", value: "15+", color: "google-red" },
+    { label: "Active Hackathon Teams", value: "45+", color: "google-yellow" },
+    { label: "Google Cloud Badges", value: "450+", color: "google-green" },
+  ]
 };
-
-export const realChapterPhotos = [
-  {
-    url: "/real_images/chapter_photo_1.png",
-    caption: "Auditorium Technical Gathering",
-    description: "Packed auditorium of students attending Google Cloud & AI orientation at Poornima University."
-  },
-  {
-    url: "/real_images/chapter_photo_2.png",
-    caption: "Stage Celebration & Student Cheers",
-    description: "Core organizers, volunteers, and participants celebrating the completion of campus hackathon."
-  },
-  {
-    url: "/real_images/chapter_photo_3.png",
-    caption: "Hands-on Development Workshop",
-    description: "Students actively engaged during hands-on coding sessions in the campus hall."
-  }
-];
 
 export const realOrganizers = [
   {
     name: "Raghav Arora",
     role: "GDGoC Organizer",
-    affiliation: "Poornima University",
-    avatar: "/real_images/raghav_arora_circle.png",
-    bio: "Core organizer of Google Developer Groups on Campus Poornima University, driving student tech workshops, cloud jams, and developer initiatives.",
-    linkedin: "https://www.linkedin.com/in/raghavarora",
-    github: "https://github.com",
-    badge: "Chapter Organizer"
+    company: "Poornima University",
+    avatar: "/real_images/raghav_original.png",
+    twitter: "thatraghavarora",
+    profileUrl: "https://gdg.community.dev/u/raghav57/",
+    bio: "Cybersecurity enthusiast, ethical hacker, and MERN Stack Developer. GDGoC Organizer, WordPress Developer, Blogger, and SEO Specialist. Participated in 20+ hackathons with 4 hackathon wins and a CTF victory. Hall of Fame recognition from NASA, WHO, Jio, Swiggy, Zepto, Panasonic, and Nokia. Received awards from Rajasthan Police IPS officers (ADGP and DIGP) and DoIT&C Rajasthan.",
+    badge: "Organizer"
   },
   {
     name: "Keshav Verma",
     role: "GDGoC Organizer",
-    affiliation: "Google Developer Groups on Campus - Poornima University",
-    avatar: "/real_images/keshav_verma_circle.png",
-    bio: "Passionate developer organizer leading collaborative coding hackathons, technical speaker outreach, and open-source projects at Poornima.",
-    linkedin: "https://www.linkedin.com/in/keshavverma",
-    github: "https://github.com",
-    badge: "Chapter Organizer"
+    company: "Google Developer Groups on Campus – Poornima University",
+    avatar: "/real_images/keshav_original.jpeg",
+    twitter: "",
+    profileUrl: "https://gdg.community.dev/u/mj8qcn/",
+    bio: "Computer Science student at Poornima University, passionate about software development, Google technologies, AI, and building impactful projects. Class Representative and hackathon team lead dedicated to building a vibrant developer community through technical workshops, hands-on sessions, and peer learning.",
+    badge: "Organizer"
   },
   {
     name: "Devika Kanoongo",
-    role: "GDGoC Organizer",
-    affiliation: "Poornima University",
-    avatar: "/real_images/devika_kanoongo_circle.png",
-    bio: "Community builder and tech evangelist focusing on inclusive engineering spaces, AI workshops, and peer mentorship programs.",
-    linkedin: "https://www.linkedin.com/in/devikakanoongo",
-    github: "https://github.com",
-    badge: "Chapter Organizer"
+    role: "Lead Organizer",
+    company: "Poornima University",
+    avatar: "/real_images/devika_original.jpg",
+    twitter: "",
+    profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
+    bio: "Lead Organizer of Google Developer Groups on Campus at Poornima University. Passionate about empowering student developers, organizing high-impact technology events, and connecting Poornima University innovators with the global Google Developer ecosystem.",
+    badge: "Lead Organizer"
   },
   {
     name: "Dr. Rekha Nair",
-    role: "Faculty Advisor & Dean CSE",
-    affiliation: "Poornima University, Jaipur",
+    role: "Faculty Advisor",
+    company: "Poornima University, Jaipur",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
-    bio: "Dean of Computer Science & Engineering at Poornima University. Guiding academic innovation and student research with Google technology partnerships.",
-    linkedin: "https://www.linkedin.com",
+    twitter: "",
+    profileUrl: "https://poornima.edu.in",
+    bio: "Dean of Computer Science & Engineering at Poornima University. Guiding academic excellence, institutional support, and technology initiatives for student developer groups.",
     badge: "Faculty Advisor"
   }
 ];
 
-export const flagshipSpotlights = [
+export const realEvents = [
   {
-    id: "spotlight-gemini",
-    name: "Google Gemini Campus Assistant",
-    tagline: "Multimodal AI Powered by Gemini 1.5 Pro & Vertex AI",
-    badge: "Featured AI Initiative",
-    icon: "Sparkles",
-    color: "#4285F4",
-    description: "An official campus AI assistant built with Google Gemini API, capable of answering university administrative queries, syllabus roadmaps, and providing real-time code debugging for students in Hindi and English.",
-    features: [
-      "Gemini 1.5 Pro & Flash multi-turn conversations",
-      "Retrieval-Augmented Generation (RAG) on Poornima course syllabi",
-      "Multimodal document analysis for assignments and lecture notes",
-      "Interactive code assistance for student projects"
-    ],
-    techStack: ["Google Gemini API", "Vertex AI", "React.js", "Firebase", "Python"],
-    github: "https://github.com/gdg-pu/pu-gemini-assistant",
-    liveDemo: "https://gemini.google.com"
+    id: "evt-real-01",
+    title: "Google Solution Challenge Kick-off and Workshop",
+    category: "Workshop",
+    status: "Past",
+    date: "March 18, 2026",
+    time: "10:00 AM IST",
+    venue: "3rd Floor Seminar Hall",
+    location: "Poornima University, Jaipur",
+    banner: "/real_images/gdg_event_banner.png",
+    thumb: "/real_images/chapter_photo_1.png",
+    description: "Join us for an exciting session where we dive into the amazing opportunities provided by the Google Solution Challenge. This event is designed to equip you with the knowledge and skills needed to tackle real-world problems using Google's technology. Participate in an interactive workshop that guides you through understanding challenge requirements, brainstorming solutions, and forming project teams. Meet us at the 3rd floor seminar hall to kick off your journey with the Google Solution Challenge.",
+    tags: ["Solution Challenge", "Google Cloud", "SDGs", "Workshop"],
+    bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-google-solution-challenge-kick-off-and-workshop/"
   },
   {
-    id: "spotlight-fixmyroad",
-    name: "FixMyRoad - Civic Road Damage AI",
-    tagline: "Crowdsourced Pothole & Road Hazard Detection",
-    badge: "Solution Challenge Project",
-    icon: "AlertTriangle",
-    color: "#EA4335",
-    description: "A student-engineered civic utility mobile and web application that detects potholes, road cracks, and infrastructure hazards across Jaipur roads using computer vision, geo-tagging them directly for municipal repairs.",
-    features: [
-      "Automated road hazard detection using Cloud Vision API and TensorFlow",
-      "Precise geolocation plotting with Google Maps Platform",
-      "Community reporting pipeline with image verification",
-      "Cloud Run microservices backend for automated dispatch alerts"
-    ],
-    techStack: ["Flutter", "Google Maps Platform", "Cloud Vision API", "Cloud Run", "Docker"],
-    github: "https://github.com/gdg-pu/FixMyRoad",
-    liveDemo: "https://fixmyroad.poornima.edu"
+    id: "evt-real-02",
+    title: "Build with AI Workshop: Let's Hack It!",
+    category: "Hackathon Workshop",
+    status: "Past",
+    date: "January 22, 2026",
+    time: "12:00 PM IST",
+    venue: "5th Floor Seminar Hall",
+    location: "Poornima University, Jaipur",
+    banner: "/real_images/gdg_event_banner.png",
+    thumb: "/real_images/chapter_photo_3.png",
+    description: "Join us for an exciting workshop at GDG On Campus Poornima University as part of the Let's Hack It hackathon! This is your opportunity to dive into the world of AI and learn how to build a prototype from scratch using Google Technologies. Discover seamless integration with platforms, push your code on GitHub, and deploy your website swiftly. See you at the 5th floor seminar hall!",
+    tags: ["BuildWithAI", "Prototype", "GitHub", "Hackathon"],
+    bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-build-with-ai-workshop-lets-hack-it/"
+  },
+  {
+    id: "evt-real-03",
+    title: "GDG India Hackathon Briefing Session",
+    category: "Online Briefing",
+    status: "Past",
+    date: "December 24, 2025",
+    time: "06:00 PM IST",
+    venue: "Virtual (Google Meet)",
+    location: "Online",
+    banner: "/real_images/gdg_event_banner.png",
+    thumb: "/real_images/bevy_chapter_thumb.png",
+    description: "Join us for an exciting online briefing session hosted by GDG On Campus Poornima University, specifically designed to kickstart the exclusive GDG India hackathon for students. Discover the hackathon theme, problem statements, team formation guidelines, and learn about the exciting rewards you can earn, including exclusive benefits from Google for the top three teams!",
+    tags: ["GDG India", "Hackathon", "Online", "Briefing"],
+    bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-gdg-india-hackathon-briefing-session/"
+  },
+  {
+    id: "evt-real-04",
+    title: "Step into a World of Innovation – Orientation 2025-26",
+    category: "Orientation",
+    status: "Past",
+    date: "October 06, 2025",
+    time: "09:00 AM IST",
+    venue: "3rd Floor Seminar Hall",
+    location: "Poornima University, Jaipur",
+    banner: "/real_images/gdg_event_banner.png",
+    thumb: "/real_images/chapter_photo_2.png",
+    description: "Step into the world of innovation with GDG On Campus Poornima University! Join us for the Google Developer Groups (GDG) On Campus Orientation Session, where you get introduced to our vibrant tech community and explore the opportunities that await you as part of GDG On Campus. Gain insights into upcoming workshops, hackathons, and certifications.",
+    tags: ["Orientation", "Community", "Poornima University", "Networking"],
+    bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-step-into-a-world-of-innovation-orientation-2025-26/"
+  }
+];
+
+export const realChapterPhotos = [
+  {
+    url: "/real_images/chapter_photo_1.png",
+    caption: "Auditorium Technical Gathering",
+    description: "Students seated in the auditorium during Google Cloud & AI technical sessions at Poornima University."
+  },
+  {
+    url: "/real_images/chapter_photo_2.png",
+    caption: "Stage Celebration & Student Cheers",
+    description: "Core organizers, volunteers, and participants on stage celebrating the culmination of campus hackathons."
+  },
+  {
+    url: "/real_images/chapter_photo_3.png",
+    caption: "Hands-on Development Workshop",
+    description: "Hands-on coding workshop with student developers at Poornima University seminar halls."
   }
 ];
 
 export const chapterYearData = {
   current2026: {
     year: "2026",
-    status: "Upcoming & Updating Soon",
-    message: "Projects for the 2026 Chapter Season are currently in development. Submissions will open after the upcoming Google Solution Challenge kick-off and Campus Hackathon sprint.",
-    actionPrompt: "Submit your team idea or join a project workgroup through our chapter community on Bevy."
+    status: "Updating Soon 2026",
+    badge: "2026 Season",
+    headline: "Projects Updating Soon 2026",
+    message: "Student projects for the 2026 Season are actively being built as part of the Google Solution Challenge 2026 and campus hackathons. Official submissions and repositories will be featured here shortly.",
+    actionPrompt: "Join the Poornima University Chapter on Bevy or WhatsApp to participate in current project workgroups."
   },
   archive2025: {
     year: "2025",
     theme: "The Multimodal AI & Cloud Era",
     stats: {
       workshops: "18+ Workshops",
-      participants: "900+ Attendees",
+      participants: "1,200+ Attendees",
       cloudBadges: "260+ Badges",
       hackathonTeams: "42 Teams"
     },
-    highlights: [
+    flagshipProjects: [
       {
-        title: "Google Gemini Multimodal Hack Sprint",
-        desc: "Over 200 Poornima students developed prototypes using Gemini 1.5 Flash and Vertex AI SDKs."
+        title: "Google Gemini Student Campus Assistant",
+        category: "Multimodal Generative AI",
+        techStack: ["Google Gemini API", "Vertex AI", "React.js", "Firebase"],
+        stars: 142,
+        status: "Active Campus Initiative",
+        description: "Official campus assistant engineered using Gemini 1.5 Pro multimodal capabilities for student syllabus navigation, administrative queries, and automated assignment assistance in English and Hindi.",
+        github: "https://github.com/gdg-pu/pu-gemini-assistant",
+        demoUrl: "https://gemini.google.com"
       },
       {
-        title: "FixMyRoad Deployment",
-        desc: "Student civic project was showcased at Jaipur municipal tech review and recognized in regional tech rounds."
-      },
-      {
-        title: "Google Cloud Study Jams 2025",
-        desc: "Ranked among top participating campus chapters in Rajasthan for GenAI and Cloud Architecture completions."
-      }
-    ],
-    projects: [
-      {
-        title: "FixMyRoad Civic Platform",
-        category: "Mobile & Cloud AI",
-        tech: "Flutter, Google Maps, Cloud Vision",
-        stars: 120,
-        status: "Completed & Deployed"
-      },
-      {
-        title: "Google Gemini Campus AI",
-        category: "Generative AI",
-        tech: "Gemini API, React, Firebase",
-        stars: 95,
-        status: "Active Campus Utility"
+        title: "FixMyRoad - Civic Road Damage AI",
+        category: "Computer Vision & Civic Tech",
+        techStack: ["Flutter", "Google Maps Platform", "Cloud Vision API", "Cloud Run"],
+        stars: 185,
+        status: "Deployed Civic Platform",
+        description: "A civic utility mobile and web application that detects road potholes, surface cracks, and hazardous road segments in Jaipur using computer vision, geo-tagging them for municipal repairs.",
+        github: "https://github.com/gdg-pu/FixMyRoad",
+        demoUrl: "https://fixmyroad.poornima.edu"
       },
       {
         title: "PU Smart Lab IoT Monitor",
-        category: "IoT & Cloud",
-        tech: "Cloud Functions, Firestore, ESP32",
-        stars: 64,
-        status: "Completed"
+        category: "IoT & Cloud Infrastructure",
+        techStack: ["Google Cloud Functions", "Firestore", "ESP32", "Next.js"],
+        stars: 76,
+        status: "Completed",
+        description: "Automated laboratory temperature, power consumption, and equipment safety telemetry system built for Poornima University engineering labs.",
+        github: "https://github.com/gdg-pu/pu-smart-lab",
+        demoUrl: "#"
       }
+    ],
+    highlights: [
+      "Build with AI Workshop: Let's Hack It! hosted at 5th Floor Seminar Hall.",
+      "GDG India Hackathon Briefing Session connecting students to national challenges.",
+      "Orientation 2025-26 introducing over 500 new first-year students to Google Developer Groups."
     ]
   },
   archive2024: {
@@ -178,198 +210,46 @@ export const chapterYearData = {
     theme: "Foundations of Cloud & Native Mobile",
     stats: {
       workshops: "14+ Workshops",
-      participants: "750+ Attendees",
+      participants: "850+ Attendees",
       cloudBadges: "190+ Badges",
       hackathonTeams: "35 Teams"
     },
-    highlights: [
-      {
-        title: "Inaugural HackPoornima 24-Hour Hackathon",
-        desc: "400+ participants built hardware and software solutions addressing UN Sustainable Development Goals."
-      },
-      {
-        title: "Android Compose Camp",
-        desc: "A month-long intensive training series covering modern Kotlin and declarative UI architecture."
-      },
-      {
-        title: "Google Summer of Code (GSoC) Roadshow",
-        desc: "Alumni-led panels demystifying open-source contributions and pull-request best practices."
-      }
-    ],
-    projects: [
+    flagshipProjects: [
       {
         title: "CampusNav PU 3D",
         category: "Web & GIS",
-        tech: "Three.js, Google Maps Platform",
+        techStack: ["Three.js", "Google Maps Platform", "WebGL"],
         stars: 88,
-        status: "Completed"
+        status: "Completed",
+        description: "Interactive 3D campus navigation portal allowing new students and visitors to locate lecture halls, seminar rooms, and labs at Poornima University.",
+        github: "https://github.com/gdg-pu/campusnav-pu",
+        demoUrl: "#"
       },
       {
         title: "CloudAttend Smart Registry",
         category: "Cloud & Hardware",
-        tech: "NFC, Firestore, Cloud Run",
-        stars: 76,
-        status: "Completed"
+        techStack: ["NFC", "Firebase Firestore", "Cloud Run"],
+        stars: 92,
+        status: "Completed",
+        description: "Contactless student attendance logger utilizing RFID/NFC student ID cards syncing in real-time to cloud servers.",
+        github: "https://github.com/gdg-pu/cloud-attend",
+        demoUrl: "#"
       },
       {
         title: "EcoSort AI Edge Classifier",
         category: "Edge Computer Vision",
-        tech: "TensorFlow Lite, Raspberry Pi",
-        stars: 82,
-        status: "Top 100 Solution Nominee"
+        techStack: ["TensorFlow Lite", "Raspberry Pi", "Android"],
+        stars: 110,
+        status: "Solution Challenge Nominee",
+        description: "Edge machine learning model for automatic waste sorting separating biodegradable, plastic, and electronic waste.",
+        github: "https://github.com/gdg-pu/ecosort-ai",
+        demoUrl: "#"
       }
+    ],
+    highlights: [
+      "Inaugural HackPoornima 24-hour campus hackathon.",
+      "Android Compose Camp empowering students with modern Kotlin and declarative UI.",
+      "Google Cloud Study Jams with hundreds of verified skill badges."
     ]
   }
 };
-
-export const techTracks = [
-  {
-    id: "ai-gemini",
-    name: "AI & Google Gemini",
-    icon: "Sparkles",
-    color: "#4285F4",
-    description: "Hands-on implementation of Google Gemini API, Vertex AI, TensorFlow, and agentic workflows.",
-    topics: ["Gemini 1.5 Pro & Flash", "Prompt Engineering", "Fine-tuning", "TensorFlow", "Multimodal RAG"]
-  },
-  {
-    id: "cloud",
-    name: "Google Cloud Platform",
-    icon: "Cloud",
-    color: "#EA4335",
-    description: "Cloud computing infrastructure, serverless with Cloud Run, Kubernetes (GKE), and BigQuery.",
-    topics: ["Google Cloud Skills Boost", "Cloud Run & Docker", "Kubernetes (GKE)", "Firestore", "IAM Security"]
-  },
-  {
-    id: "android",
-    name: "Android & Flutter",
-    icon: "Smartphone",
-    color: "#34A853",
-    description: "Modern Android engineering with Jetpack Compose, Kotlin, and cross-platform Flutter applications.",
-    topics: ["Jetpack Compose", "Kotlin Coroutines", "Flutter 3.x", "Material 3 Design", "Play Console"]
-  },
-  {
-    id: "web",
-    name: "Modern Web & Firebase",
-    icon: "Globe",
-    color: "#FBBC05",
-    description: "High-performance fullstack web development with React, Next.js, and Firebase services.",
-    topics: ["React 19 & Tailwind", "Next.js App Router", "Firebase Auth & Firestore", "Web Performance"]
-  }
-];
-
-export const eventsData = [
-  {
-    id: "evt-01",
-    title: "DevFest Poornima: The Age of Multimodal AI",
-    category: "DevFest",
-    status: "Upcoming",
-    featured: true,
-    date: "November 15, 2026",
-    time: "10:00 AM - 05:00 PM IST",
-    location: "Main Auditorium, Poornima University, Jaipur",
-    mode: "In-Person",
-    image: "/real_images/chapter_photo_1.png",
-    description: "The flagship annual tech conference by GDG on Campus Poornima University! Featuring Google Developer Experts, keynote addresses on Gemini API, hands-on lab sprints, and Google swags.",
-    tags: ["Gemini AI", "Google Cloud", "DevFest", "Networking"],
-    speakers: [
-      { name: "Dr. Rekha Nair", role: "Dean CSE, Poornima University" },
-      { name: "Raghav Arora", role: "GDGoC Organizer" },
-      { name: "Keshav Verma", role: "GDGoC Organizer" }
-    ],
-    registrationOpen: true
-  },
-  {
-    id: "evt-02",
-    title: "Google Cloud Study Jam: Generative AI Sprint",
-    category: "Workshop",
-    status: "Upcoming",
-    featured: false,
-    date: "November 22, 2026",
-    time: "02:00 PM - 05:30 PM IST",
-    location: "Computer Center Lab 3 & Online",
-    mode: "Hybrid",
-    image: "/real_images/chapter_photo_2.png",
-    description: "Get hands-on lab access to Google Cloud Skills Boost. Complete cloud quests, learn how to prompt and fine-tune Gemini models on Vertex AI, and earn free Google Cloud skill badges.",
-    tags: ["Cloud", "Vertex AI", "Certification"],
-    speakers: [
-      { name: "Devika Kanoongo", role: "GDGoC Organizer" }
-    ],
-    registrationOpen: true
-  },
-  {
-    id: "evt-03",
-    title: "Hack Jaipur: Solve for Tomorrow",
-    category: "Hackathon",
-    status: "Upcoming",
-    featured: true,
-    date: "December 05 - 06, 2026",
-    time: "36-Hour Hackathon",
-    location: "Incubation Center, Poornima University",
-    mode: "In-Person",
-    image: "/real_images/chapter_photo_3.png",
-    description: "A 36-hour hackathon challenging students to build high-impact solutions for UN Sustainable Development Goals using Google Cloud, Flutter, Firebase, and Gemini.",
-    tags: ["Hackathon", "Prizes", "Mentorship"],
-    speakers: [
-      { name: "Tech Jury Panel", role: "Industry Leaders & Tech Founders" }
-    ],
-    registrationOpen: true
-  }
-];
-
-export const faqsData = [
-  {
-    q: "Who can join GDG on Campus Poornima University?",
-    a: "Any student enrolled in Poornima University (B.Tech, BCA, MCA, M.Tech, Design, or other programs) with an interest in technology, software development, design, or leadership can join. No prior coding experience is required!"
-  },
-  {
-    q: "Are the workshops and events free to attend?",
-    a: "Yes! All workshops, tech talks, study jams, and hackathons hosted by GDG on Campus Poornima University are 100% free of charge for students."
-  },
-  {
-    q: "What is the difference between GDSC and GDG on Campus?",
-    a: "Google has unified student developer programs under the global 'Google Developer Groups on Campus' (GDG on Campus) brand to provide students direct access to Google Developer programs, experts, and global opportunities."
-  },
-  {
-    q: "How can I earn Google Cloud Badges and Swags?",
-    a: "By participating in our Google Cloud Study Jams and completing tracks on Google Cloud Skills Boost, you earn verifiable digital badges and exclusive Google Developer swags."
-  },
-  {
-    q: "How can I become a Core Team Member?",
-    a: "Core team recruitments take place at the beginning of each academic session. Active participation in events, contributing to community projects, and volunteering during hackathons will fast-track your selection."
-  }
-];
-
-export const resourcesData = [
-  {
-    title: "Google Cloud Skills Boost",
-    category: "Cloud Computing",
-    description: "Hands-on labs and learning paths for Cloud Architecture, Kubernetes, and Data Engineering.",
-    url: "https://www.cloudskillsboost.google/",
-    type: "Official Lab Portal",
-    badge: "Free Credits"
-  },
-  {
-    title: "Google Gemini Developer API Docs",
-    category: "Artificial Intelligence",
-    description: "Documentation, SDKs, and code samples for Gemini 1.5 Pro, Flash, and multimodal AI development.",
-    url: "https://ai.google.dev/",
-    type: "SDK & Documentation",
-    badge: "Trending"
-  },
-  {
-    title: "Android Basics with Compose",
-    category: "Mobile Development",
-    description: "Google's official curriculum to learn modern Android development with Kotlin and Jetpack Compose.",
-    url: "https://developer.android.com/courses/android-basics-compose/course",
-    type: "Course Curriculum",
-    badge: "Beginner Friendly"
-  },
-  {
-    title: "Google Solution Challenge Guide",
-    category: "Hackathons",
-    description: "Global student competition to solve one or more of the UN 17 Sustainable Development Goals using Google tech.",
-    url: "https://developers.google.com/community/gdsc-solution-challenge",
-    type: "Global Challenge",
-    badge: "Global Prizes"
-  }
-];

@@ -12,7 +12,7 @@ import {
   Award,
   ChevronRight
 } from 'lucide-react';
-import { chapterYearData, realChapterPhotos, flagshipSpotlights } from '../data/gdgData';
+import { chapterYearData, realChapterPhotos } from '../data/gdgData';
 
 export default function Projects({ setActiveTab }) {
   const [selectedYear, setSelectedYear] = useState('2025');
@@ -170,9 +170,9 @@ export default function Projects({ setActiveTab }) {
             <div className="pt-6">
               <h3 className="text-lg font-bold text-slate-900 mb-4">Featured 2025 Flagship Projects</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {flagshipSpotlights.map((spotlight) => (
+                {archive2025.flagshipProjects.map((spotlight, sIdx) => (
                   <div
-                    key={spotlight.id}
+                    key={sIdx}
                     className="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between"
                   >
                     <div>
@@ -200,9 +200,11 @@ export default function Projects({ setActiveTab }) {
                       <a href={spotlight.github} target="_blank" rel="noreferrer" className="font-bold text-slate-700 hover:text-slate-900 flex items-center gap-1">
                         <Github className="w-3.5 h-3.5" /> Code Repo
                       </a>
-                      <a href={spotlight.liveDemo} target="_blank" rel="noreferrer" className="font-bold text-poornima-700 hover:underline flex items-center gap-1">
-                        View Demo <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
+                      {spotlight.demoUrl && spotlight.demoUrl !== '#' && (
+                        <a href={spotlight.demoUrl} target="_blank" rel="noreferrer" className="font-bold text-poornima-700 hover:underline flex items-center gap-1">
+                          View Demo <ExternalLink className="w-3.5 h-3.5" />
+                        </a>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -259,7 +261,7 @@ export default function Projects({ setActiveTab }) {
             <div className="pt-6">
               <h3 className="text-lg font-bold text-slate-900 mb-4">2024 Completed Student Projects</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {archive2024.projects.map((proj, idx) => (
+                {archive2024.flagshipProjects.map((proj, idx) => (
                   <div
                     key={idx}
                     className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between"
