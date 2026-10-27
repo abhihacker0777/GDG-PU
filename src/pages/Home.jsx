@@ -29,7 +29,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {realEvents.map((evt) => (
+          {realEvents.slice(0, 2).map((evt) => (
             <div
               key={evt.id}
               className="rounded-3xl p-5 sm:p-6 bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between"
@@ -77,6 +77,19 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <button
+            onClick={() => {
+              setActiveTab('events');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-800 bg-white hover:bg-slate-100 border border-slate-200 shadow-xs transition"
+          >
+            <span>View All 14 Events</span>
+            <ArrowRight className="w-4 h-4 text-poornima-700" />
+          </button>
         </div>
       </section>
 
