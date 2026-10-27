@@ -1,171 +1,64 @@
 import React from 'react';
-import { Heart, Github, Linkedin, Twitter, Instagram, MapPin, Mail, Globe, ArrowUpRight } from 'lucide-react';
-import GoogleBracketsLogo from './GoogleBracketsLogo';
-import { chapterInfo } from '../data/gdgData';
+import { Instagram, Linkedin, Send, ExternalLink, Heart } from 'lucide-react';
 
-export default function Footer({ setActiveTab }) {
-  const scrollToTab = (tab) => {
-    setActiveTab(tab);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 relative overflow-hidden border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 mb-12">
-          
-          <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3 sm:gap-4">
-              <GoogleBracketsLogo className="h-8 w-auto" />
-              <div className="h-6 w-px bg-slate-700"></div>
-              <img 
-                src="/pu_clean_logo.png" 
-                alt="Poornima University Logo" 
-                className="h-8 sm:h-9 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-300 hover:scale-105"
-                onError={(e) => {
-                  e.currentTarget.src = '/logo.png';
-                }}
-              />
-            </div>
+    <footer className="bg-slate-50 border-t border-slate-200 pt-10 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200 shadow-sm space-y-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
+            About the Chapter
+          </h2>
 
-            <div>
-              <h3 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-                GDG on Campus <span className="text-poornima-gold">• Poornima University</span>
-              </h3>
-              <p className="text-xs text-slate-400 mt-1">
-                Official Google Developer Groups student chapter at Poornima University, Jaipur.
-              </p>
-            </div>
+          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed max-w-5xl">
+            Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.
+          </p>
 
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              Empowering student developers, designers, and innovators through practical coding, Google Cloud study jams, and community-led technical workshops.
-            </p>
+          <div className="pt-2 flex flex-wrap gap-2.5 sm:gap-3 text-xs sm:text-sm">
+            <a
+              href="https://instagram.com/gdg.poornima"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-pink-50 text-pink-700 hover:bg-pink-100 border border-pink-200 transition font-semibold"
+            >
+              <Instagram className="w-4 h-4 text-pink-600" />
+              <span>@gdg.poornima</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
 
-            <div className="flex items-center gap-3 pt-2">
-              <a
-                href="https://github.com/gdg-pu"
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 hover:text-white flex items-center justify-center transition border border-slate-700"
-                aria-label="GitHub"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-              <a
-                href={chapterInfo.channels.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-[#0077b5] hover:text-white flex items-center justify-center transition border border-slate-700"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
-                href={chapterInfo.channels.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-[#e1306c] hover:text-white flex items-center justify-center transition border border-slate-700"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
+            <a
+              href="https://www.linkedin.com/company/gdg-poornima/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition font-semibold"
+            >
+              <Linkedin className="w-4 h-4 text-blue-600" />
+              <span>GDG Poornima LinkedIn</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
 
-          <div className="space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Navigation</h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
-              <li>
-                <button onClick={() => scrollToTab('home')} className="hover:text-poornima-gold transition">
-                  Home
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToTab('about')} className="hover:text-poornima-gold transition">
-                  About Chapter
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToTab('events')} className="hover:text-poornima-gold transition">
-                  Chapter Events
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToTab('organizers')} className="hover:text-poornima-gold transition">
-                  Organizers
-                </button>
-              </li>
-              <li>
-                <button onClick={() => scrollToTab('photos')} className="hover:text-poornima-gold transition">
-                  Campus Photos
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Focus Tracks</h4>
-            <ul className="space-y-2 text-xs sm:text-sm text-slate-400">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-google-blue"></span>
-                <span>Google Solution Challenge</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-google-red"></span>
-                <span>Build with AI Sprints</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-google-green"></span>
-                <span>Google Cloud Study Jams</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-google-yellow"></span>
-                <span>Android & Modern Web</span>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Campus Details</h4>
-            <div className="space-y-2 text-xs text-slate-400">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-poornima-gold shrink-0 mt-0.5" />
-                <span>
-                  Poornima University, IS-2027-2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur, Rajasthan 303905
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-google-blue shrink-0" />
-                <a href="mailto:gdg@poornima.edu.in" className="hover:text-white transition">
-                  gdg@poornima.edu.in
-                </a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Globe className="w-4 h-4 text-google-green shrink-0" />
-                <a href="https://poornima.edu.in" target="_blank" rel="noreferrer" className="hover:text-white transition flex items-center gap-1">
-                  poornima.edu.in <ArrowUpRight className="w-3 h-3" />
-                </a>
-              </div>
-            </div>
-
-            <div className="p-3 rounded-2xl bg-slate-800/80 border border-slate-700/80 mt-3">
-              <div className="text-[11px] font-bold text-poornima-gold uppercase tracking-wider">
-                NAAC 'A+' Accredited
-              </div>
-              <p className="text-[10px] text-slate-400 mt-0.5">
-                Premier university in Rajasthan with state-of-the-art incubation and computing facilities.
-              </p>
-            </div>
+            <a
+              href="https://t.me/gdgpoornima"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 transition font-semibold"
+            >
+              <Send className="w-4 h-4 text-sky-600" />
+              <span>Telegram Channel</span>
+              <ExternalLink className="w-3 h-3 opacity-60" />
+            </a>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p>© {new Date().getFullYear()} GDG on Campus • Poornima University. Independent student community.</p>
-          <p className="flex items-center gap-1.5 text-slate-400">
-            Crafted with <Heart className="w-3.5 h-3.5 text-google-red fill-google-red" /> by{' '}
-            <span className="font-semibold text-white">Poornima Developers</span>
+        <div className="mt-8 pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} GDG on Campus • Poornima University. All rights reserved.</p>
+          <p className="flex items-center gap-1.5">
+            Built with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> by{' '}
+            <span className="font-semibold text-slate-700">Poornima Developers</span>
           </p>
         </div>
+
       </div>
     </footer>
   );
