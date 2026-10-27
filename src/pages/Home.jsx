@@ -120,44 +120,34 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-10">
-          <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">Leadership</span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-            Organizers
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Official student organizers of Google Developer Groups on Campus Poornima University.
-          </p>
-        </div>
+      <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl font-normal text-slate-800 mb-8 sm:mb-12">
+          Organizers
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-12">
           {realOrganizers.map((org, i) => (
-            <div
-              key={i}
-              className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition text-center flex flex-col items-center justify-between"
-            >
-              <div>
-                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-4 border-2 border-slate-200 shadow-sm">
-                  <img src={org.avatar} alt={org.name} className="w-full h-full object-cover" />
-                </div>
-                <h4 className="font-bold text-lg sm:text-xl text-slate-900">{org.name}</h4>
-                <p className="text-xs font-semibold text-poornima-700 mt-0.5">{org.role}</p>
-                <p className="text-[11px] text-slate-500 mt-0.5">{org.company}</p>
-                <p className="text-xs text-slate-600 mt-4 line-clamp-4 leading-relaxed text-left">{org.bio}</p>
+            <div key={i} className="flex flex-col items-center text-center">
+              <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden mb-4 bg-slate-100">
+                <img src={org.avatar} alt={org.name} className="w-full h-full object-cover" />
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 w-full flex items-center justify-center">
-                <a
-                  href={org.profileUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-xs font-bold text-poornima-700 hover:underline flex items-center gap-1"
-                >
-                  <span>View profile</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900">{org.name}</h3>
+              <p className="text-sm text-slate-600 mt-1">{org.role}</p>
+              {org.company ? (
+                <p className="text-xs text-slate-500 mt-0.5 max-w-[240px] leading-snug min-h-[2rem]">{org.company}</p>
+              ) : (
+                <div className="min-h-[2rem]"></div>
+              )}
+
+              <a
+                href={org.profileUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline"
+              >
+                View profile
+              </a>
             </div>
           ))}
         </div>
