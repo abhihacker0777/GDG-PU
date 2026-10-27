@@ -1,15 +1,101 @@
-import React, { useState } from 'react';
-import { Mail, MapPin, Send, MessageSquare, CheckCircle2, Sparkles, ExternalLink, Globe } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { 
+  Mail, 
+  MapPin, 
+  Send, 
+  MessageSquare, 
+  CheckCircle2, 
+  Sparkles, 
+  ExternalLink, 
+  Globe,
+  ChevronDown,
+  Check
+} from 'lucide-react';
+
+function CustomSelect({ label, value, onChange, options }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div className="relative" ref={containerRef}>
+      <label className="block text-xs font-semibold text-slate-700 mb-1">
+        {label}
+      </label>
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 flex items-center justify-between hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-poornima-700 shadow-2xs transition"
+      >
+        <span className="truncate text-left text-slate-800">{value}</span>
+        <ChevronDown className={`w-4 h-4 text-slate-500 transition-transform duration-200 shrink-0 ml-2 ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+
+      {isOpen && (
+        <div className="absolute left-0 right-0 mt-1.5 bg-white border border-slate-200 rounded-2xl shadow-xl p-1.5 z-40 animate-in fade-in zoom-in-95 duration-150">
+          <div className="max-h-60 overflow-y-auto space-y-0.5">
+            {options.map((opt) => {
+              const isSelected = opt === value;
+              return (
+                <button
+                  key={opt}
+                  type="button"
+                  onClick={() => {
+                    onChange(opt);
+                    setIsOpen(false);
+                  }}
+                  className={`w-full text-left px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition flex items-center justify-between ${
+                    isSelected
+                      ? 'bg-poornima-50 text-poornima-800 font-bold'
+                      : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900'
+                  }`}
+                >
+                  <span className="truncate">{opt}</span>
+                  {isSelected && <Check className="w-4 h-4 text-poornima-700 shrink-0 ml-2" />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    department: 'CSE',
+    department: 'Computer Science & Engineering (CSE)',
     subject: 'General Inquiry',
     message: ''
   });
   const [sent, setSent] = useState(false);
+
+  const departmentOptions = [
+    'Computer Science & Engineering (CSE)',
+    'BCA / MCA',
+    'AI & Data Science',
+    'Faculty / Staff',
+    'External / Other Organization'
+  ];
+
+  const subjectOptions = [
+    'General Inquiry',
+    'Event Participation / RSVP',
+    'Hackathon Sponsorship',
+    'Speaker Session Proposal',
+    'Core Team Application'
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +122,26 @@ export default function Contact() {
           
           <div className="lg:col-span-5 space-y-6">
             <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-6">
-              <h2 className="text-2xl font-bold text-slate-900">Chapter Headquarters</h2>
+              
+              <div className="pb-4 border-b border-slate-100 flex items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-bold text-slate-900">Chapter Headquarters</h2>
+                  <p className="text-xs text-slate-500 mt-0.5">Poornima University Campus</p>
+                </div>
+                <a
+                  href="https://poornima.edu.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit Poornima University Official Website"
+                  className="shrink-0 transition-transform duration-300 hover:scale-105"
+                >
+                  <img
+                    src="/pu_clean_logo.png"
+                    alt="Poornima University"
+                    className="h-9 sm:h-11 w-auto object-contain"
+                  />
+                </a>
+              </div>
               
               <div className="space-y-4 text-sm text-slate-600">
                 <div className="flex items-start gap-3.5">
@@ -117,7 +222,13 @@ export default function Contact() {
                   <button
                     onClick={() => {
                       setSent(false);
-                      setFormData({ name: '', email: '', department: 'CSE', subject: 'General Inquiry', message: '' });
+                      setFormData({ 
+                        name: '', 
+                        email: '', 
+                        department: 'Computer Science & Engineering (CSE)', 
+                        subject: 'General Inquiry', 
+                        message: '' 
+                      });
                     }}
                     className="px-6 py-2.5 rounded-xl font-bold text-xs text-white bg-poornima-700 hover:bg-poornima-800 transition"
                   >
@@ -142,7 +253,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="John Doe"
-                        className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
+                        className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
                       />
                     </div>
 
@@ -156,45 +267,25 @@ export default function Contact() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="john@poornima.edu.in"
-                        className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
+                        className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-700 mb-1">
-                        Department / Program
-                      </label>
-                      <select
-                        value={formData.department}
-                        onChange={(e) => setFormData({ ...formData, department: e.target.value })}
-                        className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
-                      >
-                        <option>Computer Science & Engineering (CSE)</option>
-                        <option>BCA / MCA</option>
-                        <option>AI & Data Science</option>
-                        <option>Faculty / Staff</option>
-                        <option>External / Other Organization</option>
-                      </select>
-                    </div>
+                    <CustomSelect
+                      label="Department / Program"
+                      value={formData.department}
+                      onChange={(val) => setFormData({ ...formData, department: val })}
+                      options={departmentOptions}
+                    />
 
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-700 mb-1">
-                        Subject
-                      </label>
-                      <select
-                        value={formData.subject}
-                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
-                      >
-                        <option>General Inquiry</option>
-                        <option>Event Participation / RSVP</option>
-                        <option>Hackathon Sponsorship</option>
-                        <option>Speaker Session Proposal</option>
-                        <option>Core Team Application</option>
-                      </select>
-                    </div>
+                    <CustomSelect
+                      label="Subject"
+                      value={formData.subject}
+                      onChange={(val) => setFormData({ ...formData, subject: val })}
+                      options={subjectOptions}
+                    />
                   </div>
 
                   <div>
@@ -207,7 +298,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="How can we assist you or collaborate?"
-                      className="w-full px-3.5 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
+                      className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
                     ></textarea>
                   </div>
 

@@ -78,19 +78,6 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
             </div>
           ))}
         </div>
-
-        <div className="mt-8 text-center">
-          <button
-            onClick={() => {
-              setActiveTab('events');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-slate-800 bg-white hover:bg-slate-100 border border-slate-200 shadow-xs transition"
-          >
-            <span>View All 14 Events</span>
-            <ArrowRight className="w-4 h-4 text-poornima-700" />
-          </button>
-        </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
