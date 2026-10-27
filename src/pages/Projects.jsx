@@ -3,12 +3,68 @@ import {
   Code2, 
   Sparkles, 
   Clock, 
-  Calendar, 
   CheckCircle2, 
   ExternalLink, 
-  Award
+  Award,
+  Users
 } from 'lucide-react';
 import { chapterYearData } from '../data/gdgData';
+
+function MemberBadge({ member }) {
+  const getInitials = (name) => {
+    return name
+      .replace(/[^a-zA-Z\s]/g, '')
+      .trim()
+      .split(/\s+/)
+      .map((n) => n[0])
+      .join('')
+      .slice(0, 2)
+      .toUpperCase();
+  };
+
+  return (
+    <div className="flex flex-col items-center text-center p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:bg-white hover:shadow-xs transition duration-200">
+      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-3 bg-white border-2 border-slate-200 shadow-2xs flex items-center justify-center shrink-0">
+        {member.avatar ? (
+          <img
+            src={member.avatar}
+            alt={member.name}
+            className="w-full h-full object-cover object-center"
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-linear-to-tr from-sky-100 to-indigo-100 text-google-blue font-black text-lg">
+            {getInitials(member.name)}
+          </div>
+        )}
+      </div>
+
+      <h4 className="font-bold text-sm sm:text-base text-slate-900 leading-snug">
+        {member.name}
+      </h4>
+
+      <p className="text-xs font-semibold text-slate-600 mt-0.5">
+        {member.role}
+      </p>
+
+      {member.company ? (
+        <p className="text-[11px] text-slate-500 mt-0.5 min-h-[1.5rem] flex items-center justify-center max-w-[200px]">
+          {member.company}
+        </p>
+      ) : (
+        <div className="min-h-[1.5rem]"></div>
+      )}
+
+      <a
+        href={member.profileUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="mt-2 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+      >
+        View profile
+      </a>
+    </div>
+  );
+}
 
 export default function Projects({ setActiveTab }) {
   const [selectedYear, setSelectedYear] = useState('2026');
@@ -72,8 +128,9 @@ export default function Projects({ setActiveTab }) {
       </section>
 
       {selectedYear === '2026' && (
-        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-6 sm:p-10 md:p-12 rounded-3xl bg-white border border-slate-200 shadow-sm text-center space-y-6">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          
+          <div className="p-6 sm:p-10 rounded-3xl bg-white border border-slate-200 shadow-sm text-center space-y-6">
             <div className="w-16 h-16 mx-auto rounded-3xl bg-amber-100 text-poornima-700 flex items-center justify-center">
               <Clock className="w-8 h-8 text-poornima-gold" />
             </div>
@@ -109,24 +166,43 @@ export default function Projects({ setActiveTab }) {
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div className="pt-2">
-              <a
-                href="https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover transition shadow-sm"
-              >
-                <span>Join Official Chapter on Bevy</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
+          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
+            <div className="text-center max-w-xl mx-auto">
+              <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">
+                Current Leadership
+              </span>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                2026 Chapter Organizers
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+              {current2026.organizers.map((org, i) => (
+                <MemberBadge key={i} member={org} />
+              ))}
+            </div>
+
+            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center max-w-2xl mx-auto mt-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold mb-2">
+                <Clock className="w-3.5 h-3.5 text-amber-600" /> {current2026.coreTeamStatus}
+              </div>
+              <h4 className="text-base sm:text-lg font-bold text-slate-900">
+                2026 Core Team Coming Soon
+              </h4>
+              <p className="text-xs text-slate-600 mt-1">
+                {current2026.coreTeamMessage}
+              </p>
             </div>
           </div>
+
         </section>
       )}
 
       {selectedYear === '2025' && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          
           <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
               <div>
@@ -158,6 +234,36 @@ export default function Projects({ setActiveTab }) {
             </div>
 
             <div>
+              <div className="text-center max-w-xl mx-auto mb-6">
+                <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">
+                  2025 Chapter Leadership
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                  2025 Organizer
+                </h3>
+              </div>
+
+              <div className="max-w-xs mx-auto mb-10">
+                <MemberBadge member={archive2025.organizer} />
+              </div>
+
+              <div className="text-center max-w-xl mx-auto mb-6">
+                <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">
+                  2025 Team Leads
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                  2025 Core Team
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+                {archive2025.coreTeam.map((member, i) => (
+                  <MemberBadge key={i} member={member} />
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-6 border-t border-slate-100">
               <h3 className="text-lg font-bold text-slate-900 mb-4">2025 Key Milestones</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {archive2025.highlights.map((h, i) => (
@@ -169,11 +275,13 @@ export default function Projects({ setActiveTab }) {
               </div>
             </div>
           </div>
+
         </section>
       )}
 
       {selectedYear === '2024' && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          
           <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
               <div>
@@ -205,6 +313,23 @@ export default function Projects({ setActiveTab }) {
             </div>
 
             <div>
+              <div className="text-center max-w-xl mx-auto mb-6">
+                <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">
+                  Founding Chapter Leadership
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                  2024 Organizer
+                </h3>
+              </div>
+
+              <div className="max-w-xs mx-auto mb-8">
+                {archive2024.organizers.map((org, i) => (
+                  <MemberBadge key={i} member={org} />
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-6 border-t border-slate-100">
               <h3 className="text-lg font-bold text-slate-900 mb-4">2024 Key Milestones</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {archive2024.highlights.map((h, i) => (
@@ -216,6 +341,7 @@ export default function Projects({ setActiveTab }) {
               </div>
             </div>
           </div>
+
         </section>
       )}
 

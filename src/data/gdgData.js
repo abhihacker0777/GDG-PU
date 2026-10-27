@@ -145,13 +145,116 @@ export const chapterYearData = {
     year: "2026",
     status: "Updating Soon 2026",
     badge: "2026 Season",
-    headline: "Projects Updating Soon 2026",
-    message: "Projects for the 2026 Season are actively in progress as part of the Google Solution Challenge 2026 and campus initiatives. Official project showcases and repositories will be updated here soon.",
-    actionPrompt: "Join the chapter on Bevy or WhatsApp to collaborate on current projects."
+    headline: "Projects & Core Team Updating Soon",
+    message: "Projects and initiatives for the 2026 Season are actively in progress as part of the Google Solution Challenge 2026 and campus initiatives. Official project showcases and repositories will be updated here soon.",
+    organizers: [
+      {
+        name: "Raghav Arora",
+        role: "GDGoC Organizer",
+        company: "Poornima University",
+        avatar: "/raghav_arora_7b47d9b4.webp",
+        profileUrl: "https://gdg.community.dev/u/raghav57/"
+      },
+      {
+        name: "Keshav Verma",
+        role: "GDGoC Organizer",
+        company: "Google Developer Groups on Campus – Poornima University",
+        avatar: "/keshav_verma_7c9c5ac4.webp",
+        profileUrl: "https://gdg.community.dev/u/mj8qcn/"
+      },
+      {
+        name: "Devika Kanoongo",
+        role: "Lead Organizer",
+        company: "Poornima University",
+        avatar: "/devika_kanoongo_59d95d27.webp",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      }
+    ],
+    coreTeamStatus: "Coming Soon",
+    coreTeamMessage: "2026 Core Team selection & announcements in progress. Stay tuned!"
   },
   archive2025: {
     year: "2025",
     theme: "The Innovation & Cloud Season",
+    organizer: {
+      name: "YUG PATHAK",
+      role: "GDGoC Organizer",
+      company: "Poornima University",
+      avatar: "/team2025/yug_pathak.png",
+      profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+    },
+    coreTeam: [
+      {
+        name: "Piyush Agarwal",
+        role: "Planning & Innovation Lead",
+        company: "Poornima University",
+        avatar: null,
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Aayush Patidar",
+        role: "Technical Lead",
+        company: "Poornima University",
+        avatar: "/team2025/aayush_patidar.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Yash Silwadiya",
+        role: "Technical Lead",
+        company: "Poornima University",
+        avatar: "/team2025/yash_silwadiya.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Sparsh Goyal",
+        role: "Developer Lead",
+        company: "Poornima University",
+        avatar: "/team2025/sparsh_goyal.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Saksham Verma",
+        role: "Operation Lead",
+        company: "Poornima University",
+        avatar: "/team2025/saksham_verma.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Pijus Das",
+        role: "Production Lead",
+        company: "Poornima University",
+        avatar: "/team2025/pijus_das.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Aayush askandani101",
+        role: "Training Lead",
+        company: "Poornima University",
+        avatar: "/team2025/aayush_askandani.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Swati Jain 20",
+        role: "Marketing Lead",
+        company: "Poornima University",
+        avatar: "/team2025/swati_jain.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Harshvardhan saini 19",
+        role: "Media Lead",
+        company: "Poornima University",
+        avatar: "/team2025/harshvardhan_saini.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      },
+      {
+        name: "Bhavya Alag19",
+        role: "Content Lead",
+        company: "Poornima University",
+        avatar: "/team2025/bhavya_alag.png",
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      }
+    ],
     stats: {
       workshops: "18+ Workshops",
       participants: "1,200+ Attendees",
@@ -176,6 +279,15 @@ export const chapterYearData = {
   archive2024: {
     year: "2024",
     theme: "Community Foundation & Developer Upskilling",
+    organizers: [
+      {
+        name: "Manu Sharma",
+        role: "Organizer",
+        company: "GDG PU",
+        avatar: null,
+        profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+      }
+    ],
     stats: {
       workshops: "14+ Workshops",
       participants: "850+ Attendees",
