@@ -32,21 +32,30 @@ export const realOrganizers = [
     role: "GDGoC Organizer",
     company: "Poornima University",
     avatar: "/raghav_arora_7b47d9b4.webp",
-    profileUrl: "https://gdg.community.dev/u/raghav57/"
+    twitter: "thatraghavarora",
+    profileUrl: "https://gdg.community.dev/u/raghav57/",
+    bio: "Cybersecurity enthusiast, ethical hacker, and MERN Stack Developer. GDGoC Organizer, WordPress Developer, Blogger, and SEO Specialist. Participated in 20+ hackathons with 4 hackathon wins and a CTF victory. Hall of Fame recognition from NASA, WHO, Jio, Swiggy, Zepto, Panasonic, and Nokia. Received awards from Rajasthan Police IPS officers (ADGP and DIGP) and DoIT&C Rajasthan.",
+    badge: "Organizer"
   },
   {
     name: "Keshav Verma",
     role: "GDGoC Organizer",
     company: "Google Developer Groups on Campus – Poornima University",
     avatar: "/keshav_verma_7c9c5ac4.webp",
-    profileUrl: "https://gdg.community.dev/u/mj8qcn/"
+    twitter: "",
+    profileUrl: "https://gdg.community.dev/u/mj8qcn/",
+    bio: "Computer Science student at Poornima University, passionate about software development, Google technologies, AI, and building impactful projects. Class Representative and hackathon team lead dedicated to building a vibrant developer community through technical workshops, hands-on sessions, and peer learning.",
+    badge: "Organizer"
   },
   {
     name: "Devika Kanoongo",
-    role: "GDGoC Organizer",
-    company: "",
+    role: "Lead Organizer",
+    company: "Poornima University",
     avatar: "/devika_kanoongo_59d95d27.webp",
-    profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
+    twitter: "",
+    profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
+    bio: "Lead Organizer of Google Developer Groups on Campus at Poornima University. Passionate about empowering student developers, organizing high-impact technology events, and connecting Poornima University innovators with the global Google Developer ecosystem.",
+    badge: "Lead Organizer"
   }
 ];
 

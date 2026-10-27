@@ -120,34 +120,48 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
         </div>
       </section>
 
-      <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-normal text-slate-800 mb-8 sm:mb-12">
-          Organizers
-        </h2>
+      <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">Leadership</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1 text-center">
+            Organizers
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600 mt-1 text-center">
+            Official student organizers of Google Developer Groups on Campus Poornima University.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-12">
+        <div className="w-full flex flex-wrap justify-center items-stretch gap-6 sm:gap-8">
           {realOrganizers.map((org, i) => (
-            <div key={i} className="flex flex-col items-center text-center">
-              <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden mb-4 bg-slate-100">
-                <img src={org.avatar} alt={org.name} className="w-full h-full object-cover" />
+            <div
+              key={i}
+              className="w-full sm:w-[320px] md:w-[340px] lg:w-[360px] p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between items-center text-center"
+            >
+              <div className="w-full flex flex-col items-center text-center">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-4 border-2 border-slate-200 shadow-sm bg-slate-100">
+                  <img src={org.avatar} alt={org.name} className="w-full h-full object-cover object-center" />
+                </div>
+                
+                <span className="inline-flex items-center justify-center text-[11px] font-bold px-3 py-1 rounded-full bg-poornima-50 text-poornima-700 border border-poornima-200 mb-2 mx-auto">
+                  {org.role}
+                </span>
+
+                <h4 className="font-bold text-lg sm:text-xl text-slate-900 text-center">{org.name}</h4>
+                <p className="text-xs font-medium text-slate-500 mt-0.5 text-center min-h-[2.5rem] flex items-center justify-center max-w-[260px] mx-auto">{org.company}</p>
+                <p className="text-xs text-slate-600 mt-3 line-clamp-4 leading-relaxed text-center">{org.bio}</p>
               </div>
 
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">{org.name}</h3>
-              <p className="text-sm text-slate-600 mt-1">{org.role}</p>
-              {org.company ? (
-                <p className="text-xs text-slate-500 mt-0.5 max-w-[240px] leading-snug min-h-[2rem]">{org.company}</p>
-              ) : (
-                <div className="min-h-[2rem]"></div>
-              )}
-
-              <a
-                href={org.profileUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-3 text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline"
-              >
-                View profile
-              </a>
+              <div className="mt-6 pt-4 border-t border-slate-100 w-full flex items-center justify-center">
+                <a
+                  href={org.profileUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-poornima-700 hover:underline flex items-center justify-center gap-1.5"
+                >
+                  <span>View profile</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
