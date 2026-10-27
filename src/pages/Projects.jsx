@@ -23,42 +23,44 @@ function MemberBadge({ member }) {
   };
 
   return (
-    <div className="flex flex-col items-center text-center p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:bg-white hover:shadow-xs transition duration-200">
-      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-3 bg-white border-2 border-slate-200 shadow-2xs flex items-center justify-center shrink-0">
-        {member.avatar ? (
-          <img
-            src={member.avatar}
-            alt={member.name}
-            className="w-full h-full object-cover object-center"
-          />
+    <div className="flex flex-col items-center text-center p-3.5 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:bg-white hover:shadow-xs transition duration-200 h-full justify-between">
+      <div className="flex flex-col items-center text-center w-full">
+        <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden mb-3 bg-white border-2 border-slate-200 shadow-2xs flex items-center justify-center shrink-0">
+          {member.avatar ? (
+            <img
+              src={member.avatar}
+              alt={member.name}
+              className="w-full h-full object-cover object-center"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-linear-to-tr from-sky-100 to-indigo-100 text-google-blue font-black text-lg">
+              {getInitials(member.name)}
+            </div>
+          )}
+        </div>
+
+        <h4 className="font-bold text-sm sm:text-base text-slate-900 leading-snug">
+          {member.name}
+        </h4>
+
+        <p className="text-xs font-semibold text-slate-600 mt-0.5">
+          {member.role}
+        </p>
+
+        {member.company ? (
+          <p className="text-[11px] text-slate-500 mt-0.5 min-h-[1.5rem] flex items-center justify-center max-w-[200px]">
+            {member.company}
+          </p>
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-linear-to-tr from-sky-100 to-indigo-100 text-google-blue font-black text-lg">
-            {getInitials(member.name)}
-          </div>
+          <div className="min-h-[1.5rem]"></div>
         )}
       </div>
-
-      <h4 className="font-bold text-sm sm:text-base text-slate-900 leading-snug">
-        {member.name}
-      </h4>
-
-      <p className="text-xs font-semibold text-slate-600 mt-0.5">
-        {member.role}
-      </p>
-
-      {member.company ? (
-        <p className="text-[11px] text-slate-500 mt-0.5 min-h-[1.5rem] flex items-center justify-center max-w-[200px]">
-          {member.company}
-        </p>
-      ) : (
-        <div className="min-h-[1.5rem]"></div>
-      )}
 
       <a
         href={member.profileUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-2.5 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+        className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline"
       >
         <span>View profile</span>
         <ExternalLink className="w-3 h-3 opacity-70" />

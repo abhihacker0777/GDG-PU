@@ -66,6 +66,14 @@ body::-webkit-scrollbar-button,
   }
 }
 
+@media (max-width: 768px), (pointer: coarse) {
+  html,
+  body {
+    scrollbar-color: #FBBC05 #f8fafc;
+    scrollbar-width: thin;
+  }
+}
+
 @keyframes logoPulse {
   0%, 100% {
     transform: scale(1);

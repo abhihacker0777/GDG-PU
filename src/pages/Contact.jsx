@@ -120,11 +120,11 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-6">
 
-              <div className="pb-4 border-b border-slate-100 flex items-center justify-between gap-4">
-                <div>
-                  <h2 className="text-2xl font-bold text-slate-900">Chapter Headquarters</h2>
+              <div className="pb-4 border-b border-slate-100 flex items-center justify-between gap-3">
+                <div className="min-w-0">
+                  <h2 className="text-xl sm:text-2xl font-bold text-slate-900">Chapter Headquarters</h2>
                   <p className="text-xs text-slate-500 mt-0.5">Poornima University Campus</p>
                 </div>
                 <a
@@ -137,7 +137,7 @@ export default function Contact() {
                   <img
                     src="/pu_clean_logo.png"
                     alt="Poornima University"
-                    className="h-9 sm:h-11 w-auto object-contain"
+                    className="h-8 sm:h-10 w-auto max-w-[110px] sm:max-w-[140px] object-contain"
                   />
                 </a>
               </div>
@@ -207,7 +207,7 @@ export default function Contact() {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200 shadow-xs relative overflow-hidden">
+            <div className="p-6 sm:p-10 rounded-3xl bg-white border border-slate-200 shadow-xs relative overflow-hidden">
               {sent ? (
                 <div className="text-center py-12 space-y-4">
                   <div className="w-16 h-16 mx-auto bg-green-100 text-google-green rounded-full flex items-center justify-center">
@@ -302,9 +302,9 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full py-3 px-6 rounded-xl font-bold text-sm text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-md transition flex items-center justify-center gap-2"
+                    className="w-full py-3.5 px-4 sm:px-6 rounded-xl font-bold text-xs sm:text-sm text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-md transition inline-flex items-center justify-center gap-2 text-center"
                   >
-                    <Send className="w-4 h-4 text-poornima-700" />
+                    <Send className="w-4 h-4 text-poornima-900 shrink-0" />
                     <span>Send Message to Chapter Organizers</span>
                   </button>
                 </form>

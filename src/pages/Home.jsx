@@ -60,8 +60,8 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
+              <div className="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2.5">
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 shrink-0">
                   Past Event
                 </span>
 
@@ -69,7 +69,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
                   href={evt.bevyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1.5"
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition flex items-center gap-1.5 shrink-0"
                 >
                   <span>View Details on Bevy</span>
                   <ExternalLink className="w-3 h-3 opacity-70" />
