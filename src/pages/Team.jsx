@@ -4,29 +4,29 @@ import { realOrganizers } from '../data/gdgData';
 
 export default function Team() {
   return (
-    <div className="space-y-16 py-8 pb-20 bg-slate-50">
+    <div className="space-y-12 sm:space-y-16 py-8 pb-20 bg-slate-50">
       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-poornima-50 text-poornima-700 text-xs font-bold uppercase tracking-wider mb-4 border border-poornima-200">
           <Users className="w-4 h-4 text-google-blue" /> Chapter Leadership
         </div>
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
           Organizers
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto">
           The verified student organizers managing Google Developer Groups on Campus at Poornima University.
         </p>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {realOrganizers.slice(0, 3).map((member, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          {realOrganizers.map((member, i) => (
             <div
               key={i}
-              className="rounded-3xl p-8 bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between items-center text-center"
+              className="rounded-3xl p-6 sm:p-8 bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between items-center text-center"
             >
               <div>
-                <div className="w-32 h-32 rounded-full overflow-hidden mb-5 border-4 border-slate-100 shadow-sm">
+                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden mb-5 border-4 border-slate-100 shadow-sm">
                   <img
                     src={member.avatar}
                     alt={member.name}
@@ -38,7 +38,7 @@ export default function Team() {
                   {member.role}
                 </span>
 
-                <h3 className="text-2xl font-bold text-slate-900 mt-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mt-3">
                   {member.name}
                 </h3>
                 <p className="text-xs font-semibold text-slate-500 mt-1">
@@ -80,22 +80,13 @@ export default function Team() {
       </section>
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-          <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-slate-200 shrink-0">
-            <img
-              src={realOrganizers[3].avatar}
-              alt={realOrganizers[3].name}
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="space-y-1">
-            <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
-              {realOrganizers[3].badge}
-            </span>
-            <h4 className="text-xl font-bold text-slate-900">{realOrganizers[3].name}</h4>
-            <p className="text-xs font-semibold text-poornima-700">{realOrganizers[3].role} • {realOrganizers[3].company}</p>
-            <p className="text-xs text-slate-600 pt-1 leading-relaxed">{realOrganizers[3].bio}</p>
-          </div>
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-4">
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+            Want to Join the Chapter Team?
+          </h3>
+          <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
+            Reach out through our official WhatsApp group or Bevy community to participate in upcoming hackathons and workshop organizing.
+          </p>
         </div>
       </section>
 

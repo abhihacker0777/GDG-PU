@@ -1,25 +1,25 @@
 import React from 'react';
-import { Camera, Users, Award, MapPin } from 'lucide-react';
+import { Camera, MapPin } from 'lucide-react';
 import { realChapterPhotos } from '../data/gdgData';
 
 export default function Photos() {
   return (
-    <div className="space-y-16 py-8 pb-20 bg-slate-50">
+    <div className="space-y-12 sm:space-y-16 py-8 pb-20 bg-slate-50">
       
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-poornima-50 text-poornima-700 text-xs font-bold uppercase tracking-wider mb-4 border border-poornima-200">
-          <Camera className="w-4 h-4 text-google-blue" /> Campus Memories
+          <Camera className="w-4 h-4 text-google-blue" /> Campus Atmosphere
         </div>
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Chapter Photos & Gallery
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Chapter Photos
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto">
           Moments captured during workshops, hackathon presentations, and orientation sessions at Poornima University.
         </p>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {realChapterPhotos.map((photo, i) => (
             <div
               key={i}
@@ -32,11 +32,11 @@ export default function Photos() {
                   className="w-full h-full object-cover transition duration-300 hover:scale-105"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-5 sm:p-6">
                 <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-500 mb-1">
                   <MapPin className="w-3.5 h-3.5 text-google-red" /> Poornima University Campus
                 </div>
-                <h3 className="text-lg font-bold text-slate-900">{photo.caption}</h3>
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">{photo.caption}</h3>
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                   {photo.description}
                 </p>
@@ -47,10 +47,10 @@ export default function Photos() {
       </section>
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-4">
-          <h3 className="text-xl font-bold text-slate-900">Have photos from recent GDG sessions?</h3>
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-3">
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900">Have photos from recent GDG sessions?</h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
-            Tag us on Instagram @gdg.poornima or share your event clicks on the chapter WhatsApp group to get featured here.
+            Tag us on Instagram @gdg.poornima or share your event clicks on the chapter WhatsApp group to get featured.
           </p>
         </div>
       </section>
