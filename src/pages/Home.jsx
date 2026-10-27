@@ -9,18 +9,8 @@ import { chapterInfo, realOrganizers, realEvents, realChapterPhotos } from '../d
 
 export default function Home({ setActiveTab, onOpenRSVP }) {
   return (
-    <div className="space-y-12 sm:space-y-16 pb-12 bg-slate-50">
+    <div className="space-y-12 sm:space-y-16 pb-12 pt-6 sm:pt-10 bg-slate-50">
       
-      <section className="w-full overflow-hidden bg-slate-200">
-        <div className="w-full h-40 sm:h-60 md:h-72 lg:h-80 xl:h-96">
-          <img
-            src={chapterInfo.bannerUrl}
-            alt="GDG on Campus Web Banner"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </section>
-
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>

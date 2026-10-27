@@ -24,15 +24,15 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-3">
           
-          <div className="flex items-center gap-2 sm:gap-3 cursor-pointer group min-w-0" onClick={() => handleNavClick('home')}>
+          <div className="shrink-0 flex items-center gap-2 sm:gap-3 cursor-pointer group" onClick={() => handleNavClick('home')}>
             <GoogleBracketsLogo className="h-7 sm:h-9 w-auto shrink-0" />
 
             <div className="h-6 w-px bg-slate-200 shrink-0"></div>
 
-            <div className="flex items-center gap-2 min-w-0">
+            <div className="shrink-0 flex items-center gap-2">
               <img 
                 src="/pu_clean_logo.png" 
                 alt="Poornima University Logo" 
@@ -41,26 +41,26 @@ export default function Navbar({ activeTab, setActiveTab }) {
                   e.currentTarget.src = '/logo.png';
                 }}
               />
-              <div className="flex flex-col min-w-0">
-                <span className="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight leading-tight truncate">
+              <div className="flex flex-col shrink-0">
+                <span className="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight leading-tight whitespace-nowrap">
                   <span>GDG </span>
                   <span className="text-poornima-700 font-black">on Campus</span>
                 </span>
-                <span className="text-[10px] sm:text-xs font-semibold text-slate-500 truncate hidden xs:block">
+                <span className="text-[10px] sm:text-xs font-semibold text-slate-500 whitespace-nowrap hidden sm:block">
                   Poornima University, Jaipur
                 </span>
               </div>
             </div>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">
             {navItems.map((item) => {
               const isActive = activeTab === item.id;
               return (
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className={`relative px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-150 ${
+                  className={`relative px-2.5 xl:px-3.5 py-1.5 xl:py-2 rounded-xl text-xs xl:text-sm font-semibold transition-all duration-150 whitespace-nowrap ${
                     isActive
                       ? 'text-poornima-700 bg-poornima-50 font-bold'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'

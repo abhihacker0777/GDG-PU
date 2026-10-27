@@ -3,20 +3,20 @@ import { Instagram, Linkedin, Send, ExternalLink, Heart } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white border-t border-slate-200 py-12 sm:py-16">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
+    <footer className="w-full bg-white border-t border-slate-200 py-10 sm:py-14">
+      <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 space-y-6 sm:space-y-8">
         
-        <div className="space-y-4">
+        <div className="space-y-3 w-full">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             About the Chapter
           </h2>
 
-          <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed text-justify sm:text-left">
+          <p className="w-full text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed text-left">
             Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.
           </p>
         </div>
 
-        <div className="pt-2 flex flex-wrap gap-2.5 sm:gap-3 text-xs sm:text-sm">
+        <div className="pt-2 flex flex-wrap gap-2.5 sm:gap-3 text-xs sm:text-sm w-full">
           <a
             href="https://instagram.com/gdg.poornima"
             target="_blank"
