@@ -50,17 +50,6 @@ export default function Footer() {
             <span>GDG On Campus PU</span>
             <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
           </a>
-
-          <a
-            href="https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition font-semibold"
-          >
-            <WhatsAppIcon className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>GDG On Campus PU</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
-          </a>
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">

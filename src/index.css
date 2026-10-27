@@ -18,28 +18,52 @@ body {
   color: #1e293b;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
   background: #f8fafc;
 }
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
   background: #FBBC05;
   border-radius: 9999px;
   border: 2px solid #f8fafc;
 }
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
   background: #05488B;
 }
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
 ::-webkit-scrollbar-thumb:active {
   background: #05488B;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #FBBC05 #f8fafc;
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@supports (-moz-appearance: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #FBBC05 #f8fafc;
+  }
 }
 
 @keyframes logoPulse {
