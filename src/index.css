@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --google-blue: #4285F4;
+  --google-red: #EA4335;
+  --google-yellow: #FBBC05;
+  --google-green: #34A853;
+  --poornima-blue: #05488B;
+  --poornima-gold: #FFC107;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #05488B;
+}
+
+/* Google 4-color gradient text */
+.text-gradient-google {
+  background: linear-gradient(90deg, #4285F4 0%, #EA4335 33%, #FBBC05 66%, #34A853 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Poornima brand gradient text */
+.text-gradient-poornima {
+  background: linear-gradient(135deg, #05488B 0%, #0e55e5 50%, #FFC107 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-pattern {
+  background-image: radial-gradient(rgba(5, 72, 139, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .bg-radial-pattern {
+  background-image: radial-gradient(rgba(255, 193, 7, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

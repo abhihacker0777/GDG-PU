@@ -1,0 +1,17 @@
+Build a frontend-only website for Google Developer Groups on Campus – Poornima University.
+
+✅ You may use AI tools.
+🎨 Create your own custom theme. You can take inspiration from other websites, but directly copying someone else’s design or website is not allowed.
+
+📤 A submission form will be released soon. Submit both:
+
+* Your GitHub repository URL
+* Your live website link
+
+you can choose the content according to your own creativity. Just develop a frontend-only website with 5–7 pages.
+
+Suggested pages: Home, About, Events, Team, Contact, etc.
+
+You are free to add more pages and design your own custom UI.
+
+https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/ You Can Take Content From Here
