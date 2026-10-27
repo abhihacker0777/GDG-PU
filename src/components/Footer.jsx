@@ -53,9 +53,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} GDG on Campus • Poornima University. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} GDG On Campus • Poornima University. All Rights Reserved.</p>
           <p className="flex items-center gap-1.5 flex-wrap justify-center">
-            Built with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 shrink-0" /> By{' '}
+            Built With <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 shrink-0" /> By{' '}
             <a
               href="https://www.linkedin.com/in/abhihacker0777/"
               target="_blank"

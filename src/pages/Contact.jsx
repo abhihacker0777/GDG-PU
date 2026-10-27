@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { 
-  Mail, 
-  MapPin, 
-  Send, 
-  MessageSquare, 
-  CheckCircle2, 
-  Sparkles, 
-  ExternalLink, 
+import {
+  Mail,
+  MapPin,
+  Send,
+  MessageSquare,
+  CheckCircle2,
+  Sparkles,
+  ExternalLink,
   Globe,
   ChevronDown,
   Check
@@ -53,11 +53,10 @@ function CustomSelect({ label, value, onChange, options }) {
                     onChange(opt);
                     setIsOpen(false);
                   }}
-                  className={`w-full text-left px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition flex items-center justify-between ${
-                    isSelected
+                  className={`w-full text-left px-3 py-2 rounded-xl text-xs sm:text-sm font-medium transition flex items-center justify-between ${isSelected
                       ? 'bg-poornima-50 text-poornima-800 font-bold'
                       : 'text-slate-700 hover:bg-slate-100 hover:text-slate-900'
-                  }`}
+                    }`}
                 >
                   <span className="truncate">{opt}</span>
                   {isSelected && <Check className="w-4 h-4 text-poornima-700 shrink-0 ml-2" />}
@@ -104,7 +103,7 @@ export default function Contact() {
 
   return (
     <div className="space-y-16 py-8 pb-20 bg-slate-50">
-      
+
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-poornima-50 text-poornima-700 text-xs font-bold uppercase tracking-wider mb-4 border border-poornima-200">
           <MessageSquare className="w-4 h-4 text-google-blue" /> Get In Touch
@@ -119,10 +118,10 @@ export default function Contact() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
+
           <div className="lg:col-span-5 space-y-6">
             <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-6">
-              
+
               <div className="pb-4 border-b border-slate-100 flex items-center justify-between gap-4">
                 <div>
                   <h2 className="text-2xl font-bold text-slate-900">Chapter Headquarters</h2>
@@ -142,7 +141,7 @@ export default function Contact() {
                   />
                 </a>
               </div>
-              
+
               <div className="space-y-4 text-sm text-slate-600">
                 <div className="flex items-start gap-3.5">
                   <div className="p-2.5 rounded-xl bg-poornima-50 text-poornima-700 shrink-0">
@@ -151,7 +150,6 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-slate-900">Campus Location</h4>
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                      Department of Computer Science & Engineering, <br />
                       Poornima University, IS-2027-2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur, Rajasthan 303905
                     </p>
                   </div>
@@ -222,12 +220,12 @@ export default function Contact() {
                   <button
                     onClick={() => {
                       setSent(false);
-                      setFormData({ 
-                        name: '', 
-                        email: '', 
-                        department: 'Computer Science & Engineering (CSE)', 
-                        subject: 'General Inquiry', 
-                        message: '' 
+                      setFormData({
+                        name: '',
+                        email: '',
+                        department: 'Computer Science & Engineering (CSE)',
+                        subject: 'General Inquiry',
+                        message: ''
                       });
                     }}
                     className="px-6 py-2.5 rounded-xl font-bold text-xs text-white bg-poornima-700 hover:bg-poornima-800 transition"

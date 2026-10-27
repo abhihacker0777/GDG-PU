@@ -47,7 +47,7 @@ export default function About() {
 
   return (
     <div className="space-y-12 sm:space-y-16 py-8 pb-20 bg-slate-50">
-      
+
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-poornima-50 text-poornima-700 text-xs font-bold uppercase tracking-wider mb-4 border border-poornima-200">
           <Sparkles className="w-4 h-4" /> About Our Chapter
@@ -118,7 +118,7 @@ export default function About() {
       <section className="bg-white border-y border-slate-200 py-12 sm:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             <div className="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-slate-50 rounded-3xl border border-slate-200 text-center">
               <a
                 href="https://poornima.edu.in/"
@@ -142,7 +142,7 @@ export default function About() {
 
             <div className="lg:col-span-8 space-y-4">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-                Backed by Academic Excellence
+                Academic Excellence
               </h2>
               <p className="text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed">
                 Poornima University is a premier educational institution in Rajasthan recognized for technical innovation, entrepreneurship, and industry-focused research. The Faculty of Computer Science and Engineering actively supports student developer initiatives, providing computing facilities, seminar halls, and sponsorship for tech sessions.
