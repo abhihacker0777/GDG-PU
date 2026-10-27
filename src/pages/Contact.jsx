@@ -135,7 +135,7 @@ export default function Contact() {
                   className="shrink-0 transition-transform duration-300 hover:scale-105"
                 >
                   <img
-                    src="/pu_clean_logo.png"
+                    src="/23.png"
                     alt="Poornima University"
                     className="h-8 sm:h-10 w-auto max-w-[110px] sm:max-w-[140px] object-contain"
                   />

@@ -128,7 +128,7 @@ export default function About() {
                 className="transition-transform duration-300 hover:scale-105"
               >
                 <img
-                  src="/logo.png"
+                  src="/22.png"
                   alt="Poornima University Logo"
                   className="h-16 sm:h-20 w-auto object-contain mb-4 animate-logo-pulse"
                 />

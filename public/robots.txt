@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gdgpu.vercel.app/sitemap.xml
+

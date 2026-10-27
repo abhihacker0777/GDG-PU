@@ -6,9 +6,7 @@ export const chapterInfo = {
   state: "Rajasthan",
   country: "India",
   membersCount: "2,258",
-  bannerUrl: "/bevy_gdg_banner.png",
-  thumbUrl: "/bevy_chapter_thumb.png",
-  puLogoUrl: "/logo.png",
+  puLogoUrl: "/22.png",
   officialUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
   description: "Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.",
   channels: {
@@ -31,7 +29,7 @@ export const realOrganizers = [
     name: "Raghav Arora",
     role: "GDGoC Organizer",
     company: "Poornima University",
-    avatar: "/team2026/raghav_arora_7b47d9b4.webp",
+    avatar: "/team2026/15.webp",
     twitter: "thatraghavarora",
     profileUrl: "https://gdg.community.dev/u/raghav57/",
     bio: "Cybersecurity enthusiast, ethical hacker, and MERN Stack Developer. GDGoC Organizer, WordPress Developer, Blogger, and SEO Specialist. Participated in 20+ hackathons with 4 hackathon wins and a CTF victory. Hall of Fame recognition from NASA, WHO, Jio, Swiggy, Zepto, Panasonic, and Nokia. Received awards from Rajasthan Police IPS officers (ADGP and DIGP) and DoIT&C Rajasthan.",
@@ -41,7 +39,7 @@ export const realOrganizers = [
     name: "Keshav Verma",
     role: "GDGoC Organizer",
     company: "Google Developer Groups on Campus – Poornima University",
-    avatar: "/team2026/keshav_verma_7c9c5ac4.webp",
+    avatar: "/team2026/14.webp",
     twitter: "",
     profileUrl: "https://gdg.community.dev/u/mj8qcn/",
     bio: "Computer Science student at Poornima University, passionate about software development, Google technologies, AI, and building impactful projects. Class Representative and hackathon team lead dedicated to building a vibrant developer community through technical workshops, hands-on sessions, and peer learning.",
@@ -51,7 +49,7 @@ export const realOrganizers = [
     name: "Devika Kanoongo",
     role: "Lead Organizer",
     company: "Poornima University",
-    avatar: "/team2026/devika_kanoongo_59d95d27.webp",
+    avatar: "/team2026/13.webp",
     twitter: "",
     profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
     bio: "Lead Organizer of Google Developer Groups on Campus at Poornima University. Passionate about empowering student developers, organizing high-impact technology events, and connecting Poornima University innovators with the global Google Developer ecosystem.",
@@ -246,22 +244,22 @@ export const realEvents = [
 
 export const realChapterPhotos = [
   {
-    url: "/1793124271366.jpg",
+    url: "/16.jpg",
     caption: "Student Innovators & Tech Gathering",
     description: "GDG on Campus student participants and developers gathered at Poornima University computing facilities."
   },
   {
-    url: "/Audience_jlFNSW8.webp",
+    url: "/17.webp",
     caption: "Auditorium Technical Gathering",
     description: "Students seated in the auditorium during Google Cloud & AI technical sessions at Poornima University."
   },
   {
-    url: "/group_photo_wrap_up.jpg",
+    url: "/21.jpg",
     caption: "Stage Celebration & Student Cheers",
     description: "Core organizers, volunteers, and participants on stage celebrating the culmination of campus hackathons."
   },
   {
-    url: "/Audience2_2kdIZrI.webp",
+    url: "/18.webp",
     caption: "Hands-on Development Workshop",
     description: "Hands-on coding workshop with student developers at Poornima University seminar halls."
   }
@@ -279,21 +277,21 @@ export const chapterYearData = {
         name: "Raghav Arora",
         role: "GDGoC Organizer",
         company: "Poornima University",
-        avatar: "/team2026/raghav_arora_7b47d9b4.webp",
+        avatar: "/team2026/15.webp",
         profileUrl: "https://gdg.community.dev/u/raghav57/"
       },
       {
         name: "Keshav Verma",
         role: "GDGoC Organizer",
         company: "Google Developer Groups on Campus – Poornima University",
-        avatar: "/team2026/keshav_verma_7c9c5ac4.webp",
+        avatar: "/team2026/14.webp",
         profileUrl: "https://gdg.community.dev/u/mj8qcn/"
       },
       {
         name: "Devika Kanoongo",
         role: "Lead Organizer",
         company: "Poornima University",
-        avatar: "/team2026/devika_kanoongo_59d95d27.webp",
+        avatar: "/team2026/13.webp",
         profileUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/"
       }
     ],
@@ -307,7 +305,7 @@ export const chapterYearData = {
       name: "YUG PATHAK",
       role: "GDGoC Organizer",
       company: "Poornima University",
-      avatar: "/team2025/yug_pathak_X6myFo9.jpg",
+      avatar: "/team2025/12.jpg",
       profileUrl: "https://www.linkedin.com/in/yug-pathak-94b7b225b/"
     },
     coreTeam: [
@@ -315,70 +313,70 @@ export const chapterYearData = {
         name: "Piyush Agarwal",
         role: "Planning & Innovation Lead",
         company: "Poornima University",
-        avatar: "/team2025/1785976949878.jpeg",
+        avatar: "/team2025/2.jpeg",
         profileUrl: "https://www.linkedin.com/in/piyushagarwal2/"
       },
       {
         name: "Aayush Patidar",
         role: "Technical Lead",
         company: "Poornima University",
-        avatar: "/team2025/aayush_patidar_Ivsyr4h.jpg",
+        avatar: "/team2025/4.jpg",
         profileUrl: "https://www.linkedin.com/in/aayush-patidar-619a04325/"
       },
       {
         name: "Yash Silwadiya",
         role: "Technical Lead",
         company: "Poornima University",
-        avatar: "/team2025/yash_silwadiya_20.jpg",
+        avatar: "/team2025/11.jpg",
         profileUrl: "https://www.linkedin.com/in/yash-silwadiya/"
       },
       {
         name: "Sparsh Goyal",
         role: "Developer Lead",
         company: "Poornima University",
-        avatar: "/team2025/sparsh_goyal19_8dWiIE8.jpeg",
+        avatar: "/team2025/9.jpeg",
         profileUrl: "https://www.linkedin.com/in/sparshgoyal06/"
       },
       {
         name: "Saksham Verma",
         role: "Operation Lead",
         company: "Poornima University",
-        avatar: "/team2025/saksham_verma_wKG0SXO.jpeg",
+        avatar: "/team2025/8.jpeg",
         profileUrl: "https://www.linkedin.com/in/saksham-verma-3589a9329/"
       },
       {
         name: "Pijus Das",
         role: "Production Lead",
         company: "Poornima University",
-        avatar: "/team2025/pijus_das_A1LwfyW.jpg",
+        avatar: "/team2025/7.jpg",
         profileUrl: "https://www.linkedin.com/in/pijusdas2006/"
       },
       {
         name: "Aayush askandani101",
         role: "Training Lead",
         company: "Poornima University",
-        avatar: "/team2025/aayush_askandani101_9fBTf22.jpeg",
+        avatar: "/team2025/3.jpeg",
         profileUrl: "https://www.linkedin.com/in/aayush-askandani/"
       },
       {
         name: "Swati Jain 20",
         role: "Marketing Lead",
         company: "Poornima University",
-        avatar: "/team2025/swati_jain_TfMlUc6.jpeg",
+        avatar: "/team2025/10.jpeg",
         profileUrl: "https://www.linkedin.com/in/swati-jain-83aa05300/"
       },
       {
         name: "Harshvardhan saini 19",
         role: "Media Lead",
         company: "Poornima University",
-        avatar: "/team2025/harsh_saini_KwVQBDh.jpg",
+        avatar: "/team2025/6.jpg",
         profileUrl: "https://www.linkedin.com/in/harsh-vardhan-saini93/"
       },
       {
         name: "Bhavya Alag19",
         role: "Content Lead",
         company: "Poornima University",
-        avatar: "/team2025/bhavya_alag19_lsJzGrr.jpg",
+        avatar: "/team2025/5.jpg",
         profileUrl: "https://www.linkedin.com/in/bhavya-alag23/"
       }
     ],
@@ -411,7 +409,7 @@ export const chapterYearData = {
         name: "Manu Sharma",
         role: "Organizer",
         company: "GDG PU",
-        avatar: "/team2024/1726672212771.jpeg",
+        avatar: "/team2024/1.jpeg",
         profileUrl: "https://www.linkedin.com/in/mhimanuhu/"
       }
     ],
