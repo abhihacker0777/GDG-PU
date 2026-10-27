@@ -1,12 +1,9 @@
 import React from 'react';
 import { 
-  Users, 
-  MapPin, 
-  ExternalLink, 
-  MessageCircle, 
   Calendar, 
   ArrowRight, 
-  Sparkles
+  Sparkles,
+  ExternalLink
 } from 'lucide-react';
 import { chapterInfo, realOrganizers, realEvents, realChapterPhotos } from '../data/gdgData';
 
@@ -14,84 +11,27 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
   return (
     <div className="space-y-12 sm:space-y-16 pb-12 bg-slate-50">
       
-      <section className="relative">
-        <div className="w-full h-44 sm:h-64 md:h-80 overflow-hidden bg-slate-200">
+      <section className="w-full overflow-hidden bg-slate-200">
+        <div className="w-full h-40 sm:h-60 md:h-72 lg:h-80 xl:h-96">
           <img
             src={chapterInfo.bannerUrl}
             alt="GDG on Campus Web Banner"
             className="w-full h-full object-cover"
           />
         </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-14 sm:-mt-20 md:-mt-24 relative z-10">
-          <div className="bg-white rounded-3xl p-5 sm:p-8 md:p-10 border border-slate-200 shadow-md">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-              
-              <div className="flex items-center gap-4 sm:gap-6">
-                <div className="w-18 h-18 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-2xl overflow-hidden border-4 border-white shadow-md bg-white shrink-0">
-                  <img
-                    src={chapterInfo.thumbUrl}
-                    alt="GDG Chapter Thumbnail"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                <div className="space-y-1">
-                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-google-blue bg-blue-50 px-2.5 py-0.5 rounded-full">
-                    Google Developer Groups on Campus
-                  </span>
-                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-                    GDG on Campus Poornima University
-                  </h1>
-                  <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-slate-500 pt-1">
-                    <span className="flex items-center gap-1 font-semibold text-slate-700">
-                      <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-google-red" /> {chapterInfo.city}, {chapterInfo.country}
-                    </span>
-                    <span>•</span>
-                    <span className="flex items-center gap-1 font-semibold text-slate-700">
-                      <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-google-blue" /> {chapterInfo.membersCount} Members
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0">
-                <a
-                  href={chapterInfo.channels.whatsapp}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition flex items-center gap-1.5"
-                >
-                  <MessageCircle className="w-4 h-4 text-emerald-600" />
-                  <span>WhatsApp Group</span>
-                </a>
-
-                <a
-                  href={chapterInfo.officialUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition flex items-center gap-1.5"
-                >
-                  <span>Join Community (Bevy)</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">Official Events</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">Official Gatherings</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
               Chapter Events & Workshops
             </h2>
           </div>
           <button
             onClick={() => setActiveTab('events')}
-            className="text-xs sm:text-sm font-bold text-poornima-700 hover:underline flex items-center gap-1"
+            className="text-xs sm:text-sm font-bold text-poornima-700 hover:underline flex items-center gap-1 self-start sm:self-auto"
           >
             <span>View All Events</span>
             <ArrowRight className="w-4 h-4" />
@@ -102,7 +42,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
           {realEvents.map((evt) => (
             <div
               key={evt.id}
-              className="rounded-3xl p-6 bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between"
+              className="rounded-3xl p-5 sm:p-6 bg-white border border-slate-200 shadow-xs hover:shadow-md transition flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -114,7 +54,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-bold text-slate-900">{evt.title}</h3>
+                <h3 className="text-base sm:text-lg font-bold text-slate-900">{evt.title}</h3>
                 <p className="text-xs font-semibold text-poornima-700 mt-0.5">{evt.venue} • {evt.location}</p>
 
                 <p className="text-xs sm:text-sm text-slate-600 mt-3 line-clamp-3 leading-relaxed">
@@ -164,7 +104,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
           </div>
           <button
             onClick={() => setActiveTab('photos')}
-            className="text-xs sm:text-sm font-bold text-poornima-700 hover:underline flex items-center gap-1"
+            className="text-xs sm:text-sm font-bold text-poornima-700 hover:underline flex items-center gap-1 self-start sm:self-auto"
           >
             <span>Full Gallery</span>
             <ArrowRight className="w-4 h-4" />
@@ -181,7 +121,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
                   className="w-full h-full object-cover transition duration-300 hover:scale-105"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 sm:p-5">
                 <h4 className="font-bold text-sm text-slate-900">{photo.caption}</h4>
                 <p className="text-xs text-slate-500 mt-0.5">{photo.description}</p>
               </div>
@@ -208,7 +148,7 @@ export default function Home({ setActiveTab, onOpenRSVP }) {
               className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs hover:shadow-md transition text-center flex flex-col items-center justify-between"
             >
               <div>
-                <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4 border-2 border-slate-200 shadow-sm">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden mx-auto mb-4 border-2 border-slate-200 shadow-sm">
                   <img src={org.avatar} alt={org.name} className="w-full h-full object-cover" />
                 </div>
                 <h4 className="font-bold text-lg sm:text-xl text-slate-900">{org.name}</h4>

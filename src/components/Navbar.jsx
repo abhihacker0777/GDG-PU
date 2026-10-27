@@ -27,26 +27,26 @@ export default function Navbar({ activeTab, setActiveTab }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           
-          <div className="flex items-center gap-3 sm:gap-4 cursor-pointer group" onClick={() => handleNavClick('home')}>
-            <GoogleBracketsLogo className="h-8 sm:h-10 w-auto" />
+          <div className="flex items-center gap-2 sm:gap-3 cursor-pointer group min-w-0" onClick={() => handleNavClick('home')}>
+            <GoogleBracketsLogo className="h-7 sm:h-9 w-auto shrink-0" />
 
-            <div className="h-8 w-px bg-slate-200"></div>
+            <div className="h-6 w-px bg-slate-200 shrink-0"></div>
 
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-2 min-w-0">
               <img 
                 src="/pu_clean_logo.png" 
                 alt="Poornima University Logo" 
-                className="h-8 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105 animate-logo-pulse"
+                className="h-7 sm:h-10 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105 animate-logo-pulse"
                 onError={(e) => {
                   e.currentTarget.src = '/logo.png';
                 }}
               />
-              <div className="flex flex-col">
-                <span className="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight leading-tight transition duration-300 group-hover:text-poornima-700">
+              <div className="flex flex-col min-w-0">
+                <span className="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight leading-tight truncate">
                   <span>GDG </span>
                   <span className="text-poornima-700 font-black">on Campus</span>
                 </span>
-                <span className="text-[10px] sm:text-xs font-semibold text-slate-500">
+                <span className="text-[10px] sm:text-xs font-semibold text-slate-500 truncate hidden xs:block">
                   Poornima University, Jaipur
                 </span>
               </div>
@@ -75,12 +75,12 @@ export default function Navbar({ activeTab, setActiveTab }) {
             })}
           </nav>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <a
               href={chapterInfo.channels.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold rounded-xl text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition"
+              className="hidden md:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-bold rounded-xl text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-600" />
               <span>WhatsApp</span>
@@ -90,7 +90,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
               href={chapterInfo.officialUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-bold rounded-xl text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition"
+              className="hidden md:inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-bold rounded-xl text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition"
             >
               <span>Join on Bevy</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -98,7 +98,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-slate-100"
+              className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition"
               aria-label="Open navigation menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -108,7 +108,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
       </div>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-lg">
+        <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top-2 duration-200">
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
             return (
@@ -125,12 +125,21 @@ export default function Navbar({ activeTab, setActiveTab }) {
               </button>
             );
           })}
-          <div className="pt-2">
+          <div className="pt-3 border-t border-slate-100 space-y-2">
+            <a
+              href={chapterInfo.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-bold rounded-xl text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition"
+            >
+              <span>Join on Bevy</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
             <a
               href={chapterInfo.channels.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold rounded-xl text-emerald-800 bg-emerald-50 border border-emerald-200"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold rounded-xl text-emerald-800 bg-emerald-50 border border-emerald-200 transition"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
               <span>Join Official WhatsApp Group</span>
