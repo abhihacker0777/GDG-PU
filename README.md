@@ -1,79 +1,79 @@
 # GDG On Campus - Poornima University Website 🚀
 
-The official website for **Google Developer Groups (GDG) On Campus at Poornima University (Jaipur)**.
+The Official Website For **Google Developer Groups (GDG) On Campus At Poornima University (Jaipur)**.
 
-This website was built to give our college tech community a single place to check upcoming workshops, see past hackathons, explore our team through the years (2024, 2025, 2026), and connect with us directly.
+This Site Was Built To Give Our College Tech Community A Single Place To Check Upcoming Workshops, See Past Hackathons, Explore Our Team Through The Years (2024, 2025, 2026), And Connect With Us Directly.
 
 ---
 
 ## 📌 What's Inside
 
-- **Events & Workshops**: All our past and upcoming events with direct registration links to our official Google Bevy page.
-- **Team Through the Years**:
-  - **2026**: Current organizers (Devika, Keshav, Raghav) + Core team announcements.
-  - **2025**: Retrospective on the 2025 team, Build with AI workshops, and hackathons.
-  - **2024**: Where it all started with our founding organizers.
-- **Campus Gallery**: Real photos from our workshops and meetups at Poornima University.
-- **Get in Touch**: Direct contact form to reach out to the organizers, plus links to our WhatsApp group, LinkedIn, and Instagram.
-- **Clean Design**: Made with Tailwind CSS, custom Google-themed yellow/blue scrollbar, and fully responsive on mobile and desktop.
+- **Events & Workshops**: All Our Past And Upcoming Events With Direct Registration Links To Our Official Google Bevy Page.
+- **Team Through The Years**:
+  - **2026**: Current Organizers (Devika, Keshav, Raghav) + Core Team Announcements.
+  - **2025**: Retrospective On The 2025 Team, Build With AI Workshops, And Hackathons.
+  - **2024**: Where It All Started With Our Founding Organizers.
+- **Campus Gallery**: Real Photos From Our Workshops And Meetups At Poornima University.
+- **Get In Touch**: Direct Contact Form To Reach Out To The Organizers, Plus Links To Our WhatsApp Group, LinkedIn, And Instagram.
+- **Clean Design**: Made With Tailwind CSS, Custom Google-Themed Yellow/Blue Scrollbar, And Fully Responsive On Mobile And Desktop.
 
 ---
 
 ## 🛠️ Built With
 
 - **React 18** - Frontend UI
-- **Vite** - Fast local dev and build tool
-- **Tailwind CSS** - Styling and responsive layout
-- **Lucide React** - Clean icons
-- **Canvas Confetti** - Celebration effects for RSVPs
+- **Vite** - Fast Local Dev And Build Tool
+- **Tailwind CSS** - Styling And Responsive Layout
+- **Lucide React** - Clean Icons
+- **Canvas Confetti** - Celebration Effects For RSVPs
 
 ---
 
 ## 💻 Running Locally
 
-To run this project on your machine:
+To Run This Project On Your Machine:
 
-1. **Clone the repo**
+1. **Clone The Repo**
    ```bash
    git clone https://github.com/your-username/GDG-PU.git
    cd GDG-PU
    ```
 
-2. **Install packages**
+2. **Install Packages**
    ```bash
    npm install
    ```
 
-3. **Start the dev server**
+3. **Start The Dev Server**
    ```bash
    npm run dev
    ```
-   Open `http://localhost:5173` in your browser.
+   Open `http://localhost:5173` In Your Browser.
 
-4. **Build for production**
+4. **Build For Production**
    ```bash
    npm run build
    ```
-   The production files will be created in the `dist` folder.
+   The Production Files Will Be Created In The `dist` Folder.
 
 ---
 
-## 🚀 Deploying to Vercel
+## 🚀 Deploying To Vercel
 
-This project is ready to deploy straight to Vercel:
+This Project Is Ready To Deploy Straight To Vercel:
 
-1. Push this repo to your GitHub account.
-2. Go to [Vercel](https://vercel.com/) and click **New Project**.
-3. Import your repo and hit **Deploy** (Vercel detects Vite automatically).
-4. `vercel.json` is already included so page refreshes and direct links won't throw 404 errors.
+1. Push This Repo To Your GitHub Account.
+2. Go To [Vercel](https://vercel.com/) And Click **New Project**.
+3. Import Your Repo And Hit **Deploy** (Vercel Detects Vite Automatically).
+4. `vercel.json` Is Already Included So Page Refreshes And Direct Links Won't Throw 404 Errors.
 
 ---
 
 ## 🔗 Official Community Links
 
-- **Google Bevy Chapter**: [GDG on Campus Poornima University](https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/)
+- **Google Bevy Chapter**: [GDG On Campus Poornima University](https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/)
 - **Poornima University**: [poornima.edu.in](https://poornima.edu.in/)
-- **WhatsApp Group**: [Join our community chat](https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ)
+- **WhatsApp Group**: [Join Our Community Chat](https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ)
 - **Instagram**: [@gdg.poornima](https://instagram.com/gdg.poornima)
 - **LinkedIn**: [GDG Poornima University](https://www.linkedin.com/company/gdg-poornima/)
 - **Telegram**: [GDG On Campus PU](https://t.me/gdgpoornima)
@@ -82,4 +82,4 @@ This project is ready to deploy straight to Vercel:
 
 ## 👨‍💻 Created By
 
-Made with ❤️ by a [Poornima Student](https://www.linkedin.com/in/abhihacker0777/) for GDG on Campus Poornima University.
+Made With ❤️ By A [Poornima Student](https://www.linkedin.com/in/abhihacker0777/) For GDG On Campus Poornima University.
