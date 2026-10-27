@@ -1,11 +1,12 @@
 import React from 'react';
 import { Instagram, Linkedin, Send, ExternalLink, Heart } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-slate-200 py-10 sm:py-14">
       <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 space-y-6 sm:space-y-8">
-        
+
         <div className="space-y-3 w-full">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             About the Chapter
@@ -24,7 +25,7 @@ export default function Footer() {
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-pink-50 text-pink-700 hover:bg-pink-100 border border-pink-200 transition font-semibold"
           >
             <Instagram className="w-4 h-4 text-pink-600 shrink-0" />
-            <span>@gdg.poornima</span>
+            <span>GDG On Campus PU</span>
             <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
           </a>
 
@@ -35,7 +36,7 @@ export default function Footer() {
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 transition font-semibold"
           >
             <Linkedin className="w-4 h-4 text-blue-600 shrink-0" />
-            <span>GDG Poornima LinkedIn</span>
+            <span>GDG On Campus PU</span>
             <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
           </a>
 
@@ -46,16 +47,35 @@ export default function Footer() {
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-50 text-sky-700 hover:bg-sky-100 border border-sky-200 transition font-semibold"
           >
             <Send className="w-4 h-4 text-sky-600 shrink-0" />
-            <span>Telegram Channel</span>
+            <span>GDG On Campus PU</span>
+            <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
+          </a>
+
+          <a
+            href="https://chat.whatsapp.com/BUzm2aq56HJHVmyiuzGIpJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200 transition font-semibold"
+          >
+            <WhatsAppIcon className="w-4 h-4 text-emerald-600 shrink-0" />
+            <span>GDG On Campus PU</span>
             <ExternalLink className="w-3.5 h-3.5 opacity-60 shrink-0" />
           </a>
         </div>
 
         <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} GDG on Campus • Poornima University. All rights reserved.</p>
-          <p className="flex items-center gap-1.5">
-            Built with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> by{' '}
-            <span className="font-semibold text-slate-700">Poornima Developers</span>
+          <p className="flex items-center gap-1.5 flex-wrap justify-center">
+            Built with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 shrink-0" /> By{' '}
+            <a
+              href="https://www.linkedin.com/in/abhihacker0777/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-slate-700 hover:text-poornima-700 hover:underline transition underline-offset-2"
+            >
+              Poornima Student
+            </a>{' '}
+            <span className="font-semibold text-slate-700">For GDG PU</span>
           </p>
         </div>
 

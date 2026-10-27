@@ -19,17 +19,27 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f8fafc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+  background: #FBBC05;
+  border-radius: 9999px;
+  border: 2px solid #f8fafc;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #05488B;
+  background: #f59e0b;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #4285F4;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FBBC05 #f8fafc;
 }
 
 @keyframes logoPulse {
