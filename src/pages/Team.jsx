@@ -14,7 +14,7 @@ export default function Team() {
           Organizers
         </h1>
         <p className="mt-3 text-xs sm:text-sm md:text-base text-slate-600 max-w-2xl mx-auto text-center">
-          The verified student organizers managing Google Developer Groups on Campus at Poornima University.
+          The Verified Student Organizers Managing Google Developer Groups On Campus At Poornima University.
         </p>
       </section>
 
@@ -58,7 +58,7 @@ export default function Team() {
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-sm font-bold text-poornima-700 hover:underline"
                 >
-                  <span>View profile</span>
+                  <span>View Profile</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -70,7 +70,7 @@ export default function Team() {
       <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
         <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-4">
           <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-            Want to Join the Chapter Team?
+            Want To Join The Chapter Team?
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
             Reach out through our official WhatsApp group or Bevy community to participate in upcoming hackathons and workshop organizing.

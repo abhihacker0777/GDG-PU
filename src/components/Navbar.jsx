@@ -95,7 +95,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
               rel="noopener noreferrer"
               className="hidden md:inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 text-xs sm:text-sm font-bold rounded-xl text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition"
             >
-              <span>Join on Bevy</span>
+              <span>Join On Bevy</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
 
@@ -134,7 +134,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 px-4 py-3 text-sm font-bold rounded-xl text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-sm transition"
             >
-              <span>Join on Bevy</span>
+              <span>Join On Bevy</span>
               <ExternalLink className="w-4 h-4" />
             </a>
             <a

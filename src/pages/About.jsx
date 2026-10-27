@@ -53,7 +53,7 @@ export default function About() {
           <Sparkles className="w-4 h-4" /> About Our Chapter
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Empowering Builders at <br />
+          Empowering Builders At <br />
           <span className="text-poornima-700">Poornima University</span>
         </h1>
         <p className="mt-4 text-xs sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -94,7 +94,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-8 sm:mb-10">
           <span className="text-xs font-bold uppercase tracking-wider text-poornima-700">Core Philosophy</span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">The Three Pillars of GDG</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">The Three Pillars Of GDG</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

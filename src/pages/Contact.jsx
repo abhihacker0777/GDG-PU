@@ -188,7 +188,7 @@ export default function Contact() {
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-poornima-gold">
                   <Sparkles className="w-4 h-4" /> Official Community Portal
                 </div>
-                <h4 className="font-extrabold text-base">Join on Google Developer Groups</h4>
+                <h4 className="font-extrabold text-base">Join On Google Developer Groups</h4>
                 <p className="text-xs text-slate-100 leading-relaxed">
                   Join our official chapter on the Google Community Dev portal to receive verified event notifications and tickets.
                 </p>
@@ -198,7 +198,7 @@ export default function Contact() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-white text-poornima-900 hover:bg-slate-100 transition shadow-xs"
                 >
-                  <span>Go to Bevy Chapter Page</span>
+                  <span>Go To Bevy Chapter Page</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -235,7 +235,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <h3 className="text-2xl font-bold text-slate-900">Send us a message</h3>
+                  <h3 className="text-2xl font-bold text-slate-900">Send Us A Message</h3>
                   <p className="text-xs sm:text-sm text-slate-500">
                     Fill out the form below and we will route your inquiry to the appropriate organizer.
                   </p>
@@ -305,7 +305,7 @@ export default function Contact() {
                     className="w-full py-3.5 px-4 sm:px-6 rounded-xl font-bold text-xs sm:text-sm text-slate-900 bg-poornima-gold hover:bg-poornima-goldHover shadow-md transition inline-flex items-center justify-center gap-2 text-center"
                   >
                     <Send className="w-4 h-4 text-poornima-900 shrink-0" />
-                    <span>Send Message to Chapter Organizers</span>
+                    <span>Send Message To Chapter Organizers</span>
                   </button>
                 </form>
               )}

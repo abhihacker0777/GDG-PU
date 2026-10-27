@@ -107,7 +107,7 @@ export default function Events({ onOpenRSVP }) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition shrink-0"
                 >
-                  <span>View Details on Bevy</span>
+                  <span>View Details On Bevy</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

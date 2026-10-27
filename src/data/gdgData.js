@@ -38,7 +38,7 @@ export const realOrganizers = [
   {
     name: "Keshav Verma",
     role: "GDGoC Organizer",
-    company: "Google Developer Groups on Campus – Poornima University",
+    company: "Google Developer Groups On Campus – Poornima University",
     avatar: "/team2026/14.webp",
     twitter: "",
     profileUrl: "https://gdg.community.dev/u/mj8qcn/",
@@ -283,7 +283,7 @@ export const chapterYearData = {
       {
         name: "Keshav Verma",
         role: "GDGoC Organizer",
-        company: "Google Developer Groups on Campus – Poornima University",
+        company: "Google Developer Groups On Campus – Poornima University",
         avatar: "/team2026/14.webp",
         profileUrl: "https://gdg.community.dev/u/mj8qcn/"
       },
@@ -302,7 +302,7 @@ export const chapterYearData = {
     year: "2025",
     theme: "The Innovation & Cloud Season",
     organizer: {
-      name: "YUG PATHAK",
+      name: "Yug Pathak",
       role: "GDGoC Organizer",
       company: "Poornima University",
       avatar: "/team2025/12.jpg",
@@ -352,28 +352,28 @@ export const chapterYearData = {
         profileUrl: "https://www.linkedin.com/in/pijusdas2006/"
       },
       {
-        name: "Aayush askandani101",
+        name: "Aayush Askandani",
         role: "Training Lead",
         company: "Poornima University",
         avatar: "/team2025/3.jpeg",
         profileUrl: "https://www.linkedin.com/in/aayush-askandani/"
       },
       {
-        name: "Swati Jain 20",
+        name: "Swati Jain",
         role: "Marketing Lead",
         company: "Poornima University",
         avatar: "/team2025/10.jpeg",
         profileUrl: "https://www.linkedin.com/in/swati-jain-83aa05300/"
       },
       {
-        name: "Harshvardhan saini 19",
+        name: "Harshvardhan Saini",
         role: "Media Lead",
         company: "Poornima University",
         avatar: "/team2025/6.jpg",
         profileUrl: "https://www.linkedin.com/in/harsh-vardhan-saini93/"
       },
       {
-        name: "Bhavya Alag19",
+        name: "Bhavya Alag",
         role: "Content Lead",
         company: "Poornima University",
         avatar: "/team2025/5.jpg",

@@ -62,7 +62,7 @@ function MemberBadge({ member }) {
         rel="noopener noreferrer"
         className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-700 hover:underline"
       >
-        <span>View profile</span>
+        <span>View Profile</span>
         <ExternalLink className="w-3 h-3 opacity-70" />
       </a>
     </div>

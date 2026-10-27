@@ -9,7 +9,7 @@ export default function Footer() {
 
         <div className="space-y-3 w-full">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-            About the Chapter
+            About The Chapter
           </h2>
 
           <p className="w-full text-xs sm:text-sm md:text-base text-slate-600 leading-relaxed text-left">

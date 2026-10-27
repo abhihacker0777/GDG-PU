@@ -48,7 +48,7 @@ export default function Photos() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-xs text-center space-y-3">
-          <h3 className="text-lg sm:text-xl font-bold text-slate-900">Have photos from recent GDG sessions?</h3>
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900">Have Photos From Recent GDG Sessions?</h3>
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
             Tag us on Instagram @gdg.poornima or share your event clicks on the chapter WhatsApp group to get featured.
           </p>
