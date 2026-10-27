@@ -67,7 +67,7 @@ export const realEvents = [
     date: "March 18, 2026",
     venue: "3rd Floor Seminar Hall",
     location: "Poornima University, Jaipur",
-    description: "Join us for an exciting session where we dive into the amazing opportunities provided by the Google Solution Challenge. Equip yourself with skills to tackle real-world problems using Google technology, brainstorm solutions, and form project teams.",
+    description: "Join Us For An Exciting Session Where We Dive Into The Amazing Opportunities Provided By The Google Solution Challenge. Equip Yourself With Skills To Tackle Real-World Problems Using Google Technology, Brainstorm Solutions, And Form Project Teams.",
     tags: ["SolutionChallenge", "GoogleTech", "Innovation", "Workshop"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-google-solution-challenge-kick-off-and-workshop/"
   },
@@ -80,7 +80,7 @@ export const realEvents = [
     date: "January 22, 2026",
     venue: "5th Floor Seminar Hall",
     location: "Poornima University, Jaipur",
-    description: "Hands-on generative AI sprint with Google AI Studio and Gemini models. Students built prototypes from scratch, explored GitHub integrations, and rapidly deployed web solutions.",
+    description: "Hands-On Generative AI Sprint With Google AI Studio And Gemini Models. Students Built Prototypes From Scratch, Explored GitHub Integrations, And Rapidly Deployed Web Solutions.",
     tags: ["BuildWithAI", "Prototype", "GitHub", "Hackathon"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-build-with-ai-workshop-lets-hack-it/"
   },
@@ -93,7 +93,7 @@ export const realEvents = [
     date: "December 24, 2025",
     venue: "Virtual (Google Meet)",
     location: "Poornima University, Jaipur",
-    description: "Online briefing session hosted by GDG On Campus Poornima University guiding student developers through problem themes, track judging criteria, and submission guidelines for national-level hackathons.",
+    description: "Online Briefing Session Hosted By GDG On Campus Poornima University Guiding Student Developers Through Problem Themes, Track Judging Criteria, And Submission Guidelines For National-Level Hackathons.",
     tags: ["GDGIndia", "Hackathon", "Online", "Briefing"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-gdg-india-hackathon-briefing-session/"
   },
@@ -106,7 +106,7 @@ export const realEvents = [
     date: "October 06, 2025",
     venue: "3rd Floor Seminar Hall",
     location: "Poornima University, Jaipur",
-    description: "Grand orientation welcoming freshmen to Google Developer Groups on Campus Poornima University. Explored opportunities across Android, Cloud, AI, and upcoming campus hackathons.",
+    description: "Grand Orientation Welcoming Freshmen To Google Developer Groups On Campus Poornima University. Explored Opportunities Across Android, Cloud, AI, And Upcoming Campus Hackathons.",
     tags: ["Orientation", "Community", "Freshers", "Networking"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-step-into-a-world-of-innovation-orientation-2025-26/"
   },
@@ -119,7 +119,7 @@ export const realEvents = [
     date: "July 06, 2025",
     venue: "Jaipur Conference Hall",
     location: "Poornima University, Jaipur",
-    description: "Regional flagship gathering bringing together cloud architects, industry experts, and student developers for deep architecture sessions, Kubernetes labs, and GCP best practices.",
+    description: "Regional Flagship Gathering Bringing Together Cloud Architects, Industry Experts, And Student Developers For Deep Architecture Sessions, Kubernetes Labs, And GCP Best Practices.",
     tags: ["GoogleCloud", "CommunityDay", "JaipurDevs", "Cloud"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-google-cloud-community-day-2025-jaipur/"
   },
@@ -132,7 +132,7 @@ export const realEvents = [
     date: "March 24, 2025",
     venue: "Poornima University Campus",
     location: "Poornima University, Jaipur",
-    description: "Celebrating student developer innovations in generative AI alongside the annual chapter farewell honoring graduating core team leaders and welcoming the incoming batch.",
+    description: "Celebrating Student Developer Innovations In Generative AI Alongside The Annual Chapter Farewell Honoring Graduating Core Team Leaders And Welcoming The Incoming Batch.",
     tags: ["BuildWithAI", "Farewell", "Celebration", "GenAI"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-build-with-ai-2o-amp-farewell/"
   },
@@ -145,7 +145,7 @@ export const realEvents = [
     date: "January 10, 2025",
     venue: "Virtual Session",
     location: "Poornima University, Jaipur",
-    description: "Specialized insights and project ideation frameworks for the Google Solution Challenge 2025 with guest mentors from GDG India, focusing on SDGs and technical architecture.",
+    description: "Specialized Insights And Project Ideation Frameworks For The Google Solution Challenge 2025 With Guest Mentors From GDG India, Focusing On SDGs And Technical Architecture.",
     tags: ["SolutionChallenge", "SDGs", "Mentorship", "Innovation"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-solution-challenge-2025-insights-gdg-india/"
   },
@@ -158,7 +158,7 @@ export const realEvents = [
     date: "December 24, 2024",
     venue: "Computing Lab 4",
     location: "Poornima University, Jaipur",
-    description: "Full-day practical bootcamp session covering cloud containerization, Docker basics, and automated deployment pipelines.",
+    description: "Full-Day Practical Bootcamp Session Covering Cloud Containerization, Docker Basics, And Automated Deployment Pipelines.",
     tags: ["TechWinterBreak", "Docker", "DevOps"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-tech-winter-break-gdg-on-campus-poornima-university-3/"
   },
@@ -171,7 +171,7 @@ export const realEvents = [
     date: "December 22, 2024",
     venue: "Computing Lab 4",
     location: "Poornima University, Jaipur",
-    description: "Hands-on coding lab building full-stack web applications and integrating Google Cloud APIs and Firebase services.",
+    description: "Hands-On Coding Lab Building Full-Stack Web Applications And Integrating Google Cloud APIs And Firebase Services.",
     tags: ["TechWinterBreak", "Firebase", "FullStack"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-tech-winter-break-gdg-on-campus-poornima-university-2/"
   },
@@ -184,7 +184,7 @@ export const realEvents = [
     date: "December 14, 2024",
     venue: "Seminar Hall 2",
     location: "Poornima University, Jaipur",
-    description: "Practical workshop on modern JavaScript, asynchronous patterns, React fundamentals, and collaborative Git workflow.",
+    description: "Practical Workshop On Modern JavaScript, Asynchronous Patterns, React Fundamentals, And Collaborative Git Workflow.",
     tags: ["TechWinterBreak", "React", "JavaScript", "Git"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-tech-winter-break-gdg-on-campus-poornima-university-1/"
   },
@@ -197,7 +197,7 @@ export const realEvents = [
     date: "December 05, 2024",
     venue: "Seminar Hall 2",
     location: "Poornima University, Jaipur",
-    description: "Kickoff session for the Tech Winter Break series introducing Linux command-line, developer environment setup, and open-source contributions.",
+    description: "Kickoff Session For The Tech Winter Break Series Introducing Linux Command-Line, Developer Environment Setup, And Open-Source Contributions.",
     tags: ["TechWinterBreak", "Linux", "OpenSource"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-tech-winter-break-gdg-on-campus-poornima-university/"
   },
@@ -210,7 +210,7 @@ export const realEvents = [
     date: "November 24, 2024",
     venue: "Birla Auditorium, Jaipur",
     location: "Poornima University, Jaipur",
-    description: "Rajasthan's premier annual developer festival co-hosted with GDG Jaipur featuring Google Developer Experts, keynote talks, and deep-dive technical tracks.",
+    description: "Rajasthan's Premier Annual Developer Festival Co-Hosted With GDG Jaipur Featuring Google Developer Experts, Keynote Talks, And Deep-Dive Technical Tracks.",
     tags: ["Devfest", "Jaipur", "GDE", "GoogleTech"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-devfest-jaipur-2024/cohost-gdg-on-campus-poornima-university-jaipur-india"
   },
@@ -223,7 +223,7 @@ export const realEvents = [
     date: "October 21, 2024",
     venue: "Seminar Hall 1",
     location: "Poornima University, Jaipur",
-    description: "Beginner-friendly hands-on workshop exploring artificial intelligence, machine learning concepts, and building your first AI-powered prototype with Google APIs.",
+    description: "Beginner-Friendly Hands-On Workshop Exploring Artificial Intelligence, Machine Learning Concepts, And Building Your First AI-Powered Prototype With Google APIs.",
     tags: ["BuildWithAI", "Beginners", "MachineLearning"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-build-with-ai-explore-learn-and-create-for-beginners/"
   },
@@ -236,7 +236,7 @@ export const realEvents = [
     date: "September 20, 2024",
     venue: "Main Auditorium",
     location: "Poornima University, Jaipur",
-    description: "Inaugural chapter orientation marking the transition from GDSC to GDG on Campus, along with the rollout and enrollment for the Google Cloud GenAI Study Jams.",
+    description: "Inaugural Chapter Orientation Marking The Transition From GDSC To GDG On Campus, Along With The Rollout And Enrollment For The Google Cloud GenAI Study Jams.",
     tags: ["InfoSession", "GDGOnCampus", "GenAIStudyJams"],
     bevyUrl: "https://gdg.community.dev/events/details/google-gdg-on-campus-poornima-university-jaipur-india-presents-info-session-gdsc-to-gdg-on-campus-amp-genai-study-jams-overview/"
   }

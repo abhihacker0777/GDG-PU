@@ -141,11 +141,10 @@ export default function RSVPModal({ event, isOpen, onClose }) {
                       onChange={(e) => setFormData({ ...formData, branchYear: e.target.value })}
                       className="w-full pl-9 pr-2 py-2 text-sm rounded-xl border border-slate-300 bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-poornima-700"
                     >
-                      <option>B.Tech CSE - 1st Year</option>
-                      <option>B.Tech CSE - 2nd Year</option>
-                      <option>B.Tech CSE - 3rd Year</option>
-                      <option>B.Tech CSE - 4th Year</option>
-                      <option>BCA / MCA</option>
+                      <option>B.Tech</option>
+                      <option>M.Tech</option>
+                      <option>BCA</option>
+                      <option>MCA</option>
                       <option>Other Department</option>
                     </select>
                   </div>
