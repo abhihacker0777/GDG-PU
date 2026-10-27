@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X, ExternalLink, MessageCircle } from 'lucide-react';
-import GoogleBracketsLogo from './GoogleBracketsLogo';
 import { chapterInfo } from '../data/gdgData';
 
 export default function Navbar({ activeTab, setActiveTab }) {
@@ -24,33 +23,23 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-16 sm:h-20 gap-3">
           
-          <div className="shrink-0 flex items-center gap-2 sm:gap-3 cursor-pointer group" onClick={() => handleNavClick('home')}>
-            <GoogleBracketsLogo className="h-7 sm:h-9 w-auto shrink-0" />
+          <div className="shrink-0 flex items-center gap-2.5 sm:gap-4 cursor-pointer group" onClick={() => handleNavClick('home')}>
+            <img 
+              src="/gdg_official_lockup.png" 
+              alt="Google Developer Groups" 
+              className="h-6 sm:h-8 md:h-9 w-auto object-contain shrink-0"
+            />
 
-            <div className="h-6 w-px bg-slate-200 shrink-0"></div>
+            <div className="h-6 sm:h-7 w-px bg-slate-200 shrink-0"></div>
 
-            <div className="shrink-0 flex items-center gap-2">
-              <img 
-                src="/pu_clean_logo.png" 
-                alt="Poornima University Logo" 
-                className="h-7 sm:h-10 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105 animate-logo-pulse"
-                onError={(e) => {
-                  e.currentTarget.src = '/logo.png';
-                }}
-              />
-              <div className="flex flex-col shrink-0">
-                <span className="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight leading-tight whitespace-nowrap">
-                  <span>GDG </span>
-                  <span className="text-poornima-700 font-black">on Campus</span>
-                </span>
-                <span className="text-[10px] sm:text-xs font-semibold text-slate-500 whitespace-nowrap hidden sm:block">
-                  Poornima University, Jaipur
-                </span>
-              </div>
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="Poornima University Logo" 
+              className="h-7 sm:h-9 md:h-10 w-auto object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+            />
           </div>
 
           <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 shrink-0">

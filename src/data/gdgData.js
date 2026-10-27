@@ -8,7 +8,7 @@ export const chapterInfo = {
   membersCount: "2,258",
   bannerUrl: "/bevy_gdg_banner.png",
   thumbUrl: "/bevy_chapter_thumb.png",
-  puLogoUrl: "/pu_clean_logo.png",
+  puLogoUrl: "/logo.png",
   officialUrl: "https://gdg.community.dev/gdg-on-campus-poornima-university-jaipur-india/",
   description: "Welcome to GDG On Campus Poornima University, your community for everything code, tech, and collaboration! Here at GDG On Campus Poornima University, we focus on developing our coding skills while also exploring life beyond the screen. Whether you're a beginner or an experienced developer, our community is a place to engage in meaningful discussions about technology, share fun experiences, and collaborate on projects that make a difference both on campus and in the local community. Join us as we talk about code, tech, and life, all while building lasting friendships and working together on exciting projects.",
   channels: {

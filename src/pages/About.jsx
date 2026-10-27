@@ -121,12 +121,9 @@ export default function About() {
             
             <div className="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-slate-50 rounded-3xl border border-slate-200 text-center">
               <img
-                src="/pu_clean_logo.png"
+                src="/logo.png"
                 alt="Poornima University Logo"
-                className="h-14 sm:h-16 w-auto object-contain mb-4 animate-logo-pulse"
-                onError={(e) => {
-                  e.currentTarget.src = '/logo.png';
-                }}
+                className="h-16 sm:h-20 w-auto object-contain mb-4 animate-logo-pulse"
               />
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-poornima-100 text-poornima-800 text-xs font-bold mb-2">
                 <Award className="w-4 h-4 text-poornima-gold" /> NAAC 'A+' Accredited
