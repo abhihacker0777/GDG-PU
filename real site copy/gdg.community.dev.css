@@ -1,0 +1,2757 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+/* TECHDEBT: this monolith needs to be broken up, probably by tab divisions in the style editor */
+/* Available mustache options: http://mustache.github.io/mustache.5.html */
+
+/* IMPORTANT: Imports absolutely need to be at the top of the file in order to work properly */
+
+/* FONT FAMILY */
+/* *********** */
+
+/* GENERAL_HEADING_FONT_USE_UPLOADED checks the style editor setting to see if the custom font toggle is on or off. If off, we'll apply either google or adobe typekit
+for the heading text */
+
+
+
+
+
+/* GENERAL_BODY_FONT_USE_UPLOADED checks the style editor setting to see if the custom font toggle is on or off. If off, we'll apply either google or adobe typekit
+for the body text */
+
+
+
+
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page)  *:not(.glyphicon):not([class^="icon-"]):not([class*="icon-"]):not(.rw-i):not(.caret),
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner *:not(.glyphicon):not([class^="icon-"]):not([class*="icon-"]):not(.rw-i):not(.caret),
+    body#main-dashboard .navs *:not(.glyphicon):not([class^="icon-"]):not([class*="icon-"]):not(.rw-i):not(.caret),
+    body#main-dashboard .page-footer *:not(.glyphicon):not([class^="icon-"]):not([class*="icon-"]):not(.rw-i):not(.caret),
+    .page-builder-content{
+      font-family: 'Google Sans', 'Open Sans';
+    }
+    body.event-page-builder-page,
+    body.chapter-page-builder-page {
+      font-family: 'Google Sans', 'Open Sans';
+    }
+
+
+/* When the style editor setting is true, use the custom uploaded font for body text */
+
+
+
+/* GENERAL_HEADING_FONT_USE_UPLOADED checks the style editor setting to see if the custom font toggle is on or off. If off, we'll apply either google or adobe typekit
+for the heading text */
+
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h1,
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h2,
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h3,
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h4,
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h5,
+    body:not(#main-dashboard):not(.event-page-builder-page):not(.chapter-page-builder-page) h6,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h1,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h2,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h3,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h4,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h5,
+    body#main-dashboard .cookie-consent-acknowledgement-conatiner h6,
+    body#main-dashboard .navs h1,
+    body#main-dashboard .navs h2,
+    body#main-dashboard .navs h3,
+    body#main-dashboard .navs h4,
+    body#main-dashboard .navs h5,
+    body#main-dashboard .navs h6,
+    body#main-dashboard .page-footer h1,
+    body#main-dashboard .page-footer h2,
+    body#main-dashboard .page-footer h3,
+    body#main-dashboard .page-footer h4,
+    body#main-dashboard .page-footer h5,
+    body#main-dashboard .page-footer h6,
+    #event_page .event-description--title,
+    #event_page .event-info-container .title-span,
+    .join-community .follow-community,
+    .page-footer .join-community .follow-community,
+    .page-banner .container .page-banner-title,
+    .page-builder-content h1,
+    .page-builder-content h2,
+    .page-builder-content h3,
+    .page-builder-content h4,
+    .page-builder-content h5,
+    .page-builder-content h6 {
+      font-family: 'Google Sans', 'Open Sans' !important;
+    }
+    body.event-page-builder-page h1,
+    body.event-page-builder-page h2,
+    body.event-page-builder-page h3,
+    body.event-page-builder-page h4,
+    body.event-page-builder-page h5,
+    body.event-page-builder-page h6,
+    body.chapter-page-builder-page h1,
+    body.chapter-page-builder-page h2,
+    body.chapter-page-builder-page h3,
+    body.chapter-page-builder-page h4,
+    body.chapter-page-builder-page h5,
+    body.chapter-page-builder-page h6 {
+      font-family: 'Google Sans', 'Open Sans';
+    }
+
+/* When the style editor setting is true, use the uploaded font for headings */
+
+
+/* end FONT FAMILY */
+
+/* PRIMARY COLOR */
+/* ************* */
+  .general-brand, .text-primary, .text-link { color: #4285F4; }
+  .btn-primary .badge { color: #4285F4; }
+  .navbar-default .navbar-brand { color: #4285F4; }
+  .navbar-default .navbar-nav > li > a { color: #4285F4; }
+  .navbar-default .navbar-link { color: #4285F4; }
+  .navbar-default .btn-link { color: #4285F4; }
+  .label-primary { background-color: #4285F4; }
+  .panel-primary { border-color: #4285F4; }
+  .panel-primary > .panel-heading + .panel-collapse > .panel-body { border-top-color: #4285F4; }
+  .panel-primary > .panel-heading .badge { color: #4285F4; }
+  .panel-primary > .panel-footer + .panel-collapse > .panel-body { border-bottom-color: #4285F4; }
+  .nav-underscore li.active a,
+  .nav-underscore li a.active {
+    border-bottom-color: #4285F4;
+  }
+  .topnavbar .navbar-link { color: #4285F4; }
+  .homepage .join-cta { background-color: #4285F4; }
+  .no-touch .discussions-latest-title .nav-underscore li a:hover { border-color: #4285F4; }
+  .discussions .badge { background-color: #4285F4; }
+  .discussion-featured-badge { background-color: #4285F4; }
+  .icon-vote-up.selected { color: #4285F4; }
+  .event .panel-body .chapter-link { color: #4285F4; }
+  .activities a:not(.post-timestamp) { color: #4285F4; }
+  .purchase-window .error .red a { color: #4285F4; }
+  .purchase-window .braintree-ui .braintree-hosted-fields-invalid { border-color: #4285F4; }
+  .login-to-rsvp .btn { background: #4285F4; }
+  .ladda-button { background: #4285F4; }
+  .main-dashboard#chapters-page .subtitle a { color: #4285F4; }
+  .main-dashboard#chapters-page .search-holder .search-result:hover { background-color: #4285F4; }
+  ._dashboard.chapters-panel .region-button.selected { background: #4285F4; }
+  ._dashboard .buttons .red { background: #4285F4; }
+  ._dashboard .algolia-search .search-drop-down .search-result:hover { background: #4285F4; }
+  ._dashboard .paginate-button.active { background: #4285F4; }
+  .sidebar-chapter-list .chapter-list-item .button-container .chapter-button { background: #4285F4; }
+  .conference #hero-header .cover .location a { color: #4285F4; }
+  .conference #about-startupgrind .cover .values .value .value-positive { color: #4285F4; }
+  .conference #quotes .quote .quote-author span { color: #4285F4; }
+  .conference #quotes-list .cover .quote .quote-author a { color: #4285F4; }
+  .conference-silicon-valley.conference #join-us .cover .title { color: #4285F4; }
+  .conference #faq #faq-accordion a { color: #4285F4; }
+  .join-community .follow-community { color: #4285F4; }
+  .join-community .submit { background: #4285F4; }
+  .bg-primary { background-color: #4285F4; }
+  .btn-primary { background-color: #4285F4; }
+  .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus { background-color: #4285F4; }
+  .nav-pills > li.active > a:focus { background-color: #4285F4; }
+  .panel-primary > .panel-heading { background-color: #4285F4; }
+  .homepage-highlight-banner { background-color: #4285F4; }
+  .topnavbar .navbar-stats em { color: #4285F4; }
+  .topnavbar .topdrawer-closed .navbar-nav > li.navbar-button.topdrawer-toggle > a { background-color: #4285F4; }
+  .topdrawer h4 { color: #4285F4; }
+  .homepage .join-cta .cta-button { background: #4285F4; }
+  .avatar .badge { background-color: #4285F4; }
+  .activities .activity-awesome { font-size: 21.45px; }
+  ._dashboard .paginated-form-nav-bottom .page-link:hover { color: #4285F4; }
+  .conference .sold-out-heading { color: #4285F4; }
+  .conference .title { color: #4285F4; }
+  .conference #hero-header .cover .newsletter-title { color: #4285F4; }
+  .user-card .inner .info .name { color: #4285F4; }
+  .icon-new-window-back { background-color: #4285F4; }
+  .pagination > .active > span:focus { background-color: #4285F4; }
+  .list-group-item.active:focus { background-color: #4285F4; }
+  .explore-button { background: #4285F4; }
+  .purchase-window .promo-code .discount-code-error { color: #4285F4; }
+  .purchase-window .braintree-ui a { color: #4285F4; }
+  .main-dashboard .event-list-icon-outer .event-list-icon-inner .icon-new-window { color: #4285F4; }
+  .dropdown-menu > .active > a:focus { background-color: #4285F4; }
+  .pagination > .active > span,
+  .pagination > .active > a:hover,
+  .pagination > .active > span:hover,
+  .pagination > .active > a:focus { border-color: #4285F4; }
+  .panel-default > .panel-footer + .panel-collapse > .panel-body { border-color: #4285F4; }
+  .chapter .contact-host.modal-dialog .header-icon { color: #4285F4; }
+  ._dashboard .sortableTeamMembers .payment-lead-badge .icon-star { color: #4285F4; }
+  ._dashboard .pending-featured-attendee .feature-button { background: #4285F4; }
+  .sweet-alert p button, .sweet-alert .sa-button-container button { background-color: #4285F4; }
+  .swal2-modal .swal2-buttonswrapper .swal2-styled { background-color: #4285F4; }
+  .conference #faq #faq-accordion .faq-question { color: #4285F4; }
+  .user-card.feature-cta .inner { background-color: #4285F4; }
+  .list-group-item.active,
+  .list-group-item.active:hover { border-color: #4285F4; }
+  ._dashboardImageUpload .progress-indicator { background: #4285F4; }
+  .conference .modal-carousel .item .name { color: #4285F4; }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #4285F4; }
+  .static-page .section-header { color: #4285F4; }
+  .section-header { color: #4285F4; }
+  ._dashboard .names-block { color: #4285F4; }
+  .read-more-sidebar .items-list li .content .background { background: #4285F4; }
+  .conference .sold-out { color: #4285F4; }
+  .progress-bar { background-color: #4285F4; }
+  .promo-spot div.promo-banner-text { background-color: #4285F4; }
+  #faq-accordion .faq-question { color: #4285F4; }
+  h2.small-title { color: #4285F4; }
+  #event_page .contact-host.modal-dialog .header-icon { color: #4285F4; }
+  #event_page .join-us { background-color: #4285F4; }
+  #event_page .underline-header { border-color: #4285F4; }
+  #event_page .not-ready-icon { background-color: #4285F4; }
+  #event_page .post-meta .avatar .badge { background-color: #4285F4; }
+  .purchase-window .ticket-error-row { color: #4285F4; }
+  .purchase-window .ticket-table .show-hide-info { color: #4285F4; }
+  .read-more-sidebar .items-list li .content .background { background: #4285F4; }
+  .chapter-map-widget .geosuggest-container .location-input-module li.geosuggest__item--active,
+  .profile_switch .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background .mdc-switch__knob {
+    background-color: #4285F4;
+  }
+  .profile_switch .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background::before {
+    background-color: #4285F4;
+    opacity: 0.3;
+  }
+  .promo-spot div.promo-banner-text { background-color: #4285F4; }
+/* end PRIMARY COLOR */
+
+/* TEXT */
+/* ******* */
+/* Body text */
+body:not(#main-dashboard) .general-body,
+body:not(#main-dashboard) .general-body a:not(.general-body--exclude):not(.btn):not(h2 a):not(h3 a) {
+    font-size: 16px !important;
+}
+
+body:not(#main-dashboard) .general-body,
+body:not(#main-dashboard) .general-body a:not(.general-body--exclude):not(.btn),
+body:not(#main-dashboard) .general-body--color,
+body:not(#main-dashboard) .general-body--color a:not(.general-body--exclude):not(.btn) {
+  color: var(--o-GENERAL_PARAGRAPH_FONT_COLOR, #202124) !important;
+}
+
+body:not(#main-dashboard) .general-body a:not(.general-link--exclude):not(.btn):not(.general-tab),
+body:not(#main-dashboard) .general-body--color a:not(.general-link--exclude):not(.btn):not(.general-tab),
+body:not(#main-dashboard) .general-link {
+    color: var(--o-GENERAL_TEXT_LINK_COLOR, #4285F4) !important;
+    text-decoration-color: var(--o-GENERAL_TEXT_LINK_COLOR, #4285F4);
+}
+
+/* Headings */
+  .general-h1,
+  .general-h1 > a,
+  .general-body h1,
+  .general-body h1 > a,
+  .general-body--color h1,
+  .general-body--color h1 > a {
+    color: var(--o-GENERAL_HEADING_FONT_COLOUR, #202124) !important;
+  }
+
+.general-h1,
+.general-body h1 {
+  font-size: 36px;
+    font-size: 44px !important;
+
+  text-transform: none;
+
+    font-weight: 400 !important;
+}
+
+@media (max-width: 480px) {
+  .general-h1,
+  .general-body h1 {
+    font-size: 30px;
+  }
+}
+
+  .general-h2,
+  .general-h2 > a,
+  .general-body h2,
+  .general-body h2 > a,
+  .general-body--color h2,
+  .general-body--color h2 > a{
+    color: var(--o-GENERAL_HEADING2_FONT_COLOR, #202124) !important;
+  }
+
+.general-h2,
+.general-body h2 {
+  font-size: 32px;
+    font-size: 20px;
+
+  text-transform: none;
+
+    font-weight: normal;
+}
+
+@media (max-width: 480px) {
+  .general-h2,
+  .general-body h2 {
+    font-size: 24px;
+  }
+}
+
+/* Other Text Colors */
+/* ------ */
+/* end Text Colors */
+
+/* These are legacy, don't appear in the UI: */
+/* end legacy */
+/* end Font Size */
+/* end TEXT */
+
+/* SITE SECTIONS */
+/* ************* */
+/* Body */
+/* ---- */
+  #event_page .chapter,
+  #featured-attendees,
+  #event_page .description-container,
+  #react-event-purchase-root,
+  body {
+    background-color: var(--o-GENERAL_BODY_BACKGROUND_COLOUR, #fff);
+  }
+/* end Body */
+
+/* Header */
+/* ------ */
+/* Desktop */
+header.navs .navbar.navbar-secondary .container #main-nav,
+.navbar-static-top.navbar-secondary {
+  background-color: var(--o-GENERAL_HEADER_BACKGROUND_COLOR, #fff) !important;
+}
+
+.navbar-static-top.navbar-secondary {
+  border-bottom-color: transparent;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+
+    border-bottom-width: 1px;
+
+    border-bottom-color: var(--o-GENERAL_HEADER_BOTTOM_BORDER_COLOR, #dadce0);
+}
+
+
+.top-nav-dragon .complete-profile .complete-profile-inner {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--theme-palette-soft-light);
+  margin-bottom: 8px;
+}
+.top-nav-dragon .complete-profile .profile-square .avatar {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+}
+.top-nav-dragon .complete-profile .profile-details {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--theme-palette-soft-dark);
+  font-size: 14px;
+  line-height: 136%;
+}
+.top-nav-dragon .complete-profile .profile-details .user-name {
+  font-weight: 700;
+}
+.top-nav-dragon .complete-profile .profile-details .user-company {
+  font-weight: 400;
+}
+
+/* SGP-32018: unify the legacy header's content width with the Next.js topbar.
+   SGP-32071 defaults that width to 1170px and wraps this block in the
+   GENERAL_HEADER_CONTENT_FULL_WIDTH inverted section — ticked, nothing is emitted here and
+   navbar.less's `width: 100%` leaves the row full-bleed at >=992px.
+   `width: auto` is required, not incidental: Bootstrap 3 gives `.container` a FIXED
+   `width` (750/970/1170px per tier), so a max-width alone could only ever shrink the
+   header and could never widen it to match Next. Releasing the fixed width makes the
+   cap authoritative in both directions; `.container`'s own `margin: auto` centers it.
+   Scoped to >=992px to match navbar.less's own release, which is inside
+   `@media (min-width: @screen-md-min)` for the reason stated there: below that the logo
+   is sized by the `.navbar-brand` max-width caps (SGP-31837 / DIS-3613) rather than by
+   the row, so the two surfaces already agree and there is nothing to unify.
+   The media query is load-bearing, NOT cosmetic. The cap itself is inert below its own
+   value, but `width: auto` is not: this selector is (0,5,0) against Bootstrap's (0,1,0)
+   `.container`, so unscoped it would release the 750px pin at 768-991px too — a band
+   navbar.less deliberately leaves alone. It would also invert
+   GENERAL_HEADER_CONTENT_FULL_WIDTH there, since suppressing this block is what would
+   hand the row back to Bootstrap: ticking a box labelled "spans the full viewport"
+   would make the header NARROWER (750px, centered) than leaving it off. Pinned by
+   `test_rule_is_media_scoped_to_desktop` and `test_tablet_band_is_untouched_in_both_full_width_states`. */
+@media (min-width: 992px) {
+  .navs.navs-v2 .navbar-static-top.navbar-secondary > .container {
+    width: auto;
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navs.navs-v2 .navbar-login-links .new-dropdown-menu {
+    right: 2px;
+    top: calc(100% - 9px);
+  }
+
+  /* top.html navigation updates for userprofile and nav items */
+  .navbar-nav.navbar-right.top-nav-dragon > .profile-links {
+    display: flex;
+    align-items: center !important;
+  }
+
+
+  .navbar-nav.navbar-right.top-nav-dragon > li.active-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+      background: #4285F4;
+    border-radius: 0 0 2px 2px;
+  }
+
+  .top-nav-dragon .nav-profile-wrapper {
+    border-radius: 6px;
+    max-height: 44px;
+    overflow: hidden;
+  }
+
+  .top-nav-dragon .nav-profile-wrapper .dashboard-btn a {
+    color: var(--o-GENERAL_HEADER_TEXT_COLOR, #5f6368) !important;
+    display: inline-flex;
+
+    font-size: 14px;
+    color: #4D546A;
+  }
+
+  .top-nav-dragon .nav-profile-wrapper .dots-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 4px 4px 2px 4px;
+    color: #4D546A;
+  }
+
+  .icon-dots-menu:before {
+    content: '\2807';
+    zoom: 1.3;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; } /* '⠇' */
+
+  .top-nav-dragon .nav-profile-wrapper .dots-btn:hover,
+  .top-nav-dragon .nav-profile-wrapper.open .dots-btn {
+    background-color: #F6F9FB;
+  }
+
+  .top-nav-dragon .nav-profile-wrapper .avatar {
+    height: 44px;
+    width: 44px;
+    border-radius: 6px;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu {
+    border-radius: 12px;
+    border: 1px solid #DADCE0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px 0px #0000001A;
+    padding: 8px;
+    margin-top: 0px !important;
+    min-width: 260px;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu::after,
+  .top-nav-dragon .main-menu.dropdown-menu::before {
+    content: none;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu .divider {
+    background-color: #F1F3F4;
+    margin: 8px 0;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu .section-label {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 133%;
+    text-transform: uppercase;
+    padding: 8px 4px 4px;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu > li > a {
+    font-size: 14px;
+    line-height: 136%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 8px;
+    color: #5F6368;
+    cursor: pointer;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu > li > a.logout {
+    color: #E3000F;
+  }
+
+  .top-nav-dragon .main-menu.dropdown-menu > li > a:hover {
+    background-color: transparent;
+  }
+
+  /* end top.html navigation udpates */
+
+  .navs.navs-v2 .navbar > .container .navbar-brand {
+      height: 60px;
+  }
+  .navs.navs-v2 .navbar-static-top.navbar-secondary > .container {
+      min-height: 70px;
+  }
+  .navbar-secondary .navbar-nav > li.navbar-menu > a,
+  .navbar-secondary .navbar-nav > li.navbar-login-links > a {
+      color: var(--o-GENERAL_HEADER_TEXT_COLOR, #5f6368) !important;
+
+      font-size: 14px !important;
+
+    text-transform: none !important;
+
+    font-weight: normal;
+      font-weight: 400 !important;
+
+    background-color: transparent;
+      background-color: var(--o-GENERAL_HEADER_LINK_BACKGROUND_COLOR, #fff);
+  }
+
+  .top-nav-dragon .nav-profile-wrapper .dashboard-btn > a:hover,
+  .top-nav-dragon .nav-profile-wrapper .dashboard-btn > a:focus,
+  .top-nav-dragon .nav-profile-wrapper .dashboard-btn > a:active,
+
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:hover,
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:focus,
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:active {
+      color: var(--o-GENERAL_HEADER_HOVER_MENU_LINK_TEXT_COLOR, #202124) !important;
+
+      text-shadow: none;
+
+    z-index: 1;
+    text-decoration: none;
+  }
+
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:hover,
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:focus,
+  .navbar-secondary .navbar-nav > li.navbar-menu > a:active {
+      background-color: transparent;
+      background-color: var(--o-GENERAL_HEADER_HOVER_MENU_LINK_BACKGROUND_COLOR, #fff);
+  }
+
+
+
+
+
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu {
+    background-color: var(--o-GENERAL_HEADER_DROPDOWN_BACKGROUND_COLOR, var(--theme-palette-light)) !important;
+  }
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu::after,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu::after {
+    border-bottom-color: var(--o-GENERAL_HEADER_DROPDOWN_BACKGROUND_COLOR, var(--theme-palette-light)) !important;
+  }
+
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu {
+    border-width: 0;
+      border-width: 1px;
+      right: -1px;
+
+      border-color: var(--o-GENERAL_HEADER_DROPDOWN_STROKE_COLOR, #dadce0);
+
+    /* GENERAL_HEADER_DROPDOWN_SHADOW */
+    box-shadow: none;
+  }
+
+  .navs-v2 .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu,
+  .navs-v2 .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu {
+    right: 0;
+      right: -1px;
+  }
+
+  .navs-v2 .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu {
+    right: -3px;
+      right: calc(-2px - 1px);
+  }
+
+  .navs-v2 .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu::before,
+  .navs-v2 .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu::before {
+    top: -9px;
+    border-bottom-color: transparent;
+
+        border-bottom-color: var(--o-GENERAL_HEADER_DROPDOWN_STROKE_COLOR, #dadce0);
+
+      top: calc(-8px - 1px);
+  }
+
+  /* `.nested-submenu-toggle` is the <summary> button used by the disclosure
+     pattern (parents-with-children). Adding it alongside `a` so it picks up
+     the same Style Editor controls as leaf links — without this, the
+     disclosure trigger renders with browser-default <button>/<summary>
+     styles and ignores GENERAL_HEADER_DROPDOWN_LINK_*. */
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu a,
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu .nested-submenu-toggle,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu a,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu .nested-submenu-toggle {
+      font-size: 14px;
+
+    text-transform: none !important;
+
+    font-weight: normal;
+      font-weight: normal !important;
+
+      color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_FONT_COLOR, #5f6368) !important;
+  }
+
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu a:hover,
+  .navbar-secondary .navbar-nav > .navbar-menu.open > .main-menu.dropdown-menu .nested-submenu-toggle:hover,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu a:hover,
+  .navbar-secondary .navbar-nav > .navbar-login-links.open > .main-menu.dropdown-menu .nested-submenu-toggle:hover {
+      color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_HOVER_FONT_COLOR, #202124) !important;
+
+      background-color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_HOVER_BACKGROUND_COLOR, var(--theme-palette-light)) !important;
+
+    text-decoration: none;
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  /* top.html navigation updates for userprofile and nav items */
+  .top-nav-dragon .nav-profile-wrapper .dashboard-btn {
+    display: none;
+  }
+
+  .top-nav-dragon .navbar-right.navbar-login-links .main-menu.dropdown-menu > li > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .top-nav-dragon .navbar-right.navbar-login-links .main-menu.dropdown-menu > li > a.logout {
+    color: #FF5A64 !important;
+  }
+
+  #avatar-menu {
+    display: none;
+  }
+
+  /* end top.html navigation udpates */
+
+  header.navs .navbar.navbar-secondary .container #main-nav,
+  .main-menu.dropdown-menu {
+      background-color: var(--o-GENERAL_HEADER_DROPDOWN_BACKGROUND_COLOR_MOBILE, var(--theme-palette-light)) !important;
+  }
+
+  header.navs .navbar.navbar-secondary .container a,
+  header.navs .navbar.navbar-secondary .container .nested-submenu-toggle,
+  .main-menu.dropdown-menu a,
+  .main-menu.dropdown-menu .nested-submenu-toggle {
+      font-size: 14px !important;
+
+    text-decoration: none;
+
+    font-weight: normal;
+      font-weight: normal !important;
+
+      color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_FONT_COLOR_MOBILE, #5f6368) !important;
+  }
+}
+/* end Header */
+
+/* Footer */
+/* ------ */
+footer.page-footer {
+    background-color: var(--o-GENERAL_FOOTER_BACKGROUND_COLOR, #fff) !important;
+
+    color: var(--o-GENERAL_FOOTER_TEXT_COLOR, #202124) !important;
+
+    border-top-color: var(--o-GENERAL_FOOTER_LINE_TOP_COLOR, #dadce0) !important;
+
+  border-top-width: 0 !important;
+    border-top-style: solid;
+    border-top-width: 1px !important;
+
+
+  border-bottom-width: 0 !important;
+}
+
+footer.page-footer .footer-brand.footer-brand-svg img {
+    height: 22px;
+}
+
+footer.page-footer .footer-brand.footer-brand-png img {
+    max-height: 22px;
+}
+
+footer.page-footer .footer-bottom {
+    background-color: var(--o-GENERAL_FOOTER_BOTTOM_BACKGROUND_COLOR, #fff) !important;
+
+
+  border-top-width: 0 !important;
+}
+
+footer.page-footer .footer-top h5,
+footer.page-footer .join-community .follow-community {
+    font-size: 16px !important;
+
+  text-transform: none !important;
+
+  font-weight: 400 !important;
+
+  color: var(--o-GENERAL_FOOTER_TITLE_COLOR, #676c72) !important;
+}
+
+footer.page-footer a {
+    color: var(--o-GENERAL_FOOTER_TEXT_COLOR, #202124) !important;
+
+    color: var(--o-GENERAL_FOOTER_LINK_COLOR, #202124) !important;
+}
+
+footer.page-footer a:not(.social-button):not(.powered_by_bevy):not(.btn):not(.footer-copyright) {
+  font-size: 14px !important;
+
+  text-transform: none;
+
+  font-weight: normal;
+  font-weight: normal !important;
+}
+
+@media (min-width: 992px) {
+  footer.page-footer a:hover {
+      color: var(--o-GENERAL_FOOTER_LINK_HOVER_COLOR, #1a73e8) !important;
+  }
+
+  footer.page-footer a:not(.social-button):hover {
+    text-decoration: none !important;
+
+  }
+}
+
+footer.page-footer .footer-bottom .site-info,
+footer.page-footer .footer-bottom .site-info .footer-copyright,
+footer.page-footer .footer-bottom .site-info a {
+    color: var(--o-GENERAL_FOOTER_TEXT_COLOR, #202124) !important;
+
+    font-size: 14px !important;
+
+  text-transform: none !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+    color: var(--o-GENERAL_FOOTER_COPYRIGHT_COLOR, #202124) !important;
+}
+
+footer.page-footer a.social-button {
+    color: var(--o-GENERAL_FOOTER_SOCIAL_ICON_COLOR, #676c72) !important;
+}
+
+footer.page-footer ul.social-links li {
+    background-color: var(--o-GENERAL_FOOTER_SOCIAL_ICON_BACKGROUND_COLOR, #fff) !important;
+
+}
+
+@media (min-width: 992px) {
+  footer.page-footer ul.social-links li:hover a.social-button {
+    color: var(--o-GENERAL_FOOTER_SOCIAL_ICON_HOVER_COLOR, #1a73e8) !important;
+  }
+
+  footer.page-footer ul.social-links li:hover {
+    background-color: var(--o-GENERAL_FOOTER_SOCIAL_ICON_HOVER_BACKGROUND_COLOR, #fff) !important;
+
+  }
+}
+/* end Footer */
+/* end SITE SECTIONS */
+
+/* CARDS */
+/* ********* */
+.general-card,
+.host-container,
+#event_page .tile,
+.style-editor-card,
+.vertical-boxes .vertical-box-container {
+  border-radius: 0 !important;
+    overflow: hidden;
+    border-radius: 8px !important;
+
+  border-width: 0 !important;
+
+    background-color: var(--o-GENERAL_CARD_BACKGROUND_COLOR, var(--theme-palette-light)) !important;
+
+    border-color: var(--o-GENERAL_CARD_STROKE_COLOR, var(--theme-palette-light-borders)) !important;
+
+  box-shadow: none;
+}
+
+/* PANELS */
+/* ********* */
+.style-editor-panel {
+  background-color: #ffffff !important;
+  border-color: #dddddd !important;
+    border-radius: 8px !important;
+
+  border-width: 0 !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+
+    background-color: var(--o-GENERAL_PANEL_BACKGROUND_COLOR, #fff) !important;
+
+    border-color: var(--o-GENERAL_PANEL_STROKE_COLOR, #dadce0) !important;
+
+}
+
+#event_page .tile .social-media a,
+#event_page .vertical-boxes .vertical-box-container .social-media a,
+.chapter .list-inline.social-media > li [class^="icon-"]:before,
+.people-card .people-card--twitter {
+  color: var(--o-GENERAL_SPEAKER_CARD_SOCIAL_COLOR, #4285F4);
+}
+/* end CARDS */
+
+/* BANNERS */
+/* ******* */
+.chapter-banner,
+.page-banner,
+#event_page .jumbotron {
+}
+
+.chapter-banner .overlay,
+#event_page .jumbotron .color-overlay,
+.page-banner .overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.page-banner .container .page-banner-title {
+  color: #ffffff;
+
+  text-transform: none;
+
+  text-shadow: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+    font-weight: bold;
+
+}
+@media (min-width: 768px) {
+  .page-banner .container .page-banner-title {
+  }
+}
+/* end BANNERS */
+
+/* DROPDOWNS */
+/* ********* */
+
+/* end DROPDOWNS */
+
+/* SEARCH DROPDOWNS */
+/* **************** */
+.main-dashboard#chapters-page .search-holder .search-result,
+.upcomingEventsWidget .locationSearch li.geosuggest__item,
+.location-widget .geosuggest-container .location-input-module li.geosuggest__item,
+.eventTypesContainer ul.rw-list > li.rw-list-option,
+.general-search-hit {
+  color: #333333;
+}
+.main-dashboard#chapters-page .search-holder .search-result:hover,
+.upcomingEventsWidget .locationSearch li.geosuggest__item:hover,
+.upcomingEventsWidget .locationSearch li.geosuggest__item--active,
+.location-widget .geosuggest-container .location-input-module li.geosuggest__item:hover,
+.location-widget .geosuggest-container .location-input-module li.geosuggest__item--active,
+.eventTypesContainer ul.rw-list > li.rw-list-option:hover,
+.general-search-hit:hover,
+.general-search-hit--active {
+  background-color: #555;
+  color: #ffffff;
+    background-color: #4285F4;
+
+    background-color: var(--o-GENERAL_HOVER_SEARCH_DROPDOWN_ITEM_BACKGROUND_COLOR, #4285F4) !important;
+
+    color: var(--o-GENERAL_HOVER_SEARCH_DROPDOWN_ITEM_FONT_COLOR, #fff) !important;
+}
+/* end SEARCH DROPDOWNS */
+
+/* SLIDER/CAROUSEL */
+/* ****** */
+.carousel-container .content .content-inside h2 {
+    font-size: 42px !important;
+
+  text-transform: none !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+    color: var(--o-HOMEPAGE_SLIDER_HEADING_COLOR, #ffffff) !important;
+
+    text-align: center !important;
+
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container .content .content-inside h2 {
+      font-size: calc(42px * 0.7) !important;
+  }
+}
+
+.carousel-container .content .content-inside h3 {
+    font-size: 17px !important;
+
+  text-transform: none !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+    color: var(--o-HOMEPAGE_SLIDER_SUBTITLE_COLOR, #ffffff) !important;
+
+    text-align: center !important;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container .content .content-inside h3 {
+      font-size: calc(17px * 0.7) !important;
+  }
+}
+
+/* end SLIDER */
+
+/* BUTTONS */
+/* ******* */
+/* Colors (affects buttons and nav items) */
+/* -------------------------------------- */
+/* Primary "Main" Buttons */
+body:not(#main-dashboard) .btn.btn-primary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-primary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .navs .btn.btn-primary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .page-footer .btn.btn-primary:not(.dropdown-toggle):not(.grey),
+body:not(#main-dashboard) .ladda-button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .ladda-button,
+body#main-dashboard .navs .ladda-button,
+body#main-dashboard .page-footer .ladda-button,
+body:not(#main-dashboard) .btn-fifth-fake,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn-fifth-fake,
+body#main-dashboard .navs .btn-fifth-fake,
+body#main-dashboard .page-footer .btn-fifth-fake,
+body:not(#main-dashboard) .sweet-alert p button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert p button,
+body#main-dashboard .navs .sweet-alert p button,
+body#main-dashboard .page-footer .sweet-alert p button,
+body:not(#main-dashboard) .sweet-alert .sa-button-container button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert .sa-button-container button,
+body#main-dashboard .navs .sweet-alert .sa-button-container button,
+body#main-dashboard .page-footer .sweet-alert .sa-button-container button,
+body:not(#main-dashboard) .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .navs .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .page-footer .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body:not(#main-dashboard) .chapter button.contact-us,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .chapter button.contact-us,
+body#main-dashboard .navs .chapter button.contact-us,
+body#main-dashboard .page-footer .chapter button.contact-us,
+body:not(#main-dashboard) .react-cohosted-chip .MuiChip-root,
+body:not(#main-dashboard) .react-cohosted-chip .MuiChip-icon {
+    background-color: var(--o-GENERAL_BUTTON_BACKGROUND, #1a73e8) !important;
+
+    color: var(--o-GENERAL_BUTTON_COLOR, #fff) !important;
+
+}
+
+body:not(#main-dashboard) .btn.btn-primary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-primary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .navs .btn.btn-primary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .page-footer .btn.btn-primary:not(.dropdown-toggle):not(.grey):hover,
+body:not(#main-dashboard) .ladda-button:hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .ladda-button:hover,
+body#main-dashboard .navs .ladda-button:hover,
+body#main-dashboard .page-footer .ladda-button:hover,
+body:not(#main-dashboard) .btn-fifth-fake:hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn-fifth-fake:hover,
+body#main-dashboard .navs .btn-fifth-fake:hover,
+body#main-dashboard .page-footer .btn-fifth-fake:hover,
+body:not(#main-dashboard) .sweet-alert p button:hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert p button:hover,
+body#main-dashboard .navs .sweet-alert p button:hover,
+body#main-dashboard .page-footer .sweet-alert p button:hover,
+body:not(#main-dashboard) #react-root-user-document .sweet-alert button:hover,
+body:not(#main-dashboard) .sweet-alert .sa-button-container button:hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert .sa-button-container button:hover,
+body#main-dashboard .navs .sweet-alert .sa-button-container button:hover,
+body#main-dashboard .page-footer .sweet-alert .sa-button-container button:hover,
+body:not(#main-dashboard) .swal2-modal .swal2-buttonswrapper button.swal2-styled:hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .swal2-modal .swal2-buttonswrapper button.swal2-styled:hover,
+body#main-dashboard .navs .swal2-modal .swal2-buttonswrapper button.swal2-styled:hover,
+body#main-dashboard .page-footer .swal2-modal .swal2-buttonswrapper button.swal2-styled:hover {
+    background-color: var(--o-GENERAL_HOVER_BUTTON_BACKGROUND_COLOR, #4285F4) !important;
+
+
+    color: var(--o-GENERAL_HOVER_BUTTON_COLOR, #fff) !important;
+}
+
+/* Secondary "Ghost" Buttons */
+body:not(#main-dashboard) .btn.btn-secondary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-secondary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .navs .btn.btn-secondary:not(.dropdown-toggle):not(.grey),
+body#main-dashboard .page-footer .btn.btn-secondary:not(.dropdown-toggle):not(.grey) {
+    background-color: var(--o-GENERAL_GHOST_BUTTON_BACKGROUND_COLOR, #fff) !important;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--o-GENERAL_GHOST_BUTTON_STROKE_COLOR, #dadce0) !important;
+
+    color: var(--o-GENERAL_GHOST_BUTTON_COLOR, #1a73e8) !important;
+}
+
+body:not(#main-dashboard) .btn.btn-secondary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-secondary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .navs .btn.btn-secondary:not(.dropdown-toggle):not(.grey):hover,
+body#main-dashboard .page-footer .btn.btn-secondary:not(.dropdown-toggle):not(.grey):hover {
+    background-color: var(--o-GENERAL_GHOST_HOVER_BUTTON_BACKGROUND_COLOR, #e8f0fe) !important;
+
+    border-color: var(--o-GENERAL_GHOST_HOVER_BUTTON_STROKE_COLOR, #d2e3fc) !important;
+
+    color: var(--o-GENERAL_GHOST_HOVER_BUTTON_COLOR, #4285F4) !important;
+}
+
+/* Padding / Sizing */
+/* ----------------------------------- */
+/* main / primary */
+body:not(#main-dashboard) .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more):not(.join-button),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .navs .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .page-footer .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body:not(#main-dashboard) .ladda-button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .ladda-button,
+body#main-dashboard .navs .ladda-button,
+body#main-dashboard .page-footer .ladda-button,
+body:not(#main-dashboard) .btn-fifth-fake,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn-fifth-fake,
+body#main-dashboard .navs .btn-fifth-fake,
+body#main-dashboard .page-footer .btn-fifth-fake,
+body:not(#main-dashboard) .sweet-alert p button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert p button,
+body#main-dashboard .navs .sweet-alert p button,
+body#main-dashboard .page-footer .sweet-alert p button,
+body:not(#main-dashboard) .sweet-alert .sa-button-container button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert .sa-button-container button,
+body#main-dashboard .navs .sweet-alert .sa-button-container button,
+body#main-dashboard .page-footer .sweet-alert .sa-button-container button,
+body:not(#main-dashboard) .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .navs .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .page-footer .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+/* ghost / secondary */
+body:not(#main-dashboard) .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .navs .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .page-footer .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Other button styles */
+/* ----------------------------------- */
+body:not(#main-dashboard) .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .navs .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .page-footer .btn.btn-primary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body:not(#main-dashboard) .ladda-button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .ladda-button,
+body#main-dashboard .navs .ladda-button,
+body#main-dashboard .page-footer .ladda-button,
+body:not(#main-dashboard) .btn-fifth-fake,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn-fifth-fake,
+body#main-dashboard .navs .btn-fifth-fake,
+body#main-dashboard .page-footer .btn-fifth-fake,
+body:not(#main-dashboard) .sweet-alert p button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert p button,
+body#main-dashboard .navs .sweet-alert p button,
+body#main-dashboard .page-footer .sweet-alert p button,
+body:not(#main-dashboard) .sweet-alert .sa-button-container button,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .sweet-alert .sa-button-container button,
+body#main-dashboard .navs .sweet-alert .sa-button-container button,
+body#main-dashboard .page-footer .sweet-alert .sa-button-container button,
+body:not(#main-dashboard) .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .navs .swal2-modal .swal2-buttonswrapper button.swal2-styled,
+body#main-dashboard .page-footer .swal2-modal .swal2-buttonswrapper button.swal2-styled {
+  border-radius: 0 !important;
+    border-radius: 4px !important;
+
+    font-size: 14px;
+
+  text-transform: none !important;
+
+  font-weight: 500;
+
+  border-width: 0;
+}
+
+body:not(#main-dashboard) .chapter button.contact-us .icon-mail,
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .chapter button.contact-us .icon-mail,
+body#main-dashboard .navs .chapter button.contact-us .icon-mail,
+body#main-dashboard .page-footer .chapter button.contact-us .icon-mail,
+#event_page button.contact-us .icon-mail,
+#event_page button.contact-us .text {
+    font-size: 14px;
+}
+
+#event_page button.contact-us {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body:not(#main-dashboard) .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .cookie-consent-acknowledgement-conatiner .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .navs .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more),
+body#main-dashboard .page-footer .btn.btn-secondary:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more) {
+  text-transform: none !important;
+
+    font-weight: normal;
+
+    font-size: 14px;
+
+  border-radius: 0;
+    border-radius: 4px;
+
+  border-width: 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* DIS-3339: the notifications page renders its primary/ghost action buttons
+   inside `.bds-container`, whose `.btn { border-radius: 5px !important }` rule
+   force-rounds the ghost ("Delete all") button and prevents it from honoring the
+   configured ghost border radius. The primary button is already shielded by its
+   own `!important` radius above; re-apply the ghost radius here — scoped to the
+   notifications actions, with the matching `!important` — so the secondary button
+   tracks its setting symmetrically (defaulting to square when unset). */
+#bevy-notifications .notifications-list-title-actions .btn.btn-secondary {
+  border-radius: 0 !important;
+    border-radius: 4px !important;
+}
+
+/* Special Buttons */
+body:not(#main-dashboard) .btn.btn-primary.explore-button:not(.dropdown-toggle):not([class*="col-"]):not(.grey):not(.blog-load-more) {
+}
+/* end BUTTONS */
+
+/* PRIVACY POLICY (banner) */
+/* *************** */
+.cookie-consent-acknowledgement-conatiner {
+  background: #000;
+    background-color: var(--o-HOMEPAGE_PRIVACY_POLICY_BACKGROUND_COLOR, #4285F4);
+}
+.cookie-consent-acknowledgement-conatiner .cookie-consent-text {
+    font-size: 14px !important;
+
+    font-weight: bold;
+
+  color: #fff;
+    color: var(--o-HOMEPAGE_PRIVACY_POLICY_COLOR, #fff);
+}
+.cookie-consent-acknowledgement-conatiner .cookie-consent-text a {
+  color: inherit;
+    color: var(--o-HOMEPAGE_PRIVACY_POLICY_LINK_COLOR, #fff);
+}
+.cookie-consent-acknowledgement-conatiner .cookie-consent-text a:not(:hover) {
+  /* Always underlined. This used to drop the underline as soon as
+     HOMEPAGE_PRIVACY_POLICY_LINK_COLOR was set — i.e. always, since it has a non-empty
+     default — on the assumption that the colour itself marks the link. It cannot: the link
+     and the banner text can resolve to the SAME colour (they now share a default token, and
+     a tenant may point both at one value), leaving no cue at all that "Privacy Policy" is
+     clickable. WCAG 1.4.1 wants a non-colour cue whenever a link is not ~3:1 against its
+     surrounding text, and here that difference can be zero. Matches the Next.js banner. */
+  text-decoration: underline;
+}
+/* end PRIVACY POLICY */
+
+/* JOIN FORMS */
+/* ********** */
+.join-community {
+    background-color: var(--o-JOIN_FORM_BACKGROUND_COLOR, #f1f3f4);
+}
+
+/* title */
+.join-community .follow-community,
+footer.page-footer .join-community .follow-community {
+    font-size: 16px;
+
+    color: var(--o-JOIN_FORM_TITLE_COLOR, #202124);
+
+  font-weight: normal;
+    font-weight: normal;
+}
+
+/* subtitle */
+.join-community .follow-sub-title,
+footer.page-footer .join-community .follow-sub-title {
+    font-size: 14px;
+
+    color: var(--o-JOIN_FORM_SUBTITLE_COLOR, #676c72);
+
+  font-weight: normal;
+    font-weight: normal;
+}
+/* end JOIN FORMS */
+
+/* INTRO (Homepage) */
+/* **************** */
+.intro-text {
+    background-color: var(--o-HOMEPAGE_INTRO_BACKGROUND_COLOR, #fff) !important;
+}
+
+.intro-text .section-header {
+}
+
+.intro-text .about-message {
+    color: var(--o-HOMEPAGE_INTRO_PARAGRAPH_COLOR, #202124) !important;
+}
+/* end INTRO (Homepage) */
+
+/* UPCOMING EVENTS (Homepage) */
+/* ************************** */
+.location-widget,
+.location-widget .location-widget-body {
+}
+
+.location-widget-title {
+}
+
+.location-widget .geosuggest__input-wrapper,
+.location-widget .geosuggest__input {
+  background-color: #ffffff;
+    background-color: var(--o-HOMEPAGE_UPCOMING_SEARCH_COLOR, #f1f3f4);
+
+  color: #091E42;
+    color: var(--o-HOMEPAGE_UPCOMING_SEARCH_TEXT_COLOR, #202124);
+}
+
+.location-widget .geosuggest-container .location-search-icon {
+  color: #333333;
+    color: var(--o-HOMEPAGE_UPCOMING_SEARCH_ICON_COLOR, #5f6368);
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block {
+    background-color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_BACKGROUND_COLOR, #fff) !important;
+
+  border-width: 0 !important;
+    border-style: solid;
+    border-width: 1px !important;
+
+    border-color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_STROKE_COLOR, #dadce0) !important;
+
+  box-shadow: none !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .background {
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .imageChipWrapper {
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .imageChipWrapper .chips-wrapper {
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .chapter,
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .date {
+    color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_FONT_COLOR, #676c72) !important;
+}
+
+.location-widget .type,
+.location-widget .title {
+    font-size: 18px !important;
+
+    color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_TITLE_COLOR, #1a73e8) !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+    background-color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_BACKGROUND_COLOR, #fff) !important;
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .meta {
+    background-color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_BACKGROUND_COLOR, #fff) !important;
+}
+
+.location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .meta span {
+    color: var(--o-HOMEPAGE_UPCOMING_EVENT_CARD_ICON_COLOR, #4285F4) !important;
+}
+
+.rbc-show-more {
+    color: var(--o-GENERAL_TEXT_LINK_COLOR, #4285F4) !important;
+    text-decoration-color: var(--o-GENERAL_TEXT_LINK_COLOR, #4285F4);
+}
+/* end UPCOMING EVENTS (Homepage) */
+
+/* MAP (Homepage) */
+/* ************** */
+.main-dashboard#chapters-page .search-holder {
+  border-width: 0 !important;
+    border-style: solid;
+    border-width: 1px !important;
+
+    border-color: var(--o-HOMEPAGE_MAP_SEARCH_STROKE_COLOR, #dadce0) !important;
+
+  box-shadow: none;
+}
+
+
+/*
+  Match the Next.js SearchChapters component (next/.../ChapterMap/SearchChapters):
+  when no search background is configured (HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR default
+  is None) the field must fall back to an opaque light background instead of staying
+  transparent. Next falls back to its light default; here we use the theme's light
+  palette token, which also flips correctly in dark mode. Otherwise the legacy map's
+  dark .image-map (#1C1C1C, see chapterPage/styles.less) shows through the field,
+  producing the dark box + washed-out text that the Next homepage map does not have.
+  A configured HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR still overrides it (including
+  intentionally transparent/alpha values), keeping parity with Next (SGP-31879).
+
+  DIS-3702 narrowed that last sentence to LIGHT MODE. Under [data-theme="dark"] the rule
+  further down re-points this background at var(--o-…, var(--theme-palette-light)), so a
+  configured value — alpha ones included — no longer survives into dark mode. A translucent
+  field is exactly the case that could not stay: composited over the dark .image-map it
+  produced the washed-out box this block exists to prevent, and the foreground above is
+  unconditionally flipped.
+
+  The dark-mode escape hatch is HOMEPAGE_DARK_COLOR_OVERRIDES, but note it is API-ONLY
+  today: this setting is registered `type: 'alphaColor'` in the Style Editor, and
+  withDarkOverrides.js stamps a dark slot only for palette/surface/typography types — so
+  there is no picker for it in either the legacy or the Next.js Style Editor, and an
+  operator has to PATCH the override map directly. DIS-3717 tracks giving alphaColor a
+  dark slot; drop this qualifier once it ships.
+*/
+.main-dashboard#chapters-page .search-holder,
+.main-dashboard#chapters-page .search-holder .form-control {
+  background-color: var(--theme-palette-light, #fff) !important;
+    background-color: var(--o-HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR, #fff) !important;
+}
+
+.main-dashboard#chapters-page .search-holder input,
+.main-dashboard#chapters-page .search-holder input::placeholder {
+  color: #333;
+    color: var(--o-HOMEPAGE_MAP_SEARCH_FONT_COLOR, #676c72) !important;
+}
+
+/*
+  SGP-31879: the Next.js SearchChapters placeholder renders the input text color at
+  42% opacity (a soft, de-emphasized hint); the legacy field showed a fully opaque
+  placeholder, so its hint read heavier/darker than the Next map's. Match Next by
+  fading the placeholder to the same 0.42 — the color still comes from the rules above
+  (configured FONT_COLOR in light, the dark override below in dark), and Next uses the
+  same 0.42 in both themes, so a single un-scoped rule keeps both modes in parity.
+*/
+.main-dashboard#chapters-page .search-holder input::placeholder {
+  opacity: 0.42;
+}
+
+.main-dashboard#chapters-page .search-holder .icon-search,
+.main-dashboard#chapters-page .search-holder .remote-search-cancel {
+  color: #333333;
+    color: var(--o-HOMEPAGE_MAP_SEARCH_ICON_COLOR, #5f6368) !important;
+}
+
+/*
+  SGP-31879: in dark mode the configured search FONT_COLOR / ICON_COLOR (tuned for
+  the light field) read wrong on the dark field, so — matching the Next.js shared
+  SearchField [data-theme="dark"] override — flip the legacy /chapters/ input TEXT and
+  search icon to var(--theme-palette-dark) (Next: var(--ColorDark)).
+
+  NOTE (DIS-3702): these flips are UNCONDITIONAL, so they are only safe while the field
+  background also ends up dark. That is NOT guaranteed by the fallback above — a
+  configured HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR overrides it with a literal that cannot
+  flip, which rendered white-on-white (1.00:1) on every instance that set a light field.
+  The dark background rule below is what makes these rules safe; do not add a foreground
+  flip here without a background that flips with it.
+
+  KNOWN (DIS-3719, pre-existing): because these rules hardcode the token at (1,4,0) they
+  also outrank the --o--wrapped light rule at (1,3,0) that would carry an operator's
+  HOMEPAGE_DARK_COLOR_OVERRIDES entry for FONT_COLOR / ICON_COLOR — so those two overrides
+  can never render on this page, even though the Style Editor offers a picker for both.
+  The background rule below uses the var(--o-…, role-token) shape that does honor an
+  override; reshaping these two the same way is DIS-3719.
+*/
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder input,
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder .icon-search,
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder .remote-search-cancel,
+/* The RemoteSearchField magnifier renders as an <svg> (currentColor) inside
+   .search-holder; the map's own <svg> lives in the sibling .image-map, so this
+   scoped selector only hits the search icon. */
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder svg {
+  color: var(--theme-palette-dark) !important;
+}
+
+/*
+  The PLACEHOLDER uses a DIFFERENT token AND a different opacity than the input text —
+  Next's shared SearchField dark rule sets the placeholder to
+  `color: var(--ColorSoftDark); opacity: 1` (a soft light-on-dark at FULL opacity), NOT
+  the var(--ColorDark) of the typed text nor the faded 0.42 the field uses in light mode.
+  --theme-palette-soft-dark is the legacy alias of that BDS token. Re-assert opacity: 1
+  here to override the 0.42 light-mode rule above, so the dark placeholder renders as the
+  same crisp near-white as the Next map (not a dim gray).
+*/
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder input::placeholder {
+  color: var(--theme-palette-soft-dark) !important;
+  opacity: 1 !important;
+}
+
+/*
+  DIS-3702: give the unconditional foreground flips above something dark to sit on.
+
+  The light rule earlier in this block layers a configured HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR
+  literal OVER the flip-safe `var(--theme-palette-light, #fff)` fallback. A literal cannot
+  role-swap, so on any instance that configured a light field the background stayed white
+  while the text, icon and placeholder all went near-white — measured 1.00:1 on databricks.
+
+  Resolution order here, both halves handled by the cascade rather than by Python:
+    1. --o-HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR — the operator's explicit dark override.
+       config/views.py declares --o-* custom properties ONLY inside [data-theme="dark"],
+       so this is undefined in light mode and the light rule above is untouched.
+    2. var(--theme-palette-light) — no override configured. This is a ROLE token: under
+       [data-theme="dark"] it resolves to the dark surface color, so every instance gets
+       a dark field regardless of what it configured for light mode.
+
+  Both selectors outrank the configured rule they must beat — (1,3,0) vs (1,2,0) on
+  .search-holder, (1,4,0) vs (1,3,0) on .form-control — so this wins over the literal's
+  !important (and is later in source order besides). Matches the Next.js SearchChapters
+  dark block (DIS-3555), which likewise force-sets the background onto a role token.
+*/
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder,
+[data-theme="dark"] .main-dashboard#chapters-page .search-holder .form-control {
+  background-color: var(
+    --o-HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR,
+    var(--theme-palette-light)
+  ) !important;
+}
+
+/*
+  The autocomplete panel that drops out of this field is deliberately NOT styled here.
+  theme.css already owns it — `[data-theme="dark"] #chapters-page .search-drop-down`
+  flips the panel background and border, and `… .search-result` sets the result text
+  (DIS-3555). Adding a second, higher-specificity copy in this file would silently make
+  that block dead CSS and leave two owners for one surface, which is the same
+  "which rule actually wins" ambiguity this ticket exists to fix. If the panel should
+  ever follow --o-HOMEPAGE_MAP_SEARCH_BACKGROUND_COLOR too, edit the theme.css block in
+  place. (Note it should probably not: the setting is an alphaColor, and a translucent
+  scrolling results panel over the map would show the page through it.)
+*/
+/* end MAP (Homepage) */
+
+/* GROUPS BY REGION (Homepage) */
+.main-dashboard.on-home-page #react-main-chapter-list-root > .holder {
+}
+
+.main-dashboard.on-home-page #react-main-chapter-list-root > .holder .chapters-title {
+
+}
+
+#react-main-chapter-list-root .panel-body .row.regions {
+  border-bottom-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px !important;
+
+    border-bottom-color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_BAR_BOTTOM_LINE_COLOR, #dadce0) !important;
+}
+
+#react-main-chapter-list-root .panel-body .row.regions a.region-button {
+    background-color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_INACTIVE_BACKGROUND_COLOR, #fff) !important;
+
+    color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_INACTIVE_TEXT_COLOR, #676c72) !important;
+
+
+  text-transform: none !important;
+
+  font-weight: normal;
+    font-weight: normal !important;
+
+  border-bottom-width: 0 !important;
+    /* this is needed here to prevent shift on hover */
+    border-bottom-style: solid;
+    border-bottom-width: 4px !important;
+    border-bottom-color: transparent;
+
+  border-radius: 0 !important;
+}
+
+#react-main-chapter-list-root .panel-body .row.regions a.region-button.selected,
+#react-main-chapter-list-root .panel-body .row.regions a.region-button:hover {
+    background-color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_BACKGROUND_COLOR, #fff) !important;
+
+    border-bottom-color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_BOTTOM_LINE_COLOR, #4285F4) !important;
+
+    color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_TEXT_COLOR, #202124) !important;
+}
+
+#react-main-chapter-list-root .row.regions-list .chapter-item strong {
+  /* city */
+    font-size: 14px !important;
+
+    color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_CITY_TEXT_COLOR, #202124) !important;
+}
+
+#react-main-chapter-list-root .row.regions-list .chapter-item span {
+  /* country */
+    font-size: 12px !important;
+
+    color: var(--o-HOMEPAGE_GROUPS_BY_REGION_TAB_COUNTRY_TEXT_COLOR, #676c72) !important;
+}
+/* end GROUPS BY REGION (Homepage) */
+
+/* BOTTOM SECTION (Homepage) */
+/* ************************* */
+.homepage .join-cta {
+}
+
+.homepage .join-cta .general-h1 {
+
+
+
+    color: var(--o-HOMEPAGE_BOTTOM_CTA_SECTION_TITLE_COLOR, #fff) !important;
+}
+
+
+@media (max-width: 480px) {
+  .homepage .join-cta .general-h1 {
+    font-size: 30px !important;
+  }
+}
+/* end BOTTOM SECTION (Homepage) */
+
+/* EVENT PAGE */
+.general-event-banner,
+.general-event-banner a {
+  color: #ffffff;
+    color: var(--o-EVENT_PAGE_BANNER_TEXT_COLOR, #ffffff);
+}
+
+.general-event-banner a {
+  border-color: #ffffff;
+  text-decoration-color: #ffffff;
+  fill: #ffffff;
+    border-color: var(--o-EVENT_PAGE_BANNER_TEXT_COLOR, #ffffff);
+    text-decoration-color: var(--o-EVENT_PAGE_BANNER_TEXT_COLOR, #ffffff);
+    fill: var(--o-EVENT_PAGE_BANNER_TEXT_COLOR, #ffffff);
+}
+
+#event-info.dark_bg {
+  background-color: #333333;
+    background-color: var(--o-EVENT_AGENDA_SECTION_BACKGROUND_COLOR, #f1f3f4);
+}
+#event_page .event-info-container {
+  color: #ffffff;
+    color: var(--o-EVENT_AGENDA_SECTION_COLOR, #202124);
+}
+#event-info .agenda-item.even {
+  background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--o-EVENT_AGENDA_ROW_BACKGROUND_COLOR, #dadce0);
+}
+#event-info .day-button {
+  font-size: 14px;
+    font-size: 16px;
+
+  border-radius: 0;
+
+  padding: 7px 15px;
+
+  border: none;
+  border-bottom-width: 0;
+  margin-bottom: 0;
+    border-bottom-width: 4px;
+    margin-bottom: -4px;
+
+  text-transform: none;
+
+  font-weight: normal;
+
+  border-bottom-style: solid;
+}
+#event_page .days-container {
+  padding-bottom: 0;
+    padding-bottom: 4px;
+}
+@media (min-width: 480px) {
+  #event_page .days-container {
+    padding-top: 0;
+      padding-top: 4px;
+  }
+  #event_page .agenda-title-container {
+    margin-top: 0;
+      margin-top: -4px;
+  }
+}
+#event-info .day-button:not(.selected) {
+  background-color: transparent;
+
+  color: #ffffff;
+    color: var(--o-EVENT_AGENDA_TAB_COLOR, #676c72);
+
+  border-bottom-color: transparent;
+}
+#event-info .day-button.selected,
+#event-info .day-button:not(.selected):hover {
+  background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--o-EVENT_AGENDA_TAB_ACTIVE_BACKGROUND_COLOR, #f1f3f4);
+
+  color: #ffffff;
+    color: var(--o-EVENT_AGENDA_TAB_ACTIVE_COLOR, #202124);
+
+  border-bottom-color: transparent;
+    border-bottom-color: var(--o-EVENT_AGENDA_TAB_ACTIVE_STROKE_COLOR, #4285F4);
+}
+
+#event_page .chip-placeholder {
+  height: 55px;
+}
+
+/* end EVENT PAGE */
+
+/* CHAPTER PAGE */
+.general-chapter-banner,
+.general-chapter-banner a {
+  color: #ffffff;
+    color: var(--o-CHAPTER_PAGE_BANNER_TEXT_COLOR, #ffffff);
+}
+
+.general-chapter-banner a {
+  border-color: #ffffff;
+  text-decoration-color: #ffffff;
+  fill: #ffffff;
+    border-color: var(--o-CHAPTER_PAGE_BANNER_TEXT_COLOR, #ffffff);
+    text-decoration-color: var(--o-CHAPTER_PAGE_BANNER_TEXT_COLOR, #ffffff);
+    fill: var(--o-CHAPTER_PAGE_BANNER_TEXT_COLOR, #ffffff);
+}
+/* end CHAPTER PAGE */
+
+/* MARKETING MESSAGE BAR */
+.all-pages-info-banner {
+  background-color: #333333;
+    background-color: var(--o-GENERAL_MARKETING_MESSAGE_BAR_BACKGROUND_COLOR, #4285F4);
+
+  color: #ffffff;
+    color: var(--o-GENERAL_MARKETING_MESSAGE_BAR_TEXT_COLOR, #fff);
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  /* Per-corner radius (DIS-3692). Each corner is gated on its own so they stay
+     independent. An unset corner — and a 0, which pystache drops as falsy — emits no
+     rule, and no rule already means square, so this needs no zero-coercion the way the
+     padding above does. Mirrors the Next.js PromoBanner. */
+}
+
+.all-pages-info-banner .all-pages-info-banner--title {
+  font-size: 18px;
+
+    font-weight: bold;
+}
+
+.all-pages-info-banner .all-pages-info-banner--body {
+  font-size: 16px;
+
+    font-weight: normal;
+}
+
+a.all-pages-info-banner:hover {
+  color: #ffffff;
+    color: var(--o-GENERAL_MARKETING_MESSAGE_BAR_TEXT_COLOR, #fff);
+}
+/* end MARKETING MESSAGE BAR */
+
+/* CSS OVERRIDES */
+/* ************* */
+/* Global */
+body,
+.people-card {
+  color: #5f6368;
+}
+
+body:not(#main-dashboard) .general-body a {
+  word-break: break-all;
+}
+
+/* Header */
+.dropdown-menu .divider {
+  background-color: #dadce0 !important;
+}
+
+.navbar>.container .navbar-brand img {
+  height: 45%;
+}
+
+/* Slider */
+.logged_in .carousel-container .carousel {
+  border-bottom: solid 1px #dadce0;
+}
+
+.carousel-container .content .content-inside h3 {
+  line-height: 28px;
+  padding-top: 30px;
+}
+
+.carousel-container .content .content-inside {
+    margin: 50px 0;
+    padding: 0px 200px 0px 200px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 1170px;
+    width: 100%;
+}
+
+
+/* --- Add these styles for mobile responsiveness --- */
+@media (max-width: 768px) {
+
+  .carousel-container .content .content-inside {
+    /* Greatly reduce the horizontal padding on smaller screens 
+      to give your text space. 
+    */
+    padding: 0px 20px; /* Reduced from 200px to 20px */
+    
+    /* Optionally, reduce the top/bottom margin */
+    margin: 30px 0;
+  }
+
+  .carousel-container .content .content-inside h3 {
+    /* Optionally, reduce padding for headings on small screens */
+    padding-top: 20px;
+  }
+  
+}
+
+/* Intro text */
+.intro-text .about-message {
+  margin-top: 30px;
+}
+
+/* Explore By Region */
+.on-home-page ._dashboard.chapters-panel {
+  border-color: #dadce0 !important;
+}
+
+/* Home upcoming events */
+.IconBlock-styles-scope-27bGt .IconBlock-styles-type-31aPf {
+  line-height: 22px;
+}
+
+.IconBlock-styles-scope-27bGt .IconBlock-styles-background-8wy7_ {
+  border: none;
+}
+
+
+/* Footer */
+footer.page-footer {
+  padding: 50px 0 0;
+  margin-top: -1px;
+}
+
+footer.page-footer hr {
+  border-top-color: #dadce0;
+  margin-top: 45px;
+}
+
+footer.page-footer .footer-bottom {
+  padding: 20px 0 20px;
+}
+
+/* Profile */
+#react-root .tab-content {
+  margin-bottom: 60px;
+}
+
+/* Search Results */
+div.wide-search-bar-container {
+  background: #4285F4;
+}
+
+.navbar-menu.selected {
+  background: #4285F4 !important;
+}
+
+.outer-results-container h3.category-filters {
+  color: #202124;
+}
+
+/* Chapter page */
+.chapter #leave-community .leave.member-api {
+  color: #fff;
+}
+
+.chapter .chapter-photos {
+  background-color: transparent;
+}
+
+#event_page .dark_bg.events {
+  background: transparent;
+}
+
+/*Events page*/
+div#react-upcoming-events-widget-root .eventTypesContainer:not(.tagsContainer) {
+    display: none;
+}
+
+/* Event Page */
+.purchase-window h1,
+.event .panel-body h4,
+.chapter .nav-underscore li a {
+  color: #202124;
+}
+
+#event_page #virtual-join-button-container {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+#event_page .font_banner2,
+#event_page .font_banner4,
+#event_page .event-header-address,
+.chapter-banner .chapter-banner-container .chapter-title-container h2,
+.chapter-banner .chapter-banner-container .chapter-title-container h1 {
+  font-weight: 400;
+}
+
+#featured-attendees {
+  background-color: #f1f3f4;
+}
+
+/* Past Event */
+#event_page .event-wrapup-photos {
+  background-color: transparent;
+}
+
+/* Featured Attendees */
+.user-card .inner .info .name {
+  color: #202124;
+}
+
+/* Chapter page */
+.chapter #leave-community .leave.member-api {
+  color: #4285f4;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+  body .navbar-secondary .navbar-collapse .navbar-right li.navbar-login-links {
+    padding-top: 20px !important;
+  }
+}
+
+/* Events Banner */
+.gdg-events .overlay {
+  display: none;
+}
+
+.gdg-events .page-banner {
+  height: 343px;
+}
+
+.gdg-events .p1 {
+  margin-bottom: 100px;
+  line-height: 1.5;
+}
+
+/* ==== DEV FEST PAGE === */
+body.page .static-page.devfest section.page-content {
+  display: none;
+}
+
+body.page .static-page.iwd section.imageSection .imageContainer .techmakers-link {
+  color: #4285f4;
+}
+
+/* ================== */
+/* Road to Cert Page */
+/* ================== */
+
+.road-to-google-dev-certification a {
+  color: #4285f4 !important;
+}
+
+.road-to-google-dev-certification .custom-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.road-to-google-dev-certification .custom-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 56px;
+}
+
+.road-to-google-dev-certification .custom-col {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  padding: 20px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.road-to-google-dev-certification .carousel-header {
+  margin-bottom: 80px;
+}
+
+.road-to-google-dev-certification .custom-img {
+  max-width: 240px !important;
+}
+
+.road-to-google-dev-certification .event-detail-columns .custom-img {
+  max-width: none !important;
+  height: 270px;
+  margin-left: -40px;
+}
+
+.road-to-google-dev-certification .location-widget-section h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 44px;
+  color: #202124;
+}
+
+.road-to-google-dev-certification .custom-section {
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto 80px auto;
+}
+
+.road-to-google-dev-certification .carousel-container .content .content-inside h2 {
+  color: #fff !important;
+  text-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+  text-align: left !important;
+}
+
+
+
+/* ============================== */
+/* Road to Cert Page Media Queries */
+/* ============================== */
+@media screen and (max-width:768px) {
+  .road-to-google-dev-certification .custom-row {
+    flex-direction: column;
+  }
+
+  .road-to-google-dev-certification .event-detail-columns .custom-img {
+    height: 170px;
+  }
+
+  .road-to-google-dev-certification .custom-col {
+    width: 100%;
+  }
+
+  .road-to-google-dev-certification .carousel-header.shorter .carousel-container .content {
+    height: 320px !important;
+  }
+
+  .road-to-google-dev-certification .event-detail-columns {
+    flex-direction: column;
+  }
+
+  .road-to-google-dev-certification .event-detail-columns .custom-img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.road-to-google-dev-certification .event-detail-columns .custom-img {
+  margin-top: 15px;
+}
+
+.road-to-google-dev-certification .event-detail-columns {
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width:500px) {
+  .road-to-google-dev-certification .carousel-header.shorter .carousel-container .content {
+    height: 220px !important;
+  }
+}
+
+/* SGP-28165 - START */
+body#account div.tab-content>div>div>div.panel.panel-default.style-editor-panel>div>div>a {
+  word-break: break-word
+}
+
+/* SGP-28165 - END */
+
+
+/** CNP-371 - START */
+/* Hides custom work for technologies */
+.ioextended2>section>section.page-content.white.small-padding-top.no-padding-bottom {
+  display: none;
+}
+
+.ioextended2 .carousel-container .content .content-inside h2 {
+  color: #fff !important;
+  text-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+  text-align: left !important;
+}
+
+.ioextended2 .carousel-container .content .content-inside h2 {
+  color: #333333 !important;
+  text-shadow: 2px 2px 3px rgb(0 0 0 / 40%);
+  text-align: left !important;
+}
+
+.ioextended2 .io-banner .carousel-container .item {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .ioextended2 .io-banner .carousel-container .item {
+    height: 220px;
+  }
+
+  .ioextended2 .carousel-header.shorter .carousel-container .content {
+    height: 100% !important;
+  }
+}
+
+.ioextended2 .ioextended>section>section:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.ioextended2 section.about>p {
+  font-size: 0.9em;
+}
+
+.ioextended2 section.technologies>h2 {
+  margin-bottom: 32px !important;
+}
+
+.ioextended2 section.developingfor>h2 {
+  margin-bottom: 32px !important;
+}
+
+.ioextended2 section.howthisworks>h2 {
+  margin-bottom: 32px !important;
+}
+
+.ioextended2 .ioextended>section:nth-child(1) {
+  margin: 0;
+  padding-bottom: 0 !important;
+}
+
+.ioextended2 .page-content section {
+  margin-bottom: 32px !important;
+  padding: 32px 0 !important;
+}
+
+.ioextended2 .location-widget-section {
+  margin-bottom: 32px !important;
+  padding: 32px 0 !important;
+}
+
+.ioextended2 .devsite-landing-row-group {
+  display: grid;
+  grid: auto-flow / repeat(7, 1fr);
+  row-gap: 50px;
+  margin-top: 32px;
+}
+
+.ioextended2 .devsite-landing-row-item {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: normal;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+
+.ioextended2 .devsite-landing-row-item-media {
+  min-width: 0;
+}
+
+.ioextended2 .devsite-landing-row-item-custom-image,
+.ioextended2 .devsite-landing-row-item-custom-image-icon-wrapper {
+  display: grid;
+  place-content: center;
+  aspect-ratio: unset;
+  height: 96px;
+}
+
+.ioextended2 .devsite-landing-row-item-description {
+  margin: 0;
+  text-align: center;
+}
+
+.ioextended2 .devsite-landing-row-item-custom-image,
+.ioextended2 .devsite-landing-row-item-custom-image-icon-wrapper {
+  display: grid;
+  place-content: center;
+}
+
+.ioextended2 .devsite-landing-row-logos .devsite-landing-row-item-custom-image-icon {
+  opacity: 1;
+}
+
+.ioextended2 .devfest-product-garden img {
+  background: #f1f3f4;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.ioextended2 .devsite-landing-row-item-custom-image-icon {
+  max-height: 96px;
+  width: 96px;
+  padding: 20px;
+  background: #f1f3f4;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.ioextended2 .howthisworks-wrapper {
+  display: grid;
+  grid: auto-flow / repeat(3, 1fr);
+  column-gap: 32px;
+}
+
+.ioextended2 .howthisworks-item {
+  background: #f6bd41;
+  padding: 20px;
+}
+
+.ioextended2 .howthisworks-item p {
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 840px) {
+
+  .ioextended2 .devsite-landing-row-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ioextended2 .howthisworks-wrapper {
+    display: grid;
+    grid: auto-flow / repeat(1, 1fr);
+    row-gap: 32px;
+  }
+}
+
+/** CNP-371 - END */
+
+/** ZD 10242 - Chapter PB - START */
+@media (max-width: 768px) {
+  .chapter-page-builder-page #__next .theme-provider-namespace-nextjs-root>div:nth-child(4) {
+    display: none;
+  }
+}
+
+body.chapter-page-builder-page .modal-body > .contact-host.container ,
+body.event-page-builder-page .modal-body > .contact-host.container  {
+  width: 100% !important;
+}
+
+body.chapter-page-builder-page .page-builder-content .chapter-photos {
+  margin: 0;
+  padding: 0;
+}
+
+body.chapter-page-builder-page .page-builder-content .chapter-photos .photos {
+  padding: 0;
+}
+
+body.chapter-page-builder-page .page-builder-content .chapter-photos .general-h1 {
+  text-align: left;
+}
+
+/** ZD 10242 - END */
+
+
+/** ZD 10314 - Event PB page */
+body.event-page-builder-page .page-builder-content .theme-provider-namespace-people-section .theme-provider-namespace-people-card .people-card div:nth-of-type(2) h2 {
+  color: #5f6368 !important;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+body.event-page-builder-page .page-builder-content .theme-provider-namespace-people-section .theme-provider-namespace-people-card .people-card div:nth-of-type(2) p {
+  color: #5f6368 !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body.event-page-builder-page .page-builder-content .theme-provider-namespace-people-section .theme-provider-namespace-people-card .people-card div:nth-of-type(3) button {
+  all: unset;
+  color: #4285f4;
+  font-weight: 700;
+}
+
+body.event-page-builder-page .page-builder-content .theme-provider-namespace-people-section .theme-provider-namespace-people-card .people-card div:nth-of-type(3) button:hover {
+  text-decoration: underline;
+}
+
+body.event-page-builder-page .page-builder-content .theme-provider-namespace-people-section .theme-provider-namespace-people-card .people-card div:nth-of-type(3) button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body.event-page-builder-page .page-builder-content .theme-provider-namespace-nextjs-root>div>div:nth-of-type(3)>div>div {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  body.event-page-builder-page .page-builder-content .theme-provider-namespace-nextjs-root>div>div:nth-of-type(3)>div>div>div {
+    width: 100% !important;
+  }
+  
+  body.event-page-builder-page .event-info-container .icon {
+       display: block !important; 
+  }
+  
+   body.event-page-builder-page .event-info-container .agenda-container .second-column .agenda-title-container {
+    margin-bottom: 1em;
+  }
+  #groups .row.regions-list div.col-xs-12 {
+    max-height: 200px;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body.event-page-builder-page .event-info-container .days-container {
+       margin: 1em 0; 
+  }
+}
+
+body.event-page-builder-page .event-info-container .agenda-container .second-column .agenda-title-container .days-container .days-container-inside {
+  flex-wrap: wrap;
+}
+
+body.event-page-builder-page .event-info-container .agenda-container .second-column .agenda-title-container .days-container .days-container-inside > button.day-button {
+  text-align: wrap;
+}
+
+/** ZD 10314 - end - event PB page */
+
+.theme-provider-namespace-event-tags .MuiChip-root.MuiChip-outlined {
+  max-width: 100%; 
+}
+
+/*ZD 11934 - update I/O Extended*/
+.ioextended2 .technologies {
+    display: none;
+  }
+.ioextended2 .developingfor {
+    display: none;
+  }
+
+/** Road to Google Developers Certification page*/
+body.google-program > div.static-page {
+  width: 100%;
+  padding: 0;
+  margin:0,
+}
+body.google-program .page-banner {
+     min-height: auto;
+     background-repeat: no-repeat; 
+    background-position: 50% 50%; 
+    background-size: cover; */
+     background-attachment: scroll; 
+     position: relative; 
+     margin: 0 0 50px; 
+     display: -webkit-box; 
+    display: -ms-flexbox;
+    display: flex;
+    object-fit: cover;
+;
+}
+
+ @media (min-width: 1200px) {
+    body.google-program .container {
+        width: auto;
+    }
+}
+
+/** ZD 18618 **/
+body.event-page-builder-page .page-builder-content .dynamic-text h1 {
+  font-size: 2em;
+}
+
+body.event-page-builder-page .page-builder-content .dynamic-text h2 {
+  font-size: 1.6em;
+}
+
+body.event-page-builder-page .page-builder-content .dynamic-text h3 {
+  font-size: 1.3em;
+}
+
+body.event-page-builder-page .page-builder-content .dynamic-text h4 {
+  font-size: 1.1em;
+}
+
+#react-root-user-document > div > div[class*="access_agreements-styles-checkboxContainer"] > div:nth-child(2) > div > label > span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 > span > a:nth-child(1) {
+    display: inline-block;
+}
+
+
+/* ===================================================================
+   DARK MODE FIXES (GDG) — dark-only overrides; light mode untouched
+   =================================================================== */
+
+/* Header (nav + controls): platform dark CSS forces header links/buttons to
+   #5f6368 grey (low-contrast on the dark header). Out-specify with a body#body
+   prefix and use the light text token. */
+html[data-theme="dark"] body#body header.navs a,
+html[data-theme="dark"] body#body header.navs button,
+html[data-theme="dark"] body#body header.navs [class*="Text"],
+html[data-theme="dark"] body#body header.navs [class*="label"],
+html[data-theme="dark"] body#body header.navs .caret {
+  color: var(--theme-palette-dark) !important;
+  -webkit-text-fill-color: var(--theme-palette-dark) !important;
+}
+
+/* Footer: platform + footer-tab CSS pin links and copyright text to #202124,
+   invisible on the dark footer. Cover the container, all descendants, and links
+   explicitly (links need the type selector to out-specify the platform rule). */
+html[data-theme="dark"] body#body footer.page-footer,
+html[data-theme="dark"] body#body footer.page-footer *,
+html[data-theme="dark"] body#body footer.page-footer a {
+  color: var(--theme-palette-dark) !important;
+  -webkit-text-fill-color: var(--theme-palette-dark) !important;
+}
+
+/* Upcoming-events card (location widget): meta band has a hardcoded white bg via
+   a high-specificity framework rule. Match that chain (dark-theme prefixed) and
+   make it transparent; lift the muted chapter/date text for the dark card. */
+html[data-theme="dark"] .location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .meta {
+  background-color: transparent !important;
+}
+html[data-theme="dark"] .location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .meta .chapter,
+html[data-theme="dark"] .location-widget .location-carousel .slider-frame .slider-list .slider-slide a.icon-block .meta .date {
+  color: var(--theme-palette-soft-dark) !important;
+}
+
+/* Chapter search widget (embedded on homepage under #chapters-page): white
+   holder + white input from ID-specific framework rules. Dark surface, light
+   text, readable placeholder. */
+html[data-theme="dark"] .main-dashboard#chapters-page .search-holder {
+  background-color: var(--theme-palette-light) !important;
+}
+html[data-theme="dark"] .main-dashboard#chapters-page .search-holder input.form-control {
+  background-color: var(--theme-palette-soft-light) !important;
+  color: var(--theme-palette-dark) !important;
+}
+html[data-theme="dark"] .main-dashboard#chapters-page .search-holder input.form-control::placeholder {
+  color: var(--theme-palette-soft-dark) !important;
+}
+
+/* City search (geosuggest): input already themes; match its light-grey outer
+   wrapper frame to the dark input. */
+html[data-theme="dark"] .geosuggest__input-wrapper {
+  background-color: var(--theme-palette-soft-light) !important;
+}
+/* end CSS OVERRIDES */
+
+/* THUMBNAIL ROUNDNESS */
+.__bds-thumbnail-roundness {
+  border-radius: 50% !important;
+  overflow: hidden;
+}
+
+/* CSS vars */
+:root {
+  --general-paragraph-font-size: 16px;
+
+  --theme-palette-primary: #4285F4;
+
+  /* Header dropdown vars — Next.js publishes these via headerCssVars.js so
+     SCSS can read the `--headerDropdown*` custom properties. Mirroring
+     them here so legacy LESS can read the same vars and let the cascade do
+     its job (rather than hardcoding defaults with !important that would
+     silently override SE values). Each is gated on the SE setting being
+     defined; when unset the LESS consumer falls back via the second arg of
+     its own custom-property reference. */
+  --headerDropdownBackgroundColor: var(--o-GENERAL_HEADER_DROPDOWN_BACKGROUND_COLOR, var(--theme-palette-light));
+
+  --headerDropdownStrokeWidth: 1px;
+
+  --headerDropdownStrokeColor: var(--o-GENERAL_HEADER_DROPDOWN_STROKE_COLOR, #dadce0);
+
+
+
+  --general-button-background: var(--o-GENERAL_BUTTON_BACKGROUND, #1a73e8);
+
+  --general-button-color: var(--o-GENERAL_BUTTON_COLOR, #fff);
+
+
+  --general-hover-button-background-color: var(--o-GENERAL_HOVER_BUTTON_BACKGROUND_COLOR, #4285F4);
+
+
+  --general-hover-button-color: var(--o-GENERAL_HOVER_BUTTON_COLOR, #fff);
+
+  --general-button-tb-pad: 15px;
+
+  --general-button-lr-pad: 20px;
+
+  --general-button-border-radius: 4px;
+
+  --general-button-font-size: 14px;
+
+  --general-button-all-caps: none;
+
+  --general-button-weight: 500;
+
+  --general-button-stroke-width: 0px;
+
+  --general-ghost-button-background: var(--o-GENERAL_GHOST_BUTTON_BACKGROUND_COLOR, #fff);
+
+  --general-ghost-button-stroke-color: var(--o-GENERAL_GHOST_BUTTON_STROKE_COLOR, #dadce0);
+
+  --general-ghost-button-color: var(--o-GENERAL_GHOST_BUTTON_COLOR, #1a73e8);
+
+  --general-ghost-hover-button-background-color: var(--o-GENERAL_GHOST_HOVER_BUTTON_BACKGROUND_COLOR, #e8f0fe);
+
+  --general-ghost-hover-button-stroke-color: var(--o-GENERAL_GHOST_HOVER_BUTTON_STROKE_COLOR, #d2e3fc);
+
+  --general-ghost-hover-button-color: var(--o-GENERAL_GHOST_HOVER_BUTTON_COLOR, #4285F4);
+
+  --general-ghost-button-all-caps: none;
+
+  --general-ghost-button-weight: normal;
+
+  --general-ghost-button-font-size: 14px;
+
+  --general-ghost-button-border-radius: 4px;
+
+  --general-button-stroke-width: 0px;
+  --general-ghost-button-stroke-width: 1px;
+
+  --general-text-link-color: var(--o-GENERAL_TEXT_LINK_COLOR, #4285F4);
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Hide reCAPTCHA badge: https://developers.google.com/recaptcha/docs/faq#id-like-to-hide-the-recaptcha-badge.-what-is-allowed */
+.grecaptcha-badge { visibility: hidden; }
+
+.login-button-container {
+  display: flex;
+  align-items: baseline;
+}
+.login-plaintext {
+  text-decoration: none;
+}
+
+/* new dropdown menu style overrides: https://startupgrind.atlassian.net/browse/SGP-30575 */
+.dropdown-menu.new-dropdown-menu li > a > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown-menu.new-dropdown-menu  li > a.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.dropdown-menu.new-dropdown-menu li > a:hover,
+.dropdown-menu.new-dropdown-menu li > a:focus {
+    text-shadow: none;
+    background-color: transparent;
+}
+
+.dropdown-menu.new-dropdown-menu li > a {
+  border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+  .navbar-secondary .navbar-nav > li.navbar-menu.notifications-menu-item > a:hover,
+  .navbar-secondary .navbar-nav > li.navbar-menu.notifications-menu-item > a:focus,
+  .navbar-secondary .navbar-nav > li.navbar-menu.notifications-menu-item > a:active {
+    text-shadow: none;
+  }
+}
+
+/* Navbar override https://startupgrind.atlassian.net/browse/SGP-30781 */
+.main-header-navbar li.search-menu-item > a > svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Profile dropdown style settings */
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu {
+    background-color: var(--o-GENERAL_HEADER_DROPDOWN_BACKGROUND_COLOR, var(--theme-palette-light));
+  }
+}
+
+
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu {
+    border-width: 1px;
+    border-style: solid;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu {
+    border-color: var(--o-GENERAL_HEADER_DROPDOWN_STROKE_COLOR, #dadce0);
+  }
+
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li.divider {
+    background-color: var(--o-GENERAL_HEADER_DROPDOWN_STROKE_COLOR, #dadce0);
+  }
+}
+
+.top-nav-dragon .dropdown-menu.new-dropdown-menu li.section-label {
+  color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_FONT_COLOR, #5f6368);
+}
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li.section-label,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a {
+    color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_FONT_COLOR, #5f6368);
+  }
+}
+
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a {
+    font-weight: normal;
+  }
+}
+
+
+/* Dropdown link hover states
+ *
+ * Each block below also matches `li.theme-toggle:hover` (SGP-32161 #8). That row is the
+ * only non-link row in the menu — it is an <li> of <span>s with no <a>, because it toggles
+ * the theme rather than navigating — so a `li > a` selector cannot reach it and it hovered
+ * with NO feedback at all while every sibling changed background and underlined.
+ *
+ * Extending these four existing selectors (rather than writing separate .theme-toggle
+ * rules) is what guarantees the row reacts to exactly the same style settings, with the
+ * same values and the same 992px gate, on every instance. A parallel rule set would drift
+ * the moment one of these settings changed. */
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a:hover,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a:focus,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li.theme-toggle:hover {
+    background-color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_HOVER_BACKGROUND_COLOR, var(--theme-palette-light)) !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a:hover,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li > a:focus,
+  .top-nav-dragon .dropdown-menu.new-dropdown-menu li.theme-toggle:hover {
+    color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_HOVER_FONT_COLOR, #202124);
+  }
+}
+
+
+
+/* The desktop avatar dropdown's design-system styling (section labels, links,
+   dividers, logout) lives in the min-width:992 block far above. On mobile the same
+   avatar menu renders in the header-bar bottom sheet (.mobile-header-actions, which
+   is mobile-only), so re-apply that styling here un-gated to keep the sheet content
+   consistent with the desktop dropdown. Kept in sync with the desktop rules. */
+.mobile-header-actions .dropdown-menu.new-dropdown-menu .divider {
+  background-color: #F1F3F4;
+  margin: 8px 0;
+}
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li.section-label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 133%;
+  text-transform: uppercase;
+  padding: 8px 4px 4px;
+}
+.mobile-header-actions .dropdown-menu.new-dropdown-menu > li > a {
+  font-size: 14px;
+  line-height: 136%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  color: #5F6368;
+  cursor: pointer;
+}
+.mobile-header-actions .dropdown-menu.new-dropdown-menu > li > a.logout {
+  color: #E3000F;
+}
+
+/* Per-instance Style Editor link overrides (also min-width:992 above). */
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li,
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li.section-label,
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li > a {
+  color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_FONT_COLOR, #5f6368);
+}
+
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li > a {
+  font-size: 14px;
+}
+
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li > a {
+  font-weight: normal;
+}
+
+
+/* `li.theme-toggle:hover` for the same reason as the desktop blocks above: the row is an
+   <li> of <span>s with no <a>, so a `li > a` selector cannot reach it. This sheet is
+   explicitly "kept in sync with the desktop rules", so the mobile sheet gets it too. */
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li > a:hover,
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li > a:focus,
+.mobile-header-actions .dropdown-menu.new-dropdown-menu li.theme-toggle:hover {
+  color: var(--o-GENERAL_HEADER_DROPDOWN_LINK_HOVER_FONT_COLOR, #202124);
+}
+
+
+/**
+ * IMPORTANT: This section should be kept in sync with next/src/app/variables.css
+ * Any changes made here should also be reflected in the platform_project version and vice versa.
+ * This section does _not_ add any configuration-based variables; it only defines our design system variables.
+ * Location: next/src/app/variables.css
+ */
+:root {
+  /* Spacing and gap */
+  --SpacingGap01: 4px;
+  --SpacingGap02: 8px;
+  --SpacingGap03: 12px;
+  --SpacingGap04: 16px;
+  --SpacingGap05: 20px;
+  --SpacingGap06: 24px;
+  --SpacingGap07: 28px;
+  --SpacingGap08: 32px;
+  --SpacingGap09: 36px;
+  --SpacingGap10: 40px;
+  --SpacingGap11: 44px;
+  --SpacingGap12: 48px;
+  --SpacingGap16: 64px;
+  --SpacingGap25: 100px;
+
+  /* Radius */
+  --RadiusXSM: 4px;
+  --RadiusXS: 6px;
+  --RadiusSM: 12px;
+  --RadiusMD: 16px;
+  --RadiusLG: 24px;
+
+  /* Font */
+  --FontSizeXS: 10px;
+  --FontSizeSM: 12px;
+  --FontSizeMD: 14px;
+  --FontSizeLG: 16px;
+  --FontWeightNormal: 400;
+  --FontWeightMedium: 500;
+  --FontWeightBold: 700;
+
+  /* Line Height */
+  --LineHeighNormal: 1;
+  --LineHeightRelaxed: 1.15;
+
+  /* Colors */
+  --ColorPrimary: #4285F4;
+  /* DIS-3774: 11, 105, 212 == #0B69D4, the brand default this ticket moved to (was
+     22, 134, 255 == #1686FF). This is a components-only copy of the brand — every
+     `rgba(var(--ColorPrimaryRGB), .06)` brand tint reads it — so leaving it behind
+     would have tinted with the retired blue while the brand itself moved. Pinned by
+     config/test_dark_resolver_palette_parity.py. Note it stays a literal rather than a
+     tenant value: ON LEGACY nothing emits `--theme-palette-primary-rgb` (theme.css writes
+     only the hex spellings), so a tenant with a custom brand already gets stock-blue
+     tints here. That is pre-existing and wider than this ticket. Legacy has two readers,
+     and only one of them renders: cookieManager/styles.module.less spells it
+     `rgba(var(--ColorPrimaryRGB), 0.5)`, while profile/Rewards/styles.less writes
+     `rgba(var(--ColorPrimaryRGB) / 0.03)` — a slash alpha over comma-separated
+     components, so it substitutes to `rgba(11, 105, 212 / 0.03)`, mixed grammar, and the
+     declaration is dropped. bin/css_color_function_check.py does not catch that shape
+     (it flags the same slash over literal components, and the space-appended form, but
+     not this one); both are DIS-3748's, not this ticket's.
+
+     Scope note, because the same line in next/src/app/variables.css reads differently:
+     there the token IS emitted, by BDS's `cssVarsNameGenerator` writing a `<name>-rgb`
+     companion beside every hex var, so next/ tracks both the tenant brand and the dark
+     slot. This sheet has no such generator; the gap is legacy-only. */
+  --ColorPrimaryRGB: 11, 105, 212;
+
+  /* this defaults to softdark but can be changed in style editor */
+  --ColorSecondary: #1A73E8;
+  --ColorSecondaryRGB: 130, 82, 255;
+
+  /* Neutral ramp: reference the --theme-palette-* vars (which theme.css flips under
+     [data-theme="dark"]) with the light template value as fallback, so these --Color*
+     tokens flip in dark mode instead of being frozen at their light hex. Mirrors the
+     Next app's variables.css; the template value keeps light mode identical and guards
+     pages that load generalstyles.css without theme.css (DIS-3555 DM-035, P2/P3/P4). */
+
+  /* Figma: "White" */
+  --ColorLight: var(--theme-palette-light, #FFFFFF);
+  --ColorLightRGB: 255, 255, 255;
+
+  /* Figma: "Light" */
+  --ColorSoftLight: var(--theme-palette-soft-light, #F1F3F4);
+  --ColorSoftLightRGB: 246, 249, 251;
+
+  /* Figma: "Soft Light" */
+  --ColorLightBorders: var(--theme-palette-light-borders, #DADCE0);
+  --ColorLightBordersRGB: 228, 236, 243;
+
+  /* Figma: "Black" */
+  --ColorDark: var(--theme-palette-dark, #202124);
+  --ColorDarkRGB: 41, 44, 57;
+
+  /* Figma: "Dark" */
+  --ColorSoftDark: var(--theme-palette-soft-dark, #5F6368);
+  --ColorSoftDarkRGB: 77, 84, 106;
+
+  /* Figma: "Soft Dark" */
+  --ColorDarkBorders: var(--theme-palette-dark-borders, #9AA0A6);
+  --ColorDarkBordersRGB: 124, 138, 156;
+
+  /* Extra colors */
+  --ColorError: #E3000F;
+  --ColorErrorRGB: 227, 0, 15;
+  --ColorSuccess: #008A00;
+  --ColorSuccessRGB: 0, 138, 0;
+  --ColorWarning: #F3BE02;
+  --ColorWarningRGB: 243, 190, 2;
+  --AIGradientSM: linear-gradient(270deg, #7bedff, #d783ff, #7bedff);
+}

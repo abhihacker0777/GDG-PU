@@ -14,45 +14,57 @@
 body {
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+  background-color: #f8fafc;
+  color: #1e293b;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
-.dark ::-webkit-scrollbar-track {
-  background: #0f172a;
-}
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #05488B;
 }
 
-/* Google 4-color gradient text */
-.text-gradient-google {
-  background: linear-gradient(90deg, #4285F4 0%, #EA4335 33%, #FBBC05 66%, #34A853 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 2px 4px rgba(5, 72, 139, 0.15));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 4px 10px rgba(5, 72, 139, 0.28));
+  }
 }
 
-/* Poornima brand gradient text */
-.text-gradient-poornima {
-  background: linear-gradient(135deg, #05488B 0%, #0e55e5 50%, #FFC107 100%);
+@keyframes gdgGlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-logo-pulse {
+  animation: logoPulse 4s ease-in-out infinite;
+}
+
+.animate-gdg-shimmer {
+  background: linear-gradient(90deg, #05488B 0%, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gdgGlow 6s ease infinite;
 }
 
 .bg-radial-pattern {
   background-image: radial-gradient(rgba(5, 72, 139, 0.08) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-.dark .bg-radial-pattern {
-  background-image: radial-gradient(rgba(255, 193, 7, 0.08) 1px, transparent 1px);
   background-size: 24px 24px;
 }

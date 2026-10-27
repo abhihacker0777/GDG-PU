@@ -1,0 +1,224 @@
+.SnackbarProvider-styles-snackbar-TuTZl {
+  position: absolute;
+  padding: 0 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.SnackbarProvider-styles-snackbar_notification-1CHfq {
+  -webkit-border-radius: var(--notification-border-radius);
+          border-radius: var(--notification-border-radius);
+}
+.SnackbarProvider-styles-snackbar_notification-1CHfq button[type="submit"] {
+  background-color: transparent !important;
+}
+.SnackbarProvider-styles-snackbar_notification-1CHfq button[type="submit"]:hover {
+  background-color: transparent !important;
+}
+
+.EventFormTitleWithCopyableLink-styles-surveyLinkContainer-sEY66 {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.event-page-styles-tagList-aXRyz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -5px;
+  min-width: 0;
+}
+.react-tags-root {
+  min-width: 0;
+}
+.event-page-styles-tag-XNPWU {
+  max-width: calc(100% - 10px);
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  cursor: default;
+  margin: 5px;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  background-color: var(--generalTagBackgroundColor, var(--theme-palette-soft-light));
+  border: var(--generalTagBorderWidth, 0) solid var(--generalTagBorderColor, var(--theme-palette-soft-light));
+  -webkit-border-radius: var(--generalTagBorderRadius, 16px);
+          border-radius: var(--generalTagBorderRadius, 16px);
+  padding: var(--generalTagPadding, 8px 12px);
+  color: var(--generalTagTextColor, var(--theme-palette-soft-dark));
+  font-size: var(--generalTagFontSize, 0.875rem);
+  font-weight: var(--generalTagFontWeight, 400);
+  line-height: var(--generalTagLineHeight, 1.43);
+  text-transform: var(--generalTagTextTransform, none);
+  font-family: inherit;
+}
+.event-page-styles-tag-XNPWU:focus-visible {
+  outline: 2px solid currentcolor !important;
+  outline-offset: 2px;
+}
+.event-page-styles-moreTag-VL5zM {
+  max-width: calc(100% - 10px);
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  cursor: default;
+  margin: 5px;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  background-color: var(--generalTagBackgroundColor, var(--theme-palette-soft-light));
+  border: var(--generalTagBorderWidth, 0) solid var(--generalTagBorderColor, var(--theme-palette-soft-light));
+  -webkit-border-radius: var(--generalTagBorderRadius, 16px);
+          border-radius: var(--generalTagBorderRadius, 16px);
+  padding: var(--generalTagPadding, 8px 12px);
+  color: var(--generalTagTextColor, var(--theme-palette-soft-dark));
+  font-size: var(--generalTagFontSize, 0.875rem);
+  font-weight: var(--generalTagFontWeight, 400);
+  line-height: var(--generalTagLineHeight, 1.43);
+  text-transform: var(--generalTagTextTransform, none);
+  font-family: inherit;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+.event-page-styles-moreTag-VL5zM:focus-visible {
+  outline: 2px solid currentcolor !important;
+  outline-offset: 2px;
+}
+.event-page-styles-moreTag-VL5zM:hover {
+  text-decoration: underline;
+}
+
+.ChapterPageMap-styles-mapBody-D5h1m {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.ChapterPageMap-styles-addressLink-U00VB {
+  line-height: 1.8;
+}
+.ChapterPageMap-styles-mapHeading-FU5ha {
+  color: #212225;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.ChapterPageMap-styles-mapDescription-hQlnT {
+  font-size: 18px;
+}
+
+.RfEuNF5TdTHDSvies6J9 {
+  isolation: isolate;
+  z-index: 999999;
+}
+
+.KwHlw0HziBQbTfTlYAdS {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 35px 15px 15px;
+  margin: -20px -15px 0;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.KwHlw0HziBQbTfTlYAdS.eVMNWZsAg42kPycyAJ0c {
+  padding: 35px 15px 15px;
+}
+
+.j0RVe0KWkGvZuuDb4CFd {
+  position: relative;
+  border-radius: 10px;
+  background: #f6f9fb;
+  box-shadow: 0 0 8px #00000030;
+  animation: eT3Yv_LIJHEXcURkYChh 1s
+    linear(
+      0,
+      0.007,
+      0.027 2.1%,
+      0.109 4.6%,
+      0.588 14.1%,
+      0.696,
+      0.786,
+      0.861,
+      0.921,
+      0.968,
+      1.003 29.2%,
+      1.02,
+      1.031,
+      1.038 35.9%,
+      1.041 38.5%,
+      1.036 43.1%,
+      1.01 56.5%,
+      1.002 64.4%,
+      0.998 75%,
+      1
+    );
+}
+
+.j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #f6f9fb transparent transparent;
+}
+
+.j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c.JpSvNsTpQO2_J9LAuBtL::after {
+  left: 9px;
+}
+
+.j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c.KLvOKKMCPI34hOo67jaZ::after {
+  left: calc(50% - 10px);
+}
+
+.j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c.F1eyK9ObpQ4QKrgAbkwr::after {
+  right: 9px;
+}
+
+.j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c.kBMYh7ZBIKyag2DZ4hyM::after {
+  top: -20px;
+  transform: rotate(180deg);
+}
+
+@keyframes eT3Yv_LIJHEXcURkYChh {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode: the tooltip surface (#f6f9fb) AND its caret notch (::after, same hex)
+   are hardcoded light, so both stay bright on the dark page. Repoint both to the
+   flipping token â€” the notch must match the surface or it shows as a light triangle.
+   Light mode unchanged. */
+[data-theme='dark'] .j0RVe0KWkGvZuuDb4CFd {
+  background: var(--theme-palette-soft-light);
+}
+
+[data-theme='dark'] .j0RVe0KWkGvZuuDb4CFd.eVMNWZsAg42kPycyAJ0c::after {
+  border-top-color: var(--theme-palette-soft-light);
+}
+
