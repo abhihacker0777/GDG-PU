@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --google-blue: #4285F4;
+  --google-red: #EA4335;
+  --google-yellow: #FBBC05;
+  --google-green: #34A853;
+  --poornima-blue: #05488B;
+  --poornima-gold: #FFC107;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+@media (min-width: 768px) {
+  html,
+  body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media (max-width: 767px), (pointer: coarse) {
+  html,
+  body {
+    scrollbar-color: #FBBC05 #f8fafc;
+    scrollbar-width: thin;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-track {
+    background: #f8fafc;
+  }
+
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb {
+    background: #FBBC05;
+    border-radius: 9999px;
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 2px 4px rgba(5, 72, 139, 0.15));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 4px 10px rgba(5, 72, 139, 0.28));
+  }
+}
+
+@keyframes gdgGlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-logo-pulse {
+    animation: logoPulse 4s ease-in-out infinite;
+  }
+
+  .animate-gdg-shimmer {
+    animation: gdgGlow 6s ease infinite;
+  }
+}
+
+.animate-gdg-shimmer {
+  background: linear-gradient(90deg, #05488B 0%, #4285F4 25%, #EA4335 50%, #FBBC05 75%, #34A853 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-pulse,
+  .animate-gdg-shimmer {
+    animation: none;
+  }
+}
+
+.bg-radial-pattern {
+  background-image: radial-gradient(rgba(5, 72, 139, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

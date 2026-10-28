@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gdg-pu.vercel.app/sitemap.xml
+
